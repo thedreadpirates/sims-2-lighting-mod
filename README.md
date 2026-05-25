@@ -148,6 +148,35 @@ Simply type the cheat alias on the cheat console (CTRL + SHIFT + C) to switch wh
 1. To update the lighting mod, delete all files (EXCEPT Scriptorium-related files, if you have them) in your BASE GAME and MANSION & GARDEN Lights folders, then place the updated files inside.
 2. If there are any cheat updates, delete all lines related to lighting from your userStartup.cheat file and replace with the lines in the updated userStartup.cheat.
 
+### Current Cheat Configuration
+
+```
+#### LIGHTING CHEATS ####
+ignoreErrors true
+boolProp UseShaders true
+boolProp specHighlights true
+boolProp floorAndWallNormalMapping true
+boolProp bumpMapping true
+boolProp skipTangentsInVertexData false      #false for bumpmapping!
+uintProp optionLightingQuality 3             #These two lines set the lighting option and
+uintProp LightingQuality 3                   #the lighting level to MAX (as required)
+boolProp gpuCompositing true
+floatProp geomBoneInfluenceThreshold 0.01
+floatProp geomPerBoneBoundBlendWeightThreshold 0.9
+boolProp geomCheckGeomDataIntegrity false
+boolProp geomGenerateTangentSpaceSxT true
+##########################
+
+#### LIGHTING ALIASES ####
+alias sld "setlotlightingfile clear" "default lighting" ""
+alias slw "setlotlightingfile Lighting_WLBF.txt" "a world lit by fire" ""
+alias slm "setlotlightingfile Lighting_MM.txt" "maxis match lighting mod" ""
+alias slv "setlotlightingfile Lighting_Vanilla.txt" "vanilla plus lighting mod" ""
+alias slr "setlotlightingfile Lighting_RLS.txt" "radiance lighting system" ""
+alias slc "setlotlightingfile Lighting_CS.txt" "cinema secrets lighting mod" ""
+##########################
+```
+
 ### **UNINSTALLATION INSTRUCTIONS:**
 
 1. Delete the contents of the LIGHTS folder for both BASE GAME and MANSION and GARDEN.
