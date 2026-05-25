@@ -49,10 +49,15 @@ The original mod has very dramatic lights and very dark darks, but I've put my o
 
 This is basically just Vanilla lighting with the lighting fixes from plasticbox and CircusWolf, dusk and dawn by spookymuffinsims, and the portal lighting fixes for dusk and dawn and vacation lighting from kayleigh83 she did for MM Lighting Mod.
 
-### **PHOTOS:**
+### **UNEDITED PHOTOS:**
 
-- [Edited Day Photos (Spring)](https://www.tumblr.com/veronavillequiltingbee/817330892905283584/the-new-lighting-mod-setup-is-coming-together?source=share)
-- [Unedited night photos](https://www.tumblr.com/veronavillequiltingbee/817412867195338752/unedited-night-lighting-comparison?source=share)
+| Lighting Mod             | Photo |
+| ------------------------ | ----- |
+| Vanilla Plus             | ![Image](assets/previews/VP_in.png)      |
+| Maxis Match Lighting Mod | ![Image](assets/previews/MM_in.png)       |
+| Radiance Lighting System | ![Image](assets/previews/RLS_in.png)      |
+| Cinema Secrets           | ![Image](assets/previews/CS_in.png)      |
+| World Lit by Fire        | ![Image](assets/previews/WLBF_in.png)       |
 
 ### **GAME INSTALLATION FOLDERS**
 
