@@ -1,0 +1,121 @@
+######################################################################
+# Table Based Lights
+#
+# 12/10/2005 (C) GunMod
+# FIN
+######################################################################
+######################################################################
+
+#1 Pix-Arm Drafting Table Lamp #
+create officetablelamp(lightingTableValue1_light)
+create candleflame(lightingTableValue1_light)
+######################################################################
+
+#2 The Watt is It Table Lamp #
+create officetablelamp(lightingTableValue2_light)
+create candleflame(lightingTableValue2_light)
+######################################################################
+
+#3 Lunatech Spare Fixture Ocean #
+create bigBLUEbulb(lightingTableBigBulb_light)
+create BLUE(lightingTableBigBulb_light)
+######################################################################
+
+#4 Lunatech Spare Fixture Grass #
+create bigGREENbulb(lightingTableBigBulbGreen_light)
+create GREEN(lightingTableBigBulbGreen_light)
+######################################################################
+
+#5 Lunatech Spare Fixture Crimson #
+create bigREDbulb(lightingTableBigBulbRed_light)
+create RED(lightingTableBigBulbRed_light)
+######################################################################
+
+#6 Social Climbing Ivy Table Lamp #
+create light0001(lightingTableQuaint_light)
+create candleflame(lightingTableQuaint_light)
+######################################################################
+
+#7 Illistra Lamp #
+create 100WattTABLE(lightingTableDesigner_light)
+create candleflame(lightingTableDesigner_light)
+######################################################################
+
+#8 Absolutily Nothing Special #
+create 45WattTABLE(lightingTableMoroccan_light)
+create candleflame(lightingTableMoroccan_light)
+######################################################################
+
+#9 Dynasty Enlightenment Lamp #
+create 60WattTABLE(lightingTableCentralAsian1_light)
+create candleflame(lightingTableCentralAsian1_light)
+######################################################################
+
+#11 Squintimcy Votive Table Lamp #
+create smallCANDLE(lightingTableBrasserie_glass_amber_lit_designModeLight)
+create candleflame(lightingTableBrasserie_glass_amber_lit_designModeLight)
+create smallCANDLEDIAMOND(lightingTableBrasserie_glass_diamond_lit_designModeLight)
+create flourescent(lightingTableBrasserie_glass_diamond_lit_designModeLight)
+create smallCANDLEDIAMOND(lightingTableBrasserie_glass_frosted_lit_designModeLight)
+create household(lightingTableBrasserie_glass_frosted_lit_designModeLight)
+create smallCANDLEGREEN(lightingTableBrasserie_glass_green_lit_designModeLight)
+create GREEN(lightingTableBrasserie_glass_green_lit_designModeLight)
+######################################################################
+
+#12 Gentle Glow Table Lamp #
+create 45WattTABLE(lightingTableCentralAsian2_light)
+create candleflame(lightingTableCentralAsian2_light)
+######################################################################
+
+#13 Lunatech BCT/6 #
+create 75WattTABLE(lightingTableClubLamp_light)
+create matchflame(lightingTableClubLamp_light)
+######################################################################
+
+#14 Mr Lampy McFourLegs #
+create 45WattTABLE(lightingTableNightClub_glassOuter_lime_lit_designModeLight)
+create GREENYELLOW(lightingTableNightClub_glassOuter_lime_lit_designModeLight)
+create 45WattTABLE(lightingTableNightClub_glassOuter_magenta_lit_designModeLight)
+create MAGENTA(lightingTableNightClub_glassOuter_magenta_lit_designModeLight)
+create 45WattTABLE(lightingTableNightClub_glassOuter_yellow_lit_designModeLight)
+create YELLOW(lightingTableNightClub_glassOuter_yellow_lit_designModeLight)
+create 45WattTABLE(lightingTableNightClub_glassOuter_red_lit_designModeLight)
+create RED(lightingTableNightClub_glassOuter_red_lit_designModeLight)
+create 45WattTABLE(lightingTableNightClub_glassOuter_orange_lit_designModeLight)
+create ORANGE(lightingTableNightClub_glassOuter_orange_lit_designModeLight)
+######################################################################
+
+#15 Shoji Table Lantern #
+create 45WattTABLE(lightingTableLoftShoji_light)
+create matchflame(lightingTableLoftShoji_light)
+######################################################################
+
+#16 The Inner Light #
+create BIGofficetablelamp(lightingTableArtNouveau_light)
+create candleflame(lightingTableArtNouveau_light)
+######################################################################
+
+#17 Founding Fathers Electric Lamp #
+create 100WattTABLE(lightingtablecolonial1_light)
+create candleflame(lightingtablecolonial1_light)
+######################################################################
+
+#18 Whodunit Table Lamp #
+create 100WattTABLE(lightingTableColonial2_light)
+create candleflame(lightingTableColonial2_light)
+######################################################################
+
+# The Qube # Found Under Tables
+create QubeGlow(tableCoffeeNightClub_box_amber_lit_designModeLight)
+create candleflame(tableCoffeeNightClub_box_amber_lit_designModeLight)
+create QubeGlow(tableCoffeeNightClub_box_blue_lit_designModeLight)
+create BLUE(tableCoffeeNightClub_box_blue_lit_designModeLight)
+create QubeGlowGREEN(tableCoffeeNightClub_box_green_lit_designModeLight)
+create GREEN(tableCoffeeNightClub_box_green_lit_designModeLight)
+create QubeGlowGREEN(tableCoffeeNightClub_box_red_lit_designModeLight)
+create RED(tableCoffeeNightClub_box_red_lit_designModeLight)
+create QubeGlow(tableCoffeeNightClub_box_violet_lit_designModeLight)
+create VIOLET(tableCoffeeNightClub_box_violet_lit_designModeLight)
+create QubeGlowGREEN(tableCoffeeNightClub_box_white_lit_designModeLight)
+create household(tableCoffeeNightClub_box_white_lit_designModeLight)
+######################################################################

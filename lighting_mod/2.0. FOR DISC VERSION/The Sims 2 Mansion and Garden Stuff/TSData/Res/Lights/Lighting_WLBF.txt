@@ -1,0 +1,213 @@
+####################################################
+# Lighting Manager settings
+#
+# LIGHT FILE May 4
+
+ignoreErrors true
+sinclude "WLBF/BGWindows.nlo"
+sinclude "WLBF/BGLights.nlo"
+sinclude "WLBF/BGSpecialObjects.nlo"
+sinclude "WLBF/EP1Lights.nlo"
+sinclude "WLBF/EP2Lights.nlo"
+sinclude "WLBF/EP3Lights.nlo"
+sinclude "WLBF/EP4Lights.nlo"
+sinclude "WLBF/EP5Lights.nlo"
+sinclude "WLBF/EP6Lights.nlo"
+sinclude "WLBF/EP7Lights.nlo"
+sinclude "WLBF/EP8Lights.nlo"
+sinclude "WLBF/SP1Lights.nlo"
+sinclude "WLBF/SP2Lights.nlo"
+sinclude "WLBF/SP3Lights.nlo"
+sinclude "WLBF/SP4Lights.nlo"
+sinclude "WLBF/SP5Lights.nlo"
+sinclude "WLBF/SP6Lights.nlo"
+sinclude "WLBF/SP7Lights.nlo"
+sinclude "WLBF/SP8Lights.nlo"
+sinclude "WLBF/EP9Lights.nlo"
+sinclude "WLBF/StoreLights.nlo"
+sinclude "_Overrides/Overrides.nlo"
+
+####################################################
+# Global diffusion parameters
+
+# If auto-lighting is active, this has no absolute effect,
+# but it does factor into how quickly lights fall off.
+# The higher the ambient, the sooner the lights
+# drop off to zero.
+set outsideDiffusionAmbientColor    (1.0, 1.0, 1.0)
+set outsideFloorAmbient                0.15
+set outsideWallAmbient                 0.15
+
+# These control how much the floor affects an adjacent
+# wall for a wall with direct lighting, and a wall with
+# no other lighting respectively.
+set brightWallFloorContribution        1
+set darkWallFloorContribution          1
+
+
+# Number of steps to use in the propagation algorithm.
+# The higher this number is, the farther light will
+# spread, but also the longer diffusion will take.
+seti wallPropagationSteps 10
+seti floorPropagationSteps 10
+
+# strength of wall and floor bumpmapping, derived from
+# diffusion map.
+setf incidenceMapScale 100
+setf incidenceMapHeightClamp 1
+
+####################################################
+# Automatic room lighting tuning constants
+#
+
+# Room object lighting algorithm
+# 0 = 5 directionals, 1 = 4 directionals,
+# 2 = ambient, 3 = ambient + 1 dir, etc.
+setf roomLightingType 3
+
+# Multiplier on how brightly the objects are lit by
+# overall room lighting.
+set roomOverallStrength          1.10
+set sim:roomOverallStrength      1.20
+set object:roomOverallStrength   1.00
+set wall:roomOverallStrength     0.80
+
+# strength of room object bounce light
+set roomBounceStrength 			   0.65
+
+# The amount of "crossover" from the side lights.
+set roomBounceCrossover 		   1.00
+set wall:roomBounceCrossover 		1.00
+set object:roomBounceCrossover 	1.00
+set sim:roomBounceCrossover 		1.00
+
+# Bounce crossover determines how much of the sampled
+# side lighting leaks into the bounce light. (The
+# underside of a surface can usually see portions of the
+# walls.)
+
+# strength & crossover of room object side lights
+set roomSideStrength  			   1.10
+set wall:roomSideStrength  		1.10
+set object:roomSideStrength  		1.10
+set sim:roomSideStrength  		   1.10
+
+# crossover of room object side lights
+set roomSideCrossover 			   1.00
+set wall:roomSideCrossover 		1.00
+set object:roomSideCrossover 		1.00
+set sim:roomSideCrossover 		   1.00
+
+# slope of room object side lights -- zero is
+# horizontal, 1 is pointing down at a 45 degree
+# angle.
+set roomSideSlope 			      0.5
+set wall:roomSideSlope 			   0.5
+set object:SideSlope 			   0.5
+set sim:SideSlope  			      0.5
+
+# This controls how much of the wall and floor colours
+# bleed into the object lighting. 1 gives full bleed,
+# 0 gives none at all.
+set roomSaturation               0.75
+
+# How much direct lighting from portals (windows/doors) affects
+# Sim/object lighting.
+set roomPortalStrength           1.00
+set wall:roomPortalStrength 		1.00
+set object:roomPortalStrength 	1.00
+set sim:roomPortalStrength 		1.00
+
+# How much to bias lighting so we get secondary variation
+# at ninety degrees to the major light direction.
+set roomCrossBias 			      0.50
+set wall:roomCrossBias 		      0.50
+set object:roomCrossBias 	      0.50
+set sim:roomCrossBias 		      0.50
+
+# How much to over- or under-emphasize directional aspect
+# of room lighting.
+set roomDirectionalBoost 		   1.00
+set object:roomDirectionalBoost 	1.00
+set sim:roomDirectionalBoost 	 	1.00
+set wall:roomDirectionalBoost    0.80
+
+# Ceiling light proportional to floor.
+# (There is no actual ceiling, so illumination from
+# the ceiling is estimated as a fraction of the floor
+set roomBounceStrength 			   0.75
+set wall:roomBounceStrength 		0.75
+set object:roomBounceStrength 	0.75
+set sim:roomBounceStrength 		0.75
+
+# Light-map derived room lighting
+setf roomFromLightMapMix            0 # controls mix with trad. room lighting
+setf roomFromLightMapStrength       0  # multiplier on light-map derived lighting
+
+setf sim:roomFromLightMapMix        0 # controls mix with trad. room lighting
+setf sim:roomFromLightMapStrength   0  # multiplier on light-map derived lighting
+
+setf wall:roomFromLightMapMix       0
+setf wall:roomFromLightMapStrength  0
+
+setf object:roomFromLightMapMix      0  # controls mix with trad. room lighting
+setf object:roomFromLightMapStrength 0
+
+# How much the room lights contribute to specular
+# reflection. Be careful: setting this value to
+# a high value may result in many more specular
+# highlights than you want, leading to flashing.
+set roomSpecular 			      0.8
+set sim:roomSpecular 			0.8
+set object:roomSpecular 		0.8
+set wall:roomSpecular 			0.8
+
+####################################################
+# Features
+
+set wallDrivenPortals 1
+
+# whether to use morning/evening states
+setb morningEvening true
+
+# Random jitters on practical light strengths
+setf objectLightJitter 0
+setf portalLightJitter 0
+
+# Brightness at which light influences are cut off
+# Be extremely careful in modifying this, because
+# it affects how much lights overlap each other. If
+# it's set too low, too many lights will overlap an
+# object or Sim, leading to light popping.
+set lightRangeCutoff 0.150
+
+# How far out from the wall you have to be before
+# a window/door spill light takes effect.
+setf spillPlaneOffset 0.1
+
+# How long lighting updates take (in seconds) when
+# and object light turns on or off.
+setf objectLightTransitionTime 0.01
+
+
+####################################################
+# Adjacent Portal Brightness Suppression
+
+# the distance (in tiles) at which suppression drops to zero
+# With 2 we only get suppression from windows on the adjacent
+# tiles.
+set portalSuppressionRadius 3
+
+
+# the amount of suppression to apply. if the suppressing
+# portal light is 'r' units away, the suppression is
+#    1 - (1 - r/R) * f
+# where 'f' is the suppression amount, and 'R' the suppression
+# radius.
+set portalSuppressionAmount 		      0.15
+set portalCornerSuppressionAmount 		0.1
+setf portalCornerSuppressionAmount  	0.1
+seti portalCornerSuppressionAmount 		0.1
+
+
+####################################################

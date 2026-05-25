@@ -1,0 +1,57 @@
+
+
+#################### COLORS ######################################
+define Red(lightName)
+        lightAttribOverride &lightName color (1,0.6,0.6)
+	lightAttribOverride &lightName diffusionSourceColor (1,.5,.5)
+enddef
+define Green(lightName)
+        lightAttribOverride &lightName color (.6,1,0.6)
+	lightAttribOverride &lightName diffusionSourceColor (.5,1,.5)
+enddef
+define Blue(lightName)
+        lightAttribOverride &lightName color (.6,0.6,1)
+	lightAttribOverride &lightName diffusionSourceColor (0.5,0.5,1)
+enddef
+
+define Amber(lightName)
+        lightAttribOverride &lightName color (.96,.8,.58)
+	lightAttribOverride &lightName diffusionSourceColor (.96,.78,.55)
+enddef
+
+
+define ElectricBlue(lightName)
+        lightAttribOverride &lightName color (0.6,0.6,0.8)
+	lightAttribOverride &lightName diffusionSourceColor (0.6,0.6,0.8)
+enddef
+define Fire(lightName)
+        lightAttribOverride &lightName color (1,0.7,0.3)
+	lightAttribOverride &lightName diffusionSourceColor (1,0.65,.3)
+enddef
+
+define HotTubBlue(lightName)
+        lightAttribOverride &lightName color (.6,.6,0.75)
+	lightAttribOverride &lightName diffusionSourceColor (0.8,0.8,0.9)
+enddef
+
+define Florescent(lightName)
+        lightAttribOverride &lightName color (.92,1,.94)
+	lightAttribOverride &lightName diffusionSourceColor (0.88,1,.92)
+enddef
+define SoftBlue(lightName)
+        lightAttribOverride &lightName color (.925,0.975,1)
+	lightAttribOverride &lightName diffusionSourceColor (0.87,0.95,1)
+enddef
+define SoftAmber(lightName)
+        lightAttribOverride &lightName color (1,.93,.78)
+	lightAttribOverride &lightName diffusionSourceColor (1,.87,.72)
+enddef
+define SoftWhite(lightName)
+        lightAttribOverride &lightName color (1,.98,.95)
+	lightAttribOverride &lightName diffusionSourceColor (1,.98,.95)
+enddef
+define SoftPink(lightName)
+        lightAttribOverride &lightName color (1,.925,0.96)
+	lightAttribOverride &lightName diffusionSourceColor (1,0.86,0.93)
+enddef
+

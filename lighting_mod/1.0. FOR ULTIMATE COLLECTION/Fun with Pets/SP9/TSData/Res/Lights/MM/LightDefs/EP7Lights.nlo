@@ -1,0 +1,31 @@
+######### LIGHTS ####################
+
+######## Ceiling Lights ###############
+
+create Five(lightingCeilingBaby_light)
+create SoftAmber(lightingCeilingBaby_light)
+
+########### Floor lights ############
+
+
+######### OUTDOOR lights ##########
+
+
+######### Table lights ###########
+
+
+######### Wall lights ##########
+
+create Four(ightingWallNeonSporty_light)
+create SoftWhite(ightingWallNeonSporty_light)
+
+######## Special Objects ###############
+
+
+##### FirePlaces #####
+
+
+########## Windows ##############
+
+
+########## Doors ##############

@@ -1,0 +1,84 @@
+######### LIGHTS ####################
+
+######## Ceiling Lights ###############
+
+
+create 100WattOVER(lightingCeilingLuxury_light)
+create 150WattOVER(lightingCeilingLuxuryBow_light)
+
+
+create flourescent(lightingCeilingLuxury_light)
+create flourescent(lightingCeilingLuxuryBow_light)
+
+########### Floor lights ############
+
+######### OUTDOOR lights ##########
+
+######### Table lights ###########
+
+
+create 75WattTABLE(lightingTableLuxury_light)
+create household(lightingTableLuxury_light)
+
+######### Wall lights ##########
+
+########## Windows ##############
+
+create WFive(windowTallLuxuryClereStory_0_0_0_N_light)
+create WFive(windowTallLuxuryClereStory_0_1S_0_S_light)
+create WFive(windowTallLuxuryClereStoryDiagonal_0_0_0_NW_light)
+create WFive(windowTallLuxuryClereStoryDiagonal_0_0_0_SE_light)
+
+create NS(windowTallLuxuryClereStory_0_0_0_N_light)
+create NS(windowTallLuxuryClereStory_0_1S_0_S_light)
+create EW(windowTallLuxuryClereStoryDiagonal_0_0_0_NW_light)
+create EW(windowTallLuxuryClereStoryDiagonal_0_0_0_SE_light)
+
+create WFiveD(windowTallLuxury_0_0_0_N_light)
+create WFiveD(windowTallLuxury_0_1S_0_S_light)
+create WFiveD(windowTallLuxuryDiagonal_0_0_0_NW_light)
+create WFiveD(windowTallLuxuryDiagonal_0_0_0_SE_light)
+
+create NS(windowTallLuxury_0_0_0_N_light)
+create NS(windowTallLuxury_0_1S_0_S_light)
+create EW(windowTallLuxuryDiagonal_0_0_0_NW_light)
+create EW(windowTallLuxuryDiagonal_0_0_0_SE_light)
+
+create WFour(windowClerestoryLuxury_0_0_0_N_light)
+create WFour(windowClerestoryLuxury_0_1S_0_S_light)
+create WFour(windowClerestoryLuxuryDiagonal_0_0_0_NW_light)
+create WFour(windowClerestoryLuxuryDiagonal_0_0_0_SE_light)
+
+create NS(windowClerestoryLuxury_0_0_0_N_light)
+create NS(windowClerestoryLuxury_0_1S_0_S_light)
+create EW(windowClerestoryLuxuryDiagonal_0_0_0_NW_light)
+create EW(windowClerestoryLuxuryDiagonal_0_0_0_SE_light)
+
+
+########## Doors ##############
+
+
+
+create WSix(doorLuxury_0_0_0_N_light)
+create WSix(doorLuxury_0_1S_0_S_light)
+create WSix(doorLuxuryDiagonal_0_0_0_SE_light)
+create WSix(doorLuxuryDiagonal_0_0_0_NW_light)
+create NS(doorLuxury_0_0_0_N_light)
+create NS(doorLuxury_0_1S_0_S_light)
+create EW(doorLuxuryDiagonal_0_0_0_SE_light)
+create EW(doorLuxuryDiagonal_0_0_0_NW_light)
+create noAngle(doorLuxury_0_0_0_N_light)
+create noAngle(doorLuxury_0_1S_0_S_light)
+create noAngle(doorLuxuryDiagonal_0_0_0_SE_light)
+create noAngle(doorLuxuryDiagonal_0_0_0_NW_light)
+
+create doorarch2(doorLuxuryArch_0_0_0_N_light)
+create doorarch2(doorLuxuryArch_0_1S_0_S_light)
+create doorarch2(doorLuxuryArchDiagonal_0_0_0_NW_light)
+create doorarch2t(doorLuxuryArchDiagonal_0_0_0_SE_light)
+create OpenArch1(doorLuxuryArch_0_0_0_N_light)
+create OpenArch1(doorLuxuryArch_0_1S_0_S_light)
+create OpenArch1Dia(doorLuxuryArchDiagonal_0_0_0_NW_light)
+create OpenArch1Dia(doorLuxuryArchDiagonal_0_0_0_SE_light)
+create noAngle(doorLuxuryArch_0_0_0_N_light)
+create noAngle(doorLuxuryArch_0_1S_0_S_light)

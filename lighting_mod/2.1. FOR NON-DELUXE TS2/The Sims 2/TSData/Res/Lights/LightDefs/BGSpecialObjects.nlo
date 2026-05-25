@@ -1,0 +1,139 @@
+############ SPECIAL OBJECTS #######################
+
+create SZero(sculptureTableCandleCollection_light)
+
+create TubLight3(hotTubSunken_centerLight)
+create PastelBlue(hotTubSunken_centerLight)
+
+create TubLight2(hotTubSunken_centerLowLight)
+create PastelBlue(hotTubSunken_centerLowLight)
+
+create TubLight(hotTubRaised_centerLight)
+create SoftBlue(hotTubRaised_centerLight)
+
+create TubLight2(hotTubRaised_centerLowLight)
+create PastelBlue(hotTubRaised_centerLowLight)
+
+create TubLight4(loveTub_centerLight)
+create Fire(loveTub_centerLight)
+
+create TubLight4B(loveTub_centerLowLight)
+create Fire(loveTub_centerLowLight)
+
+create 50W-Spotlight(lightingWallPoolSimple_light)
+create PastelBlue(lightingWallPoolSimple_light)
+
+# Aquariums
+#########################
+create Zero(aquarium_light)
+create PastelBlue(aquarium_light)
+
+create SFive(careerSurgicalDummy_light)
+create SoftBlue(careerSurgicalDummy_light)
+
+create SFour(careerFingerprintGun_light)
+create ElectricBlue(careerFingerprintGun_light)
+lightAttribOverride careerFingerprintGun_light diffusionSourceFalloff 15
+
+
+# TV's
+###########################
+create 75-Watt(televisionExpensive_light)
+create SoftBlue(televisionExpensive_light)
+
+create 30-Watt(TVModerate_bulb)
+create SoftBlue(TVModerate_bulb)
+
+create 50-Watt(tvWall_light)
+create SoftBlue	(tvWall_light)
+
+# Computers
+#########################
+create comp-Watt(computerCheap_light)
+create comp-Watt2(computerExpensive_light)
+
+create 150-Watt(hydroponicGarden_light)
+lightAttribOverride hydroponicGarden_light diffusionSourceFalloff 5
+
+# Display Racks
+########################
+create 25-Watt(magazineRack_light)
+	lightAttribOverride magazineRack_light diffusionSourceMin  (0,1)
+	lightAttribOverride magazineRack_light diffusionSourceMax (0,1)
+	lightAttribOverride magazineRack_light diffusionSourceWallIntensityScale 1
+	lightAttribOverride magazineRack_light diffusionSourceFloorIntensityScale 1
+create 25-Watt(magazineRack_light_1)
+	lightAttribOverride magazineRack_light_1 diffusionSourceMin  (0,1)
+	lightAttribOverride magazineRack_light_1 diffusionSourceMax (0,1)
+	lightAttribOverride magazineRack_light_1 diffusionSourceWallIntensityScale 1
+	lightAttribOverride magazineRack_light_1 diffusionSourceFloorIntensityScale 1
+create 25-Watt(magazineRack_light_2)
+	lightAttribOverride magazineRack_light_2 diffusionSourceMin  (0,1)
+	lightAttribOverride magazineRack_light_2 diffusionSourceMax (0,1)
+	lightAttribOverride magazineRack_light_2 diffusionSourceWallIntensityScale 1
+	lightAttribOverride magazineRack_light_2 diffusionSourceFloorIntensityScale 1
+
+create 20-Watt(fridgeStainless_bulb)
+
+
+####  Lightning ####
+lightAttribOverride lightning_0 intensity 3
+lightAttribOverride lightning_1 intensity 2.5
+lightAttribOverride lightning_2 intensity 1.5
+lightAttribOverride lightning_3 intensity .5
+
+create Cyan(lightning_0)
+create Cyan(lightning_1)
+create Cyan(lightning_2)
+create Cyan(lightning_3)
+
+##### Abduction #####
+lightAttribOverride telescopeAbduction_light diffusionSourceIntensity 1.5
+lightAttribOverride telescopeAbductionPoint_light diffusionSourceIntensity 1.5
+lightAttribOverride telescopeAbductionPoint_light diffusionSourceFalloff 2
+lightAttribOverride telescopeAbduction_light diffusionSourceFalloff 2
+lightAttribOverride telescopeAbduction_light intensity 7
+lightAttribOverride telescopeAbductionPoint_light intensity 10
+lightAttribOverride telescopeAbductionPoint_light falloffRate 1
+lightAttribOverride telescopeAbduction_light falloffRate .25
+
+create Cyan(telescopeAbductionPoint_light)
+create Cyan(telescopeAbduction_light)
+
+lightAttribOverride telescopeAbduction_light coneAngle 7
+lightAttribOverride telescopeAbduction_light conePenumbra 4
+
+##### FirePlaces #####
+
+create FireTable(fireplaceHearth_fillLight)
+create Fire(fireplaceHearth_light)
+
+create FireTable(fireplaceHearth_fillLight)
+create Fire(fireplaceMantle_light)
+
+create FireTable(fireplaceHearth_fillLight)
+create Fire(birthdayCake_candles)
+
+
+# Maxis Created Downloads
+#############################
+
+# Halloween Cat Deco #
+create BlackCat(lightingcatballoon_light)
+create Blue(lightingcatballoon_light)
+            
+# Halloween Pumpkin Deco #
+
+create JackLantern(lightinghalloweenpumpkin_light)
+create Fire(lightinghalloweenpumpkin_light)
+
+# Green Ghosts deco #
+create GhostPot(lightinghalloweenghosts_light)
+create Green(lightinghalloweenghosts_light)
+
+# Alienware Computer #
+create comp-watt(computertower_light)
+
+# Berge The ProLifeRating Reindeer #
+create ReindeerLight(sculpturereindeer_light)
+create SoftWhite(sculpturereindeer_light)

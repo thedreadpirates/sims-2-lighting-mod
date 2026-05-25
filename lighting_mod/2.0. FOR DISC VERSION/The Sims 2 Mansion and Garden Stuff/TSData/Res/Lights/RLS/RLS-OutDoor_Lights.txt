@@ -1,0 +1,54 @@
+######################################################################
+# OutDoor Lighting
+#
+# 12/6/2005 (C) GunMod
+#
+######################################################################
+######################################################################
+
+# Blazin Buckaroos Fencelight#
+create 50WattFENCE(deckPostLamp_point)
+create halogen(deckPostLamp_point)
+######################################################################
+
+# Garden Glow SpotLight #
+create gardenSPOTLIGHT(gardenUplight)
+create gardenSPOTLIGHT(gardenUplight_tree)
+create SOFTWHITE(gardenUplight)
+create SOFTWHITE(gardenUplight_tree)
+######################################################################
+
+# Secure Sentinal FenceLight #
+create 100WattFENCE(lightingFenceBrickWallLamp_light)
+create candleflame(lightingFenceBrickWallLamp_light)
+######################################################################
+
+# Little House Lantern #
+create 50WattFENCE(lightingFenceCentralAsian_light)
+create household(lightingFenceCentralAsian_light)
+######################################################################
+
+# City Dweller Dims #
+create 25WattFENCE(lightingFloorGardenBollard_light)
+create LED(lightingFloorGardenBollard_light)
+######################################################################
+
+# The Spike Light #
+create 25WattFENCE(lightingFloorGardenTier_light)
+create quartz(lightingFloorGardenTier_light)
+######################################################################
+
+# Preventek Lumilight Street Light #
+create mediumSTREETLIGHT(lightingStreetlight_light)
+create streetlightwhite(lightingStreetlight_light)
+######################################################################
+
+# Wooden Post N Lamp Street Light #
+create mediumSTREETLIGHT(lightingStreetlightWooden_light)
+create streetlightyellow(lightingStreetlightWooden_light)
+######################################################################
+
+# Preventek Tri-Luminlight Street Lamp #
+create poleSTREETLIGHTstill(streetlightTriple_middle)
+create streetlightwhite(streetlightTriple_middle)
+######################################################################

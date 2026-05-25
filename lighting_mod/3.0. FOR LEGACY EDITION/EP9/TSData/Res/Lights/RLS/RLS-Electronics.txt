@@ -1,0 +1,54 @@
+######################################################################
+# Electronic Gadgets
+#
+# 12/6/2005 (C) GunMod
+# FIN
+######################################################################
+######################################################################
+
+# Arcade Game #
+#########################################
+create 15-Watt(arcadeGame_light)
+	lightAttribOverride arcadeGame_light diffusionSourceMin  (0,1)
+	lightAttribOverride arcadeGame_light diffusionSourceMax (0,1)
+	lightAttribOverride arcadeGame_light diffusionSourceWallIntensityScale 2
+	lightAttribOverride arcadeGame_light diffusionSourceFloorIntensityScale .3
+create LED(arcadeGame_light)
+
+# Vending Kiosk
+############################
+create 20-Watt(vendingKiosk_light)
+create 20-Watt(vendingKiosk_light1)
+	lightAttribOverride vendingKiosk_light diffusionSourceMin  (0,1)
+	lightAttribOverride vendingKiosk_light diffusionSourceMax (0,1)
+	lightAttribOverride vendingKiosk_light1 diffusionSourceMin  (0,1)
+	lightAttribOverride vendingKiosk_light1 diffusionSourceMax (0,1)
+create LED(vendingKiosk_light)
+create LED(vendingKiosk_light1)
+
+# Phone Booth
+###################################
+create 20-Watt(phonebooth_light)
+	lightAttribOverride phonebooth_light diffusionSourceMin  (0,1)
+	lightAttribOverride phonebooth_light diffusionSourceMax (0,1)
+	lightAttribOverride phonebooth_light diffusionSourceWallIntensityScale 1
+	lightAttribOverride phonebooth_light diffusionSourceFloorIntensityScale .3
+
+# TV's
+###########################
+create 75-Watt(televisionExpensive_light)
+create SOFTBLUE(televisionExpensive_light)
+
+create 30-Watt(TVModerate_bulb)
+create SOFTBLUE(TVModerate_bulb)
+
+create 50-Watt(tvWall_light)
+create SOFTBLUE(tvWall_light)
+
+create 20-Watt(tvWallTavern_light)
+create SOFTBLUE(tvWallTavern_light)
+
+# Computers
+#########################
+create comp-Watt(computerCheap_light)
+create comp-Watt2(computerExpensive_light)

@@ -1,0 +1,31 @@
+######### LIGHTS ####################
+
+######## Ceiling Lights ###############
+
+create 75WattOVER(lightingCeilingBaby_light)
+create SoftAmber(lightingCeilingBaby_light)
+
+########### Floor lights ############
+
+
+######### OUTDOOR lights ##########
+
+
+######### Table lights ###########
+
+
+######### Wall lights ##########
+
+create 15WattWALLNEON(lightingWallNeonSporty_light)
+create SoftWhite(lightingWallNeonSporty_light)
+
+######## Special Objects ###############
+
+
+##### FirePlaces #####
+
+
+########## Windows ##############
+
+
+########## Doors ##############

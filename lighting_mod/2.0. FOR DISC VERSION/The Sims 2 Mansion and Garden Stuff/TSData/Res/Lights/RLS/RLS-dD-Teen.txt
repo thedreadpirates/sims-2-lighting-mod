@@ -1,0 +1,42 @@
+######### LIGHTS ####################
+
+######## Ceiling Lights ###############
+
+
+create 75WattOVER2(lightingCeilingSurfer_light)
+create flourescent(lightingCeilingSurfer_light)
+
+create 75WattOVER2(lightingCeilingVictorian_light)
+create household(lightingCeilingVictorian_light)
+
+########### Floor lights ############
+
+######### OUTDOOR lights ##########
+
+######### Table lights ###########
+
+
+create FireTable(lightingTableCandleGoth_light)
+create candleflame(lightingTableCandleGoth_light)
+
+create 75WattTABLE(lightingTableVictorian_light)
+create household(lightingTableVictorian_light)
+
+######### Wall lights ##########
+
+create 60WattWALL4(lightingWallVictorian_light)
+create household(lightingWallVictorian_Light)
+
+########## Windows ##############
+
+
+########## Doors ##############
+
+####TV
+
+
+####missing objects??
+##hang
+
+#create 75WattOVER(lightingCeilingDesigner_light)
+#create household(lightingCeilingDesigner_light)

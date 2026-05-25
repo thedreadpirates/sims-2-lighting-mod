@@ -1,0 +1,48 @@
+######### LIGHTS ####################
+
+######## Ceiling Lights ###############
+
+
+create Five(lightingceilingsurfer_light)
+create SoftWhite(lightingceilingsurfer_light)
+
+
+create Four(lightingceilingvictorian_light)
+create SoftAmber(lightingceilingvictorian_light)
+
+
+
+
+
+########### Floor lights ############
+
+######### OUTDOOR lights ##########
+
+######### Table lights ###########
+
+create Four(lightingtablecandlegoth_light)
+create Fire(lightingtablecandlegoth_light)
+
+create Four(lightingtablevictorian_light)
+create SoftAmber(lightingtablevictorian_light)
+
+
+
+
+
+######### Wall lights ##########
+
+create Four(lightingwallvictorian_light)
+create SoftAmber(lightingwallvictorian_light)
+
+
+######## Special Objects ###############
+
+create five(tvteen_light)
+create ElectricBlue(tvteen_light)
+
+########## Windows ##############
+
+
+########## Doors ##############
+

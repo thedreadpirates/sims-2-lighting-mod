@@ -1,0 +1,270 @@
+define GoboWide(lightName)
+	lightAttribOverride &lightName intensity 9.5
+	lightAttribOverride &lightName falloffRate 6
+	lightAttribOverride &lightName diffusionSourceIntensity 2.5
+	lightAttribOverride &lightName diffusionSourceFalloff 2
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName coneAngle 60
+	lightAttribOverride &lightName conePenumbra 10
+enddef
+
+####prober door leak start
+
+define OpenArch1(portal)
+	lightAttribOverride &portal diffusionSourceMin (0, 2)
+	lightAttribOverride &portal diffusionSourceMax ( 0, 0)
+enddef
+
+define OpenArch1Dia(portal)
+	lightAttribOverride &portal diffusionSourceMin (0, 2)
+	lightAttribOverride &portal diffusionSourceMax ( 0, 0)
+enddef
+
+
+####End
+
+
+###Reduced version for ect
+define gar1(portal)
+	lightAttribOverride &portal intensity .6
+	lightAttribOverride &portal falloffRate 1
+	lightAttribOverride &portal coneAngle $wConeMul 
+	lightAttribOverride &portal conePenumbra $wPenMul 
+	lightAttribOverride &portal diffusionSourceIntensity 1
+	lightAttribOverride &portal diffusionSourceFalloff 1
+	lightAttribOverride &portal diffusionSourceWallIntensityScale 1
+	lightAttribOverride &portal diffusionSourceFloorIntensityScale .7
+	lightAttribOverride &portal diffusionSourceIsDirectional 1
+	lightAttribOverride &portal diffusionSourceDirectionalFalloff 0
+enddef
+
+define doorarch1(portal)
+	lightAttribOverride &portal intensity .55
+	lightAttribOverride &portal falloffRate 1
+	lightAttribOverride &portal coneAngle $wConeMul 
+	lightAttribOverride &portal conePenumbra $wPenMul 
+	lightAttribOverride &portal diffusionSourceIntensity 1
+	lightAttribOverride &portal diffusionSourceFalloff 2.4
+	lightAttribOverride &portal diffusionSourceWallIntensityScale 1
+	lightAttribOverride &portal diffusionSourceFloorIntensityScale .7
+	lightAttribOverride &portal diffusionSourceIsDirectional 1
+	lightAttribOverride &portal diffusionSourceDirectionalFalloff 0
+enddef
+
+define doorarch2(portal)
+	lightAttribOverride &portal intensity .7
+	lightAttribOverride &portal falloffRate .75
+	lightAttribOverride &portal coneAngle $wConeMul 
+	lightAttribOverride &portal conePenumbra $wPenMul 
+	lightAttribOverride &portal diffusionSourceIntensity 1.1 #.95
+	lightAttribOverride &portal diffusionSourceFalloff 2.2 #1.2
+	lightAttribOverride &portal diffusionSourceWallIntensityScale 1 #.92
+	lightAttribOverride &portal diffusionSourceFloorIntensityScale .7 #.45
+	lightAttribOverride &portal diffusionSourceIsDirectional 1
+	lightAttribOverride &portal diffusionSourceDirectionalFalloff 0
+enddef
+
+define glassdoor1(portal)
+	lightAttribOverride &portal intensity 1.2
+	lightAttribOverride &portal falloffRate 1.2
+	lightAttribOverride &portal coneAngle $wConeMul 
+	lightAttribOverride &portal conePenumbra $wPenMul 
+	lightAttribOverride &portal diffusionSourceIntensity .8
+	lightAttribOverride &portal diffusionSourceFalloff .85
+	lightAttribOverride &portal diffusionSourceWallIntensityScale 1
+	lightAttribOverride &portal diffusionSourceFloorIntensityScale .7
+	lightAttribOverride &portal diffusionSourceIsDirectional 1
+	lightAttribOverride &portal diffusionSourceDirectionalFalloff 0
+enddef
+
+define glassdoor2(portal)
+	lightAttribOverride &portal intensity .98
+	lightAttribOverride &portal falloffRate 1
+	lightAttribOverride &portal coneAngle $wConeMul 
+	lightAttribOverride &portal conePenumbra $wPenMul 
+	lightAttribOverride &portal diffusionSourceIntensity 1
+	lightAttribOverride &portal diffusionSourceFalloff 1
+	lightAttribOverride &portal diffusionSourceWallIntensityScale 1
+	lightAttribOverride &portal diffusionSourceFloorIntensityScale .7
+	lightAttribOverride &portal diffusionSourceIsDirectional 1
+	lightAttribOverride &portal diffusionSourceDirectionalFalloff 0
+enddef
+
+define GARWINDOW(portal)
+	lightAttribOverride &portal diffusionSourceMin (0,.2)
+	lightAttribOverride &portal diffusionSourceMax ( 0, 1)
+enddef
+
+###end of edited
+
+define WTen(portal)
+	lightAttribOverride &portal intensity 1.63
+	lightAttribOverride &portal falloffRate 1.2
+	lightAttribOverride &portal coneAngle $wConeMul 
+	lightAttribOverride &portal conePenumbra $wPenMul 
+	lightAttribOverride &portal diffusionSourceIntensity 1.65
+	lightAttribOverride &portal diffusionSourceFalloff 1
+	lightAttribOverride &portal diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &portal diffusionSourceFloorIntensityScale 1.2
+	lightAttribOverride &portal diffusionSourceIsDirectional 1
+	lightAttribOverride &portal diffusionSourceDirectionalFalloff 0
+enddef
+define WNine(portal)
+	lightAttribOverride &portal intensity 1.55
+	lightAttribOverride &portal falloffRate 1.3
+	lightAttribOverride &portal coneAngle $wConeMul 
+	lightAttribOverride &portal conePenumbra $wPenMul 
+	lightAttribOverride &portal diffusionSourceIntensity 1.6
+	lightAttribOverride &portal diffusionSourceFalloff 1
+	lightAttribOverride &portal diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &portal diffusionSourceFloorIntensityScale 1.2
+	lightAttribOverride &portal diffusionSourceIsDirectional 1
+	lightAttribOverride &portal diffusionSourceDirectionalFalloff 0
+enddef
+define WEight(portal)
+	lightAttribOverride &portal intensity 1.55
+	lightAttribOverride &portal falloffRate 1.4
+	lightAttribOverride &portal coneAngle $wConeMul 
+	lightAttribOverride &portal conePenumbra $wPenMul 
+	lightAttribOverride &portal diffusionSourceIntensity 1.6
+	lightAttribOverride &portal diffusionSourceFalloff 1
+	lightAttribOverride &portal diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &portal diffusionSourceFloorIntensityScale 1.2
+	lightAttribOverride &portal diffusionSourceIsDirectional 1
+	lightAttribOverride &portal diffusionSourceDirectionalFalloff 0
+enddef
+define WSeven(portal)
+	lightAttribOverride &portal intensity 1.55
+	lightAttribOverride &portal falloffRate 1.3
+	lightAttribOverride &portal coneAngle $wConeMul 
+	lightAttribOverride &portal conePenumbra $wPenMul 
+	lightAttribOverride &portal diffusionSourceIntensity 1.5
+	lightAttribOverride &portal diffusionSourceFalloff 1
+	lightAttribOverride &portal diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &portal diffusionSourceFloorIntensityScale 1.2
+	lightAttribOverride &portal diffusionSourceIsDirectional 1
+	lightAttribOverride &portal diffusionSourceDirectionalFalloff 0
+enddef
+define WSix(portal)
+	lightAttribOverride &portal intensity 1.55 
+	lightAttribOverride &portal falloffRate 1.15
+	lightAttribOverride &portal coneAngle $wConeMul 
+	lightAttribOverride &portal conePenumbra $wPenMul 
+	lightAttribOverride &portal diffusionSourceIntensity 1.5
+	lightAttribOverride &portal diffusionSourceFalloff 1
+	lightAttribOverride &portal diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &portal diffusionSourceFloorIntensityScale 1.2
+	lightAttribOverride &portal diffusionSourceIsDirectional 1
+	lightAttribOverride &portal diffusionSourceDirectionalFalloff 0
+enddef
+define WFiveD(portal) #standard for open glass
+	lightAttribOverride &portal intensity 1.42 
+	lightAttribOverride &portal falloffRate 1.1
+	lightAttribOverride &portal coneAngle $wConeMul 
+	lightAttribOverride &portal conePenumbra $wPenMul 
+	lightAttribOverride &portal diffusionSourceIntensity 1.4
+	lightAttribOverride &portal diffusionSourceFalloff 1
+	lightAttribOverride &portal diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &portal diffusionSourceFloorIntensityScale 1.2
+	lightAttribOverride &portal diffusionSourceIsDirectional 1
+	lightAttribOverride &portal diffusionSourceDirectionalFalloff 0
+enddef
+define WFive(portal) #standard
+	lightAttribOverride &portal intensity 1.4 
+	lightAttribOverride &portal falloffRate 1.1
+	lightAttribOverride &portal coneAngle $wConeMul 
+	lightAttribOverride &portal conePenumbra $wPenMul 
+	lightAttribOverride &portal diffusionSourceIntensity 1.2
+	lightAttribOverride &portal diffusionSourceFalloff 1
+	lightAttribOverride &portal diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &portal diffusionSourceFloorIntensityScale 1.2
+	lightAttribOverride &portal diffusionSourceIsDirectional 1
+	lightAttribOverride &portal diffusionSourceDirectionalFalloff 0
+enddef
+define WFour(portal)
+	lightAttribOverride &portal intensity 1.35 
+	lightAttribOverride &portal falloffRate 1.15
+	lightAttribOverride &portal coneAngle $wConeMul 
+	lightAttribOverride &portal conePenumbra $wPenMul 
+	lightAttribOverride &portal diffusionSourceIntensity 1.2
+	lightAttribOverride &portal diffusionSourceFalloff 1
+	lightAttribOverride &portal diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &portal diffusionSourceFloorIntensityScale 1.2
+	lightAttribOverride &portal diffusionSourceIsDirectional 1
+	lightAttribOverride &portal diffusionSourceDirectionalFalloff 0
+enddef
+define WThree(portal)
+	lightAttribOverride &portal intensity 1.1 
+	lightAttribOverride &portal falloffRate 1.35
+	lightAttribOverride &portal coneAngle $wConeMul 
+	lightAttribOverride &portal conePenumbra $wPenMul 
+	lightAttribOverride &portal diffusionSourceIntensity 1.1
+	lightAttribOverride &portal diffusionSourceFalloff 1
+	lightAttribOverride &portal diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &portal diffusionSourceFloorIntensityScale 1.2
+	lightAttribOverride &portal diffusionSourceIsDirectional 1
+	lightAttribOverride &portal diffusionSourceDirectionalFalloff 0
+enddef
+define WTwo(portal)
+	lightAttribOverride &portal intensity .6
+	lightAttribOverride &portal falloffRate .5
+	lightAttribOverride &portal coneAngle $wConeMul 
+	lightAttribOverride &portal conePenumbra $wPenMul 
+	lightAttribOverride &portal diffusionSourceIntensity .85
+	lightAttribOverride &portal diffusionSourceFalloff .6
+	lightAttribOverride &portal diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &portal diffusionSourceFloorIntensityScale 1.2
+	lightAttribOverride &portal diffusionSourceIsDirectional 1
+	lightAttribOverride &portal diffusionSourceDirectionalFalloff 0
+enddef
+define WOne(portal)
+	lightAttribOverride &portal intensity .43
+	lightAttribOverride &portal falloffRate .25
+	lightAttribOverride &portal coneAngle $wConeMul
+	lightAttribOverride &portal conePenumbra $wPenMul 
+	lightAttribOverride &portal diffusionSourceIntensity .6
+	lightAttribOverride &portal diffusionSourceFalloff .5
+	lightAttribOverride &portal diffusionSourceWallIntensityScale 1.6	
+	lightAttribOverride &portal diffusionSourceFloorIntensityScale 1.2
+	lightAttribOverride &portal diffusionSourceIsDirectional 1
+	lightAttribOverride &portal diffusionSourceDirectionalFalloff 0
+enddef
+define WZero(portal)
+	lightAttribOverride &portal intensity 0
+	lightAttribOverride &portal diffusionSourceIntensity 0
+	lightAttribOverride &portal coneAngle 0
+	lightAttribOverride &portal conePenumbra 0
+	
+enddef
+
+define NS(portal)
+	lightAttribOverride &portal diffusionSourceMin (0, .2)
+	lightAttribOverride &portal diffusionSourceMax ( 0, 2)
+enddef
+
+define 2tiled(portal) #fix for windows using single tiled lighting
+	lightAttribOverride &portal diffusionSourceMin (-1, .2)
+	lightAttribOverride &portal diffusionSourceMax ( 1, 2)
+enddef
+
+define Bay(portal) #For Bay Windows
+	lightAttribOverride &portal diffusionSourceMin (-.08, .08)
+	lightAttribOverride &portal diffusionSourceMax (.8, .85)
+enddef
+
+define 3tiled(portal) #For 3 tiled Windows
+	lightAttribOverride &portal diffusionSourceMin (-.8, .2)
+	lightAttribOverride &portal diffusionSourceMax (.8, 2)
+enddef
+
+define EW(portal)
+	lightAttribOverride &portal diffusionSourceMin (0, .2)
+	lightAttribOverride &portal diffusionSourceMax ( 0, 2)
+enddef
+
+define noAngle(portal)
+	lightAttribOverride &portal coneAngle 0
+	lightAttribOverride &portal conePenumbra 0
+enddef

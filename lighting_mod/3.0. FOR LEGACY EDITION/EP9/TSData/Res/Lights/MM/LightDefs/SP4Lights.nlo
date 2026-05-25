@@ -1,0 +1,39 @@
+######### LIGHTS ####################
+
+######## Ceiling Lights ###############
+
+
+create Five(lightingCeilingPartyLantern_light)
+create Fire(lightingCeilingPartyLantern_light)
+
+########### Floor lights ############
+
+######### OUTDOOR lights ##########
+
+######### Table lights ###########
+
+create Four(lightingTablePartyHurricane_light)
+create Fire(lightingTablePartyHurricane_light)
+
+create Four(lightingTablePartyTealights_light)
+create Fire(lightingTablePartyTealights_light)
+
+######### Wall lights ##########
+
+create Four(lightingWallNeonWedding_neon_blueRose_lit_designModeLight_light)
+create Four(lightingWallNeonWedding_neon_pinkBamboo_lit_designModeLight_light)
+create Four(lightingWallNeonWedding_neon_aquaViolet_lit_designModeLight_light)
+create Four(lightingWallNeonWedding_neon_bambooOrange_lit_designModeLight_light)
+
+create SoftWhite(lightingWallNeonWedding_neon_blueRose_lit_designModeLight_light)
+create SoftWhite(lightingWallNeonWedding_neon_pinkBamboo_lit_designModeLight_light)
+create SoftWhite(lightingWallNeonWedding_neon_aquaViolet_lit_designModeLight_light)
+create SoftWhite(lightingWallNeonWedding_neon_bambooOrange_lit_designModeLight_light)
+
+
+
+########## Windows ##############
+
+
+########## Doors ##############
+

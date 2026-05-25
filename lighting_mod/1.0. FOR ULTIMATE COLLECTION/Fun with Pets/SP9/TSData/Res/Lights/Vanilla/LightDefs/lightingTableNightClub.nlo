@@ -1,0 +1,14 @@
+### lightingTableNightClub ####################################
+
+create Five(lightingtablenightclub_glassouter_lime_lit_designmodelight)
+create Five(lightingtablenightclub_glassouter_magenta_lit_designmodelight)
+create Five(lightingtablenightclub_glassouter_orange_lit_designmodelight)
+create Five(lightingtablenightclub_glassouter_red_lit_designmodelight)
+create Five(lightingtablenightclub_glassouter_yellow_lit_designmodelight)
+
+create SoftAmber(lightingtablenightclub_glassouter_lime_lit_designmodelight)
+create SoftAmber(lightingtablenightclub_glassouter_magenta_lit_designmodelight)
+create SoftAmber(lightingtablenightclub_glassouter_orange_lit_designmodelight)
+create SoftAmber(lightingtablenightclub_glassouter_red_lit_designmodelight)
+create SoftAmber(lightingtablenightclub_glassouter_yellow_lit_designmodelight)
+

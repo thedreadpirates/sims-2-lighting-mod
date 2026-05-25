@@ -1,0 +1,42 @@
+######### LIGHTS ####################
+
+######## Ceiling Lights ###############
+
+
+create 75WattOVER2(lightingceilingsurfer_light)
+create SoftWhite(lightingceilingsurfer_light)
+
+
+create 75WattOVER2(lightingceilingvictorian_light)
+create SoftAmber(lightingceilingvictorian_light)
+
+
+########### Floor lights ############
+
+######### OUTDOOR lights ##########
+
+######### Table lights ###########
+
+create FireTable(lightingtablecandlegoth_light)
+create Fire(lightingtablecandlegoth_light)
+
+create 75WattTABLE(lightingtablevictorian_light)
+create SoftAmber(lightingtablevictorian_light)
+
+
+######### Wall lights ##########
+
+create 60WattWALL4(lightingwallvictorian_light)
+create SoftAmber(lightingwallvictorian_light)
+
+
+######## Special Objects ###############
+
+create 30-Watt(tvteen_light)
+create SoftBlue(tvteen_light)
+
+########## Windows ##############
+
+
+########## Doors ##############
+

@@ -1,0 +1,24 @@
+#### LIGHTING CHEATS ####
+ignoreErrors true
+boolProp UseShaders true
+boolProp specHighlights true
+boolProp floorAndWallNormalMapping true
+boolProp bumpMapping true
+boolProp skipTangentsInVertexData false      #false for bumpmapping!
+uintProp optionLightingQuality 3             #These two lines set the lighting option and
+uintProp LightingQuality 3                   #the lighting level to MAX (as required)
+boolProp gpuCompositing true
+floatProp geomBoneInfluenceThreshold 0.01
+floatProp geomPerBoneBoundBlendWeightThreshold 0.9
+boolProp geomCheckGeomDataIntegrity false
+boolProp geomGenerateTangentSpaceSxT true
+##########################
+
+#### LIGHTING ALIASES ####
+alias sld "setlotlightingfile clear" "default lighting" ""
+alias slw "setlotlightingfile Lighting_WLBF.txt" "a world lit by fire" ""
+alias slm "setlotlightingfile Lighting_MM.txt" "maxis match lighting mod" ""
+alias slv "setlotlightingfile Lighting_Vanilla.txt" "vanilla plus lighting mod" ""
+alias slr "setlotlightingfile Lighting_RLS.txt" "radiance lighting system" ""
+alias slc "setlotlightingfile Lighting_CS.txt" "cinema secrets lighting mod" ""
+##########################

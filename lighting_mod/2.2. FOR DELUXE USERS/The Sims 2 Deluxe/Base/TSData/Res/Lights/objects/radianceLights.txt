@@ -1,0 +1,1136 @@
+#####################################################################
+#         Custom Lighting
+#####################################################################
+
+define ReindeerLight(lightName)
+	lightAttribOverride &lightName intensity 1
+	lightAttribOverride &lightName falloffRate 2
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 2
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .9
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 0
+	lightAttribOverride &lightName conePenumbra 0
+enddef
+
+define BlackCat(lightName)
+	lightAttribOverride &lightName intensity .5
+	lightAttribOverride &lightName falloffRate 1
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 2
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 350
+	lightAttribOverride &lightName conePenumbra 359
+enddef
+
+define JackLantern(lightName)
+	lightAttribOverride &lightName intensity 1.1
+	lightAttribOverride &lightName falloffRate 2
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1.5
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 350
+	lightAttribOverride &lightName conePenumbra 359
+enddef
+
+define GhostPot(lightName)
+	lightAttribOverride &lightName intensity 1.1
+	lightAttribOverride &lightName falloffRate 2
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 2
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 350
+	lightAttribOverride &lightName conePenumbra 359
+enddef
+
+define witchpot(lightName)
+	lightAttribOverride &lightName intensity 1.2
+	lightAttribOverride &lightName falloffRate 2.5
+	lightAttribOverride &lightName diffusionSourceIntensity 1.2
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1.5
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 2.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .55
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+###############NEON/SMALL OBJECTS
+
+define 15WattCOUNTERNEON(lightName)
+	lightAttribOverride &lightName intensity .5
+	lightAttribOverride &lightName falloffRate .9
+	lightAttribOverride &lightName diffusionSourceIntensity .3
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,2)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 5WattWALLNEON(lightName)
+	lightAttribOverride &lightName intensity .55
+	lightAttribOverride &lightName falloffRate .8
+	lightAttribOverride &lightName diffusionSourceIntensity .2
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 2.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 15WattWALLNEON(lightName)
+	lightAttribOverride &lightName intensity .65
+	lightAttribOverride &lightName falloffRate .9
+	lightAttribOverride &lightName diffusionSourceIntensity .3
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 2
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 45WattWALLNEON(lightName)
+	lightAttribOverride &lightName intensity 1
+	lightAttribOverride &lightName falloffRate .8
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1.2
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.6
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .5
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define NeonCabinet(lightName)
+	lightAttribOverride &lightName intensity 1.2
+	lightAttribOverride &lightName falloffRate 3
+	lightAttribOverride &lightName diffusionSourceIntensity .2
+	lightAttribOverride &lightName diffusionSourceMin  (0,.5)
+	lightAttribOverride &lightName diffusionSourceMax (0,1)
+	lightAttribOverride &lightName diffusionSourceFalloff 9
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .8
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 75
+	lightAttribOverride &lightName conePenumbra 50
+enddef
+
+define QubeGlow(lightName)
+	lightAttribOverride &lightName intensity .33
+	lightAttribOverride &lightName falloffRate 1
+	lightAttribOverride &lightName diffusionSourceIntensity .33
+	lightAttribOverride &lightName diffusionSourceMin  (-1,-1)
+	lightAttribOverride &lightName diffusionSourceMax (1,1)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale .1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .8
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define QubeGlowGREEN(lightName)
+	lightAttribOverride &lightName intensity .33
+	lightAttribOverride &lightName falloffRate 1.5
+	lightAttribOverride &lightName diffusionSourceIntensity .22
+	lightAttribOverride &lightName diffusionSourceMin  (-2,-2)
+	lightAttribOverride &lightName diffusionSourceMax (2,2)
+	lightAttribOverride &lightName diffusionSourceFalloff 1.4
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale .1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .8
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define TubLight(lightName)
+	lightAttribOverride &lightName intensity 5
+	lightAttribOverride &lightName falloffRate 10
+	lightAttribOverride &lightName diffusionSourceIntensity 2
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 2
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .45
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+enddef
+
+define TubLight2(lightName)
+	lightAttribOverride &lightName intensity 0
+	lightAttribOverride &lightName falloffRate 25
+	lightAttribOverride &lightName diffusionSourceIntensity 2
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 2
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .45
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+enddef
+
+define TubLight3(lightName)
+	lightAttribOverride &lightName intensity 3
+	lightAttribOverride &lightName falloffRate 10
+	lightAttribOverride &lightName diffusionSourceIntensity 1.5
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 2
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .45
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+enddef
+
+define TubLight4(lightName)
+	lightAttribOverride &lightName intensity 8
+	lightAttribOverride &lightName falloffRate 60
+	lightAttribOverride &lightName diffusionSourceIntensity 2
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 2
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .75
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+enddef
+
+define TubLight4B(lightName)
+	lightAttribOverride &lightName intensity 8
+	lightAttribOverride &lightName falloffRate 60
+	lightAttribOverride &lightName diffusionSourceIntensity 2
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 2
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .7
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+enddef
+
+define BIGofficetablelamp(lightName)
+	lightAttribOverride &lightName intensity 1.2
+	lightAttribOverride &lightName falloffRate .9
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,-0)
+	lightAttribOverride &lightName diffusionSourceMax (0,1)
+	lightAttribOverride &lightName diffusionSourceFalloff .8
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .6
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 25
+	lightAttribOverride &lightName conePenumbra 15
+enddef
+
+define officetablelamp(lightName)
+	lightAttribOverride &lightName intensity 1.2
+	lightAttribOverride &lightName falloffRate 1.5
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,-0)
+	lightAttribOverride &lightName diffusionSourceMax (0,-1)
+	lightAttribOverride &lightName diffusionSourceFalloff 1.8
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .6
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 25
+	lightAttribOverride &lightName conePenumbra 15
+enddef
+
+define bigBLUEbulb(lightName)
+	lightAttribOverride &lightName intensity 1.5
+	lightAttribOverride &lightName falloffRate 2.5
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale .8
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .5
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define bigGREENbulb(lightName)
+	lightAttribOverride &lightName intensity 1.5
+	lightAttribOverride &lightName falloffRate 2.5
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale .8
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .5
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define bigREDbulb(lightName)
+	lightAttribOverride &lightName intensity 1.2
+	lightAttribOverride &lightName falloffRate 2.5
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .8
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+
+###################FIRE
+
+define FireFlame1(lightName)
+	lightAttribOverride &lightName intensity 6
+	lightAttribOverride &lightName falloffRate .8
+	lightAttribOverride &lightName diffusionSourceIntensity 0
+	lightAttribOverride &lightName coneAngle 350
+	lightAttribOverride &lightName conePenumbra 359
+enddef
+
+define FireFlame(lightName)
+	lightAttribOverride &lightName intensity 1
+	lightAttribOverride &lightName falloffRate 1
+	lightAttribOverride &lightName diffusionSourceIntensity .6
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 3.5
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .75
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define FireTable(lightName)
+	lightAttribOverride &lightName intensity 1.5
+	lightAttribOverride &lightName falloffRate 1.1
+	lightAttribOverride &lightName diffusionSourceIntensity .6
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 3.5
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .75
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 350
+	lightAttribOverride &lightName conePenumbra 359
+enddef
+
+define smallCANDLE(lightName)
+	lightAttribOverride &lightName intensity 1
+	lightAttribOverride &lightName falloffRate 1
+	lightAttribOverride &lightName diffusionSourceIntensity .4
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .8
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define smallCANDLEGREEN(lightName)
+	lightAttribOverride &lightName intensity .55
+	lightAttribOverride &lightName falloffRate 4
+	lightAttribOverride &lightName diffusionSourceIntensity .3
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 2
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .5
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define smallCANDLEDIAMOND(lightName)
+	lightAttribOverride &lightName intensity .8
+	lightAttribOverride &lightName falloffRate 2
+	lightAttribOverride &lightName diffusionSourceIntensity .3
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 2
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .8
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define largeCANDLE(lightName)
+	lightAttribOverride &lightName intensity 1.9
+	lightAttribOverride &lightName falloffRate 1
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .55
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define largeCANDLE2(lightName)
+	lightAttribOverride &lightName intensity 1.5
+	lightAttribOverride &lightName falloffRate .8
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,1)
+	lightAttribOverride &lightName diffusionSourceMax (0,1)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.6
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .55
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define largeCANDLE2WALL(lightName)
+	lightAttribOverride &lightName intensity 1.5
+	lightAttribOverride &lightName falloffRate .8
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,1)
+	lightAttribOverride &lightName diffusionSourceMax (0,1)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 2
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .55
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define largeCANDLEHIGH(lightName)
+	lightAttribOverride &lightName intensity 1.3
+	lightAttribOverride &lightName falloffRate .8
+	lightAttribOverride &lightName diffusionSourceIntensity 1.4
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+###################TABLE
+
+define 100WattTABLE(lightName)
+	lightAttribOverride &lightName intensity 1.7
+	lightAttribOverride &lightName falloffRate .95
+	lightAttribOverride &lightName diffusionSourceIntensity 1.65
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff .8
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 60WattTABLE(lightName)
+	lightAttribOverride &lightName intensity 1.4
+	lightAttribOverride &lightName falloffRate .95
+	lightAttribOverride &lightName diffusionSourceIntensity 1.52
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff .8
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1.2
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+define 45WattTABLE(lightName)
+	lightAttribOverride &lightName intensity 1.35
+	lightAttribOverride &lightName falloffRate .95
+	lightAttribOverride &lightName diffusionSourceIntensity 1.25
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 75WattTABLE(lightName)
+	lightAttribOverride &lightName intensity 1.5
+	lightAttribOverride &lightName falloffRate .85
+	lightAttribOverride &lightName diffusionSourceIntensity 1.68
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff .7
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+###############FLOOR
+
+define 45WattFL(lightName)
+	lightAttribOverride &lightName intensity 1.45
+	lightAttribOverride &lightName falloffRate .9
+	lightAttribOverride &lightName diffusionSourceIntensity 1.32
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 75WattFL(lightName)
+	lightAttribOverride &lightName intensity 1.65
+	lightAttribOverride &lightName falloffRate .8
+	lightAttribOverride &lightName diffusionSourceIntensity 1.3
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.6
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 1
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 75WattFL5(lightName)#for flood light
+	lightAttribOverride &lightName intensity 1.7
+	lightAttribOverride &lightName falloffRate 1
+	lightAttribOverride &lightName diffusionSourceIntensity 1.5
+	lightAttribOverride &lightName diffusionSourceMin  (0,1)
+	lightAttribOverride &lightName diffusionSourceMax (0,2)
+	lightAttribOverride &lightName diffusionSourceFalloff 1.0
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.4
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 1
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 60
+	lightAttribOverride &lightName conePenumbra 20
+enddef
+
+define 75WattFL2(lightName)
+	lightAttribOverride &lightName intensity 1.6
+	lightAttribOverride &lightName falloffRate .75
+	lightAttribOverride &lightName diffusionSourceIntensity 1.76
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff .8
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.4
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 75WattFL3(lightName)
+	lightAttribOverride &lightName intensity 1.6
+	lightAttribOverride &lightName falloffRate .75
+	lightAttribOverride &lightName diffusionSourceIntensity 1.65
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff .9
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 75WattFL4(lightName)
+	lightAttribOverride &lightName intensity 1.65
+	lightAttribOverride &lightName falloffRate .76
+	lightAttribOverride &lightName diffusionSourceIntensity 1.52
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff .9
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.6
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+
+define 100WattFL(lightName)
+	lightAttribOverride &lightName intensity 2.0
+	lightAttribOverride &lightName falloffRate .7
+	lightAttribOverride &lightName diffusionSourceIntensity 1.8
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff .75
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+#####################WALL
+
+define 75WattWALL(lightName)
+	lightAttribOverride &lightName intensity 1.6
+	lightAttribOverride &lightName falloffRate 1
+	lightAttribOverride &lightName diffusionSourceIntensity 1.4
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,-.4)
+	lightAttribOverride &lightName diffusionSourceFalloff 1.2
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 2.2
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 75WattWALL2(lightName)
+	lightAttribOverride &lightName intensity 1.6
+	lightAttribOverride &lightName falloffRate .9
+	lightAttribOverride &lightName diffusionSourceIntensity 1.5
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,-.5)
+	lightAttribOverride &lightName diffusionSourceFalloff 1.2
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .8
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 75WattWALL3(lightName)
+	lightAttribOverride &lightName intensity 1.75
+	lightAttribOverride &lightName falloffRate .95
+	lightAttribOverride &lightName diffusionSourceIntensity 1.5
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,-.5)
+	lightAttribOverride &lightName diffusionSourceFalloff 1.1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 2
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 75WattWALL4(lightName)
+	lightAttribOverride &lightName intensity 1.6
+	lightAttribOverride &lightName falloffRate .97
+	lightAttribOverride &lightName diffusionSourceIntensity 1.1
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,-.5)
+	lightAttribOverride &lightName diffusionSourceFalloff 1.3
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1.7
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 75WattWALL5(lightName)
+	lightAttribOverride &lightName intensity 1.5
+	lightAttribOverride &lightName falloffRate 1
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,-.5)
+	lightAttribOverride &lightName diffusionSourceFalloff 1.5
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.6
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1.8
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 75WattWALL6(lightName)
+	lightAttribOverride &lightName intensity 1.8
+	lightAttribOverride &lightName falloffRate 1
+	lightAttribOverride &lightName diffusionSourceIntensity 1.3
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,-.51)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 2.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .8
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 45WattWALL(lightName)# clam lights 
+	lightAttribOverride &lightName intensity 1.25
+	lightAttribOverride &lightName falloffRate .9
+	lightAttribOverride &lightName diffusionSourceIntensity 1.6
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,.5)
+	lightAttribOverride &lightName diffusionSourceFalloff 1.
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.6
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 45WattWALL2(lightName)
+	lightAttribOverride &lightName intensity 1.25
+	lightAttribOverride &lightName falloffRate .9
+	lightAttribOverride &lightName diffusionSourceIntensity 1.5
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.6
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .9
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 50WattWALL(lightName)
+	lightAttribOverride &lightName intensity 1.5
+	lightAttribOverride &lightName falloffRate 1.1
+	lightAttribOverride &lightName diffusionSourceIntensity 1.6
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1.3
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.6
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .8
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 60WattWALL(lightName)
+	lightAttribOverride &lightName intensity 1.7
+	lightAttribOverride &lightName falloffRate .85
+	lightAttribOverride &lightName diffusionSourceIntensity 1.7
+	lightAttribOverride &lightName diffusionSourceMin  (0,.5)
+	lightAttribOverride &lightName diffusionSourceMax (0,.5)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.6
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 60WattWALL4(lightName)
+	lightAttribOverride &lightName intensity 1.7
+	lightAttribOverride &lightName falloffRate .85
+	lightAttribOverride &lightName diffusionSourceIntensity 1.6
+	lightAttribOverride &lightName diffusionSourceMin  (0,1)
+	lightAttribOverride &lightName diffusionSourceMax (0,1)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .8
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 100WattWALL(lightName)
+	lightAttribOverride &lightName intensity 1.9
+	lightAttribOverride &lightName falloffRate .9
+	lightAttribOverride &lightName diffusionSourceIntensity 1.4
+	lightAttribOverride &lightName diffusionSourceMin  (0,.5)
+	lightAttribOverride &lightName diffusionSourceMax (0,.5)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.6
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+##############OVER
+
+define CanisterLight(lightName)
+	lightAttribOverride &lightName intensity 1.2
+	lightAttribOverride &lightName falloffRate .9
+	lightAttribOverride &lightName diffusionSourceIntensity 1.8
+	lightAttribOverride &lightName diffusionSourceMin  (-0,-0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.44
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 78
+	lightAttribOverride &lightName conePenumbra 100
+enddef
+
+define 150WattOVER(lightName)
+	lightAttribOverride &lightName intensity 1.5
+	lightAttribOverride &lightName falloffRate .75
+	lightAttribOverride &lightName diffusionSourceIntensity 2.0#1.765
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff .8
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.8
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .9
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 20WattOVER(lightName)
+	lightAttribOverride &lightName intensity 1.5
+	lightAttribOverride &lightName falloffRate .5
+	lightAttribOverride &lightName diffusionSourceIntensity 1.75
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,5)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 100WattOVER(lightName)
+	lightAttribOverride &lightName intensity 1.5
+	lightAttribOverride &lightName falloffRate .8
+	lightAttribOverride &lightName diffusionSourceIntensity 1.9 #1.97
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff .9
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.6
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .8
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 75WattOVER(lightName)
+	lightAttribOverride &lightName intensity 1.33
+	lightAttribOverride &lightName falloffRate .9 #.5
+	lightAttribOverride &lightName diffusionSourceIntensity 1.83
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1.
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 2
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .8
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+##########FENCE
+
+define 50WattFENCE(lightName)
+	lightAttribOverride &lightName intensity 2
+	lightAttribOverride &lightName falloffRate .9
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1.3
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1.25
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 25WattFENCE(lightName)
+	lightAttribOverride &lightName intensity 1.5
+	lightAttribOverride &lightName falloffRate .85
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1.2
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.33
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1.33
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 100WattFENCE(lightName)
+	lightAttribOverride &lightName intensity 2
+	lightAttribOverride &lightName falloffRate .85
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1.1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1.25
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+#############POLE
+
+define mediumSTREETLIGHT(lightName) #arched street light default
+	lightAttribOverride &lightName intensity 3.5
+	lightAttribOverride &lightName falloffRate 1
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (-2,-2)
+	lightAttribOverride &lightName diffusionSourceMax (2,2)
+	lightAttribOverride &lightName diffusionSourceFalloff .6
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 2.5
+	lightAttribOverride &lightName diffusionSourceIsDirectional 1
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define sodiumSTREETLIGHT(lightName)
+	lightAttribOverride &lightName intensity 3
+	lightAttribOverride &lightName falloffRate .8 #.5
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,2)
+	lightAttribOverride &lightName diffusionSourceMax (0,2)
+	lightAttribOverride &lightName diffusionSourceFalloff .6
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 2
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 2
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+poleSTREETLIGHTstill(lightName) #non angled lights
+	lightAttribOverride &lightName intensity 2.8
+	lightAttribOverride &lightName falloffRate .5
+	lightAttribOverride &lightName diffusionSourceIntensity .8
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff .8
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 2
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceIsDirectional 1
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define poleSTREETLIGHT(lightName)
+	lightAttribOverride &lightName intensity 2.8
+	lightAttribOverride &lightName falloffRate .8
+	lightAttribOverride &lightName diffusionSourceIntensity .8
+	lightAttribOverride &lightName diffusionSourceMin  (-2,-2)
+	lightAttribOverride &lightName diffusionSourceMax (2,2)
+	lightAttribOverride &lightName diffusionSourceFalloff .8
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 2
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceIsDirectional 1
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define poleSTREETLIGHTstill(lightName) #non angled lights
+	lightAttribOverride &lightName intensity 2.8
+	lightAttribOverride &lightName falloffRate .8
+	lightAttribOverride &lightName diffusionSourceIntensity .8
+	lightAttribOverride &lightName diffusionSourceMin  (-2,-2)
+	lightAttribOverride &lightName diffusionSourceMax (2,2)
+	lightAttribOverride &lightName diffusionSourceFalloff .8
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 2
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceIsDirectional 1
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define gardenSPOTLIGHT(lightName)
+	lightAttribOverride &lightName intensity 2
+	lightAttribOverride &lightName falloffRate .5
+	lightAttribOverride &lightName diffusionSourceIntensity 2
+	lightAttribOverride &lightName diffusionSourceFalloff 2
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .5
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,2)
+	lightAttribOverride &lightName coneAngle 75
+	lightAttribOverride &lightName conePenumbra 50
+enddef
+
+
+# pract to diff ratio 5 to 1
+
+define light0001(lightName)
+	lightAttribOverride &lightName intensity 1.8
+	lightAttribOverride &lightName falloffRate .6
+	lightAttribOverride &lightName diffusionSourceIntensity 1.55
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff .9
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 75WattOVER2(lightName)
+	lightAttribOverride &lightName intensity 1.5
+	lightAttribOverride &lightName falloffRate .8
+	lightAttribOverride &lightName diffusionSourceIntensity 2.1
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff .95
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .8
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+#for the orb thing light BOV
+define ORBlight(lightName)
+	lightAttribOverride &lightName intensity 1.2
+	lightAttribOverride &lightName falloffRate .9
+	lightAttribOverride &lightName diffusionSourceIntensity 1.2
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+#test
+define neonlightsTABLE (lightName)
+	lightAttribOverride &lightName intensity .5
+	lightAttribOverride &lightName falloffRate .8
+	lightAttribOverride &lightName diffusionSourceIntensity .2
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 2.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+###### BELOWE are FOR CERTAIN LIGHTS
+
+#for vanitly light
+define VanityLight(lightName)
+	lightAttribOverride &lightName intensity 1.5
+	lightAttribOverride &lightName falloffRate .5
+	lightAttribOverride &lightName diffusionSourceIntensity 1.8
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,1)
+	lightAttribOverride &lightName diffusionSourceFalloff .8
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 2
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+### TRACKLIGHt
+
+define TrackLight(lightName)
+	lightAttribOverride &lightName intensity 2
+	lightAttribOverride &lightName falloffRate .9
+	lightAttribOverride &lightName diffusionSourceIntensity 2.8
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .8
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceMin  (0,-5)
+	lightAttribOverride &lightName diffusionSourceMax (0,-1)
+	lightAttribOverride &lightName coneAngle 25
+	lightAttribOverride &lightName conePenumbra 25
+enddef

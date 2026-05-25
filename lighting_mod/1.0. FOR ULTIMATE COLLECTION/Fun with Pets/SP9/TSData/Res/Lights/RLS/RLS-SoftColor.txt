@@ -1,0 +1,153 @@
+######################################################################
+# Soft Colors
+#
+# 12/5/2005 (C) GunMod
+#
+######################################################################
+######################################################################
+define SOFTRED(lightName)
+lightAttribOverride &lightName color (1,0.5,0.5)
+lightAttribOverride &lightName diffusionSourceColor (1,0.5,0.5)
+enddef
+######################################################################
+define SOFTREDORANGE(lightName)
+lightAttribOverride &lightName color (1,0.627,0.5)
+lightAttribOverride &lightName diffusionSourceColor (1,0.627,0.5)
+enddef
+######################################################################
+define SOFTORANGE(lightName)
+lightAttribOverride &lightName color (1,0.75,0.5)
+lightAttribOverride &lightName diffusionSourceColor (1,0.75,0.5)
+enddef
+######################################################################
+define SOFTYELLOWORANGE(lightName)
+lightAttribOverride &lightName color (1,0.854,0.5)
+lightAttribOverride &lightName diffusionSourceColor (1,0.854,0.5)
+enddef
+######################################################################
+define SOFTYELLOW(lightName)
+lightAttribOverride &lightName color (1,1,0.5)
+lightAttribOverride &lightName diffusionSourceColor (1,1,0.5)
+enddef
+######################################################################
+define SOFTGREENYELLOW(lightName)
+lightAttribOverride &lightName color (0.894,1,0.5)
+lightAttribOverride &lightName diffusionSourceColor (0.894,1,0.5)
+enddef
+######################################################################
+define SOFTGREEN(lightName)
+lightAttribOverride &lightName color (0.5,1,0.5)
+lightAttribOverride &lightName diffusionSourceColor (0.5,1,0.5)
+enddef
+######################################################################
+define SOFTBLUEGREEN(lightName)
+lightAttribOverride &lightName color (0.5,1,0.874)
+lightAttribOverride &lightName diffusionSourceColor (0.5,1,0.874)
+enddef
+######################################################################
+define SOFTCYAN(lightName)
+lightAttribOverride &lightName color (0.5,1,1)
+lightAttribOverride &lightName diffusionSourceColor (0.5,1,1)
+enddef
+######################################################################
+define SOFTBLUE(lightName)
+lightAttribOverride &lightName color (0.5,0.5,1)
+lightAttribOverride &lightName diffusionSourceColor (0.5,0.5,1)
+enddef
+######################################################################
+define SOFTVIOLET(lightName)
+lightAttribOverride &lightName color (0.75,0.5,1)
+lightAttribOverride &lightName diffusionSourceColor (0.75,0.5,1)
+enddef
+######################################################################
+define SOFTPURPLE(lightName)
+lightAttribOverride &lightName color (1,0.5,1)
+lightAttribOverride &lightName diffusionSourceColor (1,0.5,1)
+enddef
+######################################################################
+define SOFTPINK(lightName)
+lightAttribOverride &lightName color (1,0,.5)
+lightAttribOverride &lightName diffusionSourceColor (1,0,.5)
+enddef
+######################################################################
+define SOFTPINKRED(lightName)
+lightAttribOverride &lightName color (1,0.5,.75)
+lightAttribOverride &lightName diffusionSourceColor (1,0.5,.75)
+enddef
+######################################################################
+define SOFTWHITE(lightName)
+lightAttribOverride &lightName color (1,.96,.96)
+lightAttribOverride &lightName diffusionSourceColor (1,.96,.96)
+enddef
+######################################################################
+define SOFTGREY(lightName)
+lightAttribOverride &lightName color (0.75,0.75,0.75)
+lightAttribOverride &lightName diffusionSourceColor (0.75,0.75,0.75)
+enddef
+
+
+######################################################################
+#                   PASTELS
+######################################################################
+
+
+######################################################################
+define PASTELRED(lightName)
+lightAttribOverride &lightName color (1,0.85,0.85)
+lightAttribOverride &lightName diffusionSourceColor (1,0.85,0.85)
+enddef
+
+######################################################################
+define PASTELORANGE(lightName)
+lightAttribOverride &lightName color (0.92,0.74,0.59)
+lightAttribOverride &lightName diffusionSourceColor (0.92,0.74,0.59)
+enddef
+
+######################################################################
+define PASTELYELLOW(lightName)
+lightAttribOverride &lightName color (1,1,0.85)
+lightAttribOverride &lightName diffusionSourceColor (1,1,0.85)
+enddef
+
+######################################################################
+define PASTELGREEN(lightName)
+lightAttribOverride &lightName color (0.85,1,0.85)
+lightAttribOverride &lightName diffusionSourceColor (0.85,1,0.85)
+enddef
+
+######################################################################
+define PASTELBLUE(lightName)
+lightAttribOverride &lightName color (0.85,1,1)
+lightAttribOverride &lightName diffusionSourceColor (0.85,1,1)
+enddef
+
+######################################################################
+define PASTELPURPLE(lightName)
+lightAttribOverride &lightName color (1,0.85,1)
+lightAttribOverride &lightName diffusionSourceColor (1,0.85,1)
+enddef
+
+
+define streetlightyellow(lightName)
+lightAttribOverride &lightName color (1,0.85,0.5)
+lightAttribOverride &lightName diffusionSourceColor (.78,0.65,0.02)
+#lightAttribOverride &lightName color (.94,0.95,.72)
+#lightAttribOverride &lightName color (.74,0.65,.02)
+#lightAttribOverride &lightName diffusionSourceColor (.74,0.65,.02)
+enddef
+
+define streetlightwhite(lightName)
+lightAttribOverride &lightName color (.84,0.84,.84)
+lightAttribOverride &lightName diffusionSourceColor (.84,0.84,.84)
+enddef
+
+#lightAttribOverride &lightName color (.94,0.95,.72)
+#lightAttribOverride &lightName diffusionSourceColor (.94,0.95,.72)
+
+define WITCHRED(lightName)
+lightAttribOverride &lightName color (1,0.55,0.55)
+lightAttribOverride &lightName diffusionSourceColor (1,0.55,0.55)
+enddef
+######################################################################
+# EOF
+######################################################################
