@@ -89,6 +89,10 @@ This is basically just Vanilla lighting with the lighting fixes from plasticbox 
 
 The Lights folder is located under `TSData\Res\Lights` under each Game Installation Folder.
 
+### **DOWNLOAD INSTRUCTIONS**
+
+Download the latest release from the [Releases](https://github.com/thedreadpirates/ts2-lighting-mod-uc/releases) page.
+
 ### **INSTALLATION INSTRUCTIONS:**
 
 **![Image](assets/INSTALLATION_CHART.png)**
