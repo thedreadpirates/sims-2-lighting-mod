@@ -2,9 +2,12 @@ import shutil
 from pathlib import Path
 
 # Sims 2 game installation folder paths
-
 INPUT_DIR = Path.cwd().parent / "base_files"
 OUTPUT_DIR = Path.cwd().parent / "output"
+
+DISC_OUTPUT_DIR = OUTPUT_DIR / "disc"
+ULTIMATE_OUTPUT_DIR = OUTPUT_DIR / "ultimate"
+LEGACY_OUTPUT_DIR = OUTPUT_DIR / "legacy"
 
 def _get_base_game_path(installation_type: str, deluxe_flag: int) -> Path:
     """
@@ -15,14 +18,14 @@ def _get_base_game_path(installation_type: str, deluxe_flag: int) -> Path:
     :return:
     """
     if installation_type == "ultimate":
-        return OUTPUT_DIR / "Double Deluxe" / "Base"
+        return ULTIMATE_OUTPUT_DIR / "Double Deluxe" / "Base"
     elif installation_type == "legacy":
-        return OUTPUT_DIR / "Base"
+        return LEGACY_OUTPUT_DIR / "Base"
     elif deluxe_flag == 1:
-        return OUTPUT_DIR / "The Sims 2 Deluxe" / "Base"
+        return DISC_OUTPUT_DIR / "The Sims 2 Deluxe" / "Base"
     elif deluxe_flag == 2:
-        return OUTPUT_DIR / "The Sims 2 Double Deluxe" / "Base"
-    return OUTPUT_DIR / "The Sims 2"
+        return DISC_OUTPUT_DIR / "The Sims 2 Double Deluxe" / "Base"
+    return DISC_OUTPUT_DIR / "The Sims 2"
 
 
 def _get_ep2_path(installation_type: str, deluxe_flag: int) -> Path:
@@ -34,14 +37,14 @@ def _get_ep2_path(installation_type: str, deluxe_flag: int) -> Path:
     :return:
     """
     if installation_type == "ultimate":
-        return OUTPUT_DIR / "Double Deluxe" / "EP2"
+        return ULTIMATE_OUTPUT_DIR / "Double Deluxe" / "EP2"
     elif installation_type == "legacy":
-        return OUTPUT_DIR / "EP2"
+        return LEGACY_OUTPUT_DIR / "EP2"
     elif deluxe_flag == 1:
-        return OUTPUT_DIR / "The Sims 2 Deluxe" / "EP2"
+        return DISC_OUTPUT_DIR / "The Sims 2 Deluxe" / "EP2"
     elif deluxe_flag == 2:
-        return OUTPUT_DIR / "The Sims 2 Double Deluxe" / "EP2"
-    return OUTPUT_DIR / "The Sims 2 Nightlife"
+        return DISC_OUTPUT_DIR / "The Sims 2 Double Deluxe" / "EP2"
+    return DISC_OUTPUT_DIR / "The Sims 2 Nightlife"
 
 
 def _get_sp4_path(installation_type: str, deluxe_flag: int) -> Path:
@@ -53,12 +56,12 @@ def _get_sp4_path(installation_type: str, deluxe_flag: int) -> Path:
     :return:
     """
     if installation_type == "ultimate":
-        return OUTPUT_DIR / "Double Deluxe" / "SP4"
+        return ULTIMATE_OUTPUT_DIR / "Double Deluxe" / "SP4"
     elif installation_type == "legacy":
-        return OUTPUT_DIR / "SP4"
+        return LEGACY_OUTPUT_DIR / "SP4"
     elif deluxe_flag == 2:
-        return OUTPUT_DIR / "The Sims 2 Double Deluxe" / "SP4"
-    return OUTPUT_DIR / "The Sims 2 Celebration! Stuff"
+        return DISC_OUTPUT_DIR / "The Sims 2 Double Deluxe" / "SP4"
+    return DISC_OUTPUT_DIR / "The Sims 2 Celebration! Stuff"
 
 
 INPUT_FOLDER_PATHS = {
@@ -85,61 +88,61 @@ INPUT_FOLDER_PATHS = {
 OUTPUT_FOLDER_PATHS = {
     "ultimate": {
         "Base": _get_base_game_path("ultimate", 0),
-        "EP1": OUTPUT_DIR / "University Life" / "EP1",
+        "EP1": ULTIMATE_OUTPUT_DIR / "University Life" / "EP1",
         "EP2": _get_ep2_path("ultimate", 0),
-        "EP3": OUTPUT_DIR / "Best for Business" / "EP3",
-        "EP4": OUTPUT_DIR / "Fun with Pets" / "EP4",
-        "EP5": OUTPUT_DIR / "Seasons",
-        "EP6": OUTPUT_DIR / "Bon Voyage",
-        "EP7": OUTPUT_DIR / "Free Time",
-        "EP8": OUTPUT_DIR / "Apartment Life",
-        "EP9": OUTPUT_DIR / "Fun with Pets" / "SP9",
-        "SP1": OUTPUT_DIR / "Fun with Pets" / "SP1",
-        "SP2": OUTPUT_DIR / "Glamour Life Stuff",
+        "EP3": ULTIMATE_OUTPUT_DIR / "Best for Business" / "EP3",
+        "EP4": ULTIMATE_OUTPUT_DIR / "Fun with Pets" / "EP4",
+        "EP5": ULTIMATE_OUTPUT_DIR / "Seasons",
+        "EP6": ULTIMATE_OUTPUT_DIR / "Bon Voyage",
+        "EP7": ULTIMATE_OUTPUT_DIR / "Free Time",
+        "EP8": ULTIMATE_OUTPUT_DIR / "Apartment Life",
+        "EP9": ULTIMATE_OUTPUT_DIR / "Fun with Pets" / "SP9",
+        "SP1": ULTIMATE_OUTPUT_DIR / "Fun with Pets" / "SP1",
+        "SP2": ULTIMATE_OUTPUT_DIR / "Glamour Life Stuff",
         "SP4": _get_sp4_path("ultimate", 0),
-        "SP5": OUTPUT_DIR / "Best for Business" / "SP5",
-        "SP6": OUTPUT_DIR / "University Life" / "SP6",
-        "SP7": OUTPUT_DIR / "Best for Business" / "SP7",
-        "SP8": OUTPUT_DIR / "University Life" / "SP8",
+        "SP5": ULTIMATE_OUTPUT_DIR / "Best for Business" / "SP5",
+        "SP6": ULTIMATE_OUTPUT_DIR / "University Life" / "SP6",
+        "SP7": ULTIMATE_OUTPUT_DIR / "Best for Business" / "SP7",
+        "SP8": ULTIMATE_OUTPUT_DIR / "University Life" / "SP8",
     },
     "disc": {
         "Base": _get_base_game_path("disc", 0),
-        "EP1": OUTPUT_DIR / "The Sims 2 University",
+        "EP1": DISC_OUTPUT_DIR / "The Sims 2 University",
         "EP2": _get_ep2_path("disc", 0),
-        "EP3": OUTPUT_DIR / "The Sims 2 Open for Business",
-        "EP4": OUTPUT_DIR / "The Sims 2 Pets",
-        "EP5": OUTPUT_DIR / "The Sims 2 Seasons",
-        "EP6": OUTPUT_DIR / "The Sims 2 Bon Voyage",
-        "EP7": OUTPUT_DIR / "The Sims 2 Freetime",
-        "EP8": OUTPUT_DIR / "The Sims 2 Apartment Life",
-        "EP9": OUTPUT_DIR / "The Sims 2 Mansion and Garden Stuff",
-        "SP1": OUTPUT_DIR / "The Sims 2 Family Fun Stuff",
-        "SP2": OUTPUT_DIR / "The Sims 2 Glamour Life Stuff",
+        "EP3": DISC_OUTPUT_DIR / "The Sims 2 Open for Business",
+        "EP4": DISC_OUTPUT_DIR / "The Sims 2 Pets",
+        "EP5": DISC_OUTPUT_DIR / "The Sims 2 Seasons",
+        "EP6": DISC_OUTPUT_DIR / "The Sims 2 Bon Voyage",
+        "EP7": DISC_OUTPUT_DIR / "The Sims 2 Freetime",
+        "EP8": DISC_OUTPUT_DIR / "The Sims 2 Apartment Life",
+        "EP9": DISC_OUTPUT_DIR / "The Sims 2 Mansion and Garden Stuff",
+        "SP1": DISC_OUTPUT_DIR / "The Sims 2 Family Fun Stuff",
+        "SP2": DISC_OUTPUT_DIR / "The Sims 2 Glamour Life Stuff",
         "SP4": _get_sp4_path("disc", 0),
-        "SP5": OUTPUT_DIR / "The Sims 2 H&M® Fashion Stuff",
-        "SP6": OUTPUT_DIR / "The Sims 2 Teen Style Stuff",
-        "SP7": OUTPUT_DIR / "The Sims 2 Kitchen & Bath Interior Design Stuff",
-        "SP8": OUTPUT_DIR / "The Sims 2 IKEA® Home Stuff",
+        "SP5": DISC_OUTPUT_DIR / "The Sims 2 H&M® Fashion Stuff",
+        "SP6": DISC_OUTPUT_DIR / "The Sims 2 Teen Style Stuff",
+        "SP7": DISC_OUTPUT_DIR / "The Sims 2 Kitchen & Bath Interior Design Stuff",
+        "SP8": DISC_OUTPUT_DIR / "The Sims 2 IKEA® Home Stuff",
     },
     "legacy": {
         "Base": _get_base_game_path("legacy", 0),
-        "EP1": OUTPUT_DIR / "EP1",
+        "EP1": LEGACY_OUTPUT_DIR / "EP1",
         "EP2": _get_ep2_path("legacy", 0),
-        "EP3": OUTPUT_DIR / "EP3",
-        "EP4": OUTPUT_DIR / "EP4",
-        "EP5": OUTPUT_DIR / "EP5",
-        "EP6": OUTPUT_DIR / "EP6",
-        "EP7": OUTPUT_DIR / "EP7",
-        "EP8": OUTPUT_DIR / "EP8",
-        "EP9": OUTPUT_DIR / "EP9",
-        "SP1": OUTPUT_DIR / "SP1",
-        "SP2": OUTPUT_DIR / "SP2",
-        "SP3": OUTPUT_DIR / "SP3",
+        "EP3": LEGACY_OUTPUT_DIR / "EP3",
+        "EP4": LEGACY_OUTPUT_DIR / "EP4",
+        "EP5": LEGACY_OUTPUT_DIR / "EP5",
+        "EP6": LEGACY_OUTPUT_DIR / "EP6",
+        "EP7": LEGACY_OUTPUT_DIR / "EP7",
+        "EP8": LEGACY_OUTPUT_DIR / "EP8",
+        "EP9": LEGACY_OUTPUT_DIR / "EP9",
+        "SP1": LEGACY_OUTPUT_DIR / "SP1",
+        "SP2": LEGACY_OUTPUT_DIR / "SP2",
+        "SP3": LEGACY_OUTPUT_DIR / "SP3",
         "SP4": _get_sp4_path("legacy", 0),
-        "SP5": OUTPUT_DIR / "SP5",
-        "SP6": OUTPUT_DIR / "SP6",
-        "SP7": OUTPUT_DIR / "SP7",
-        "SP8": OUTPUT_DIR / "SP8",
+        "SP5": LEGACY_OUTPUT_DIR / "SP5",
+        "SP6": LEGACY_OUTPUT_DIR / "SP6",
+        "SP7": LEGACY_OUTPUT_DIR / "SP7",
+        "SP8": LEGACY_OUTPUT_DIR / "SP8",
     },
 }
 
@@ -171,8 +174,8 @@ def get_input_ep_path(ep_flag="Base"):
 
 
 def get_folder_path(
-        installation_type: str, ep_flag: str = "Base",
-        deluxe_flag: int = 0, input_flag=0
+    installation_type: str, ep_flag: str = "Base",
+    deluxe_flag: int = 0, input_flag=0
 ) -> Path:
     if input_flag:
         ep_path = get_input_ep_path(ep_flag)
@@ -190,4 +193,4 @@ def copy_to_output_folder(
     print(f"Copying {src} to {dst}")
 
     dst.parent.mkdir(parents=True, exist_ok=True)
-    src.copy(dst, preserve_metadata=True)
+    shutil.copytree(src, dst, dirs_exist_ok=True)

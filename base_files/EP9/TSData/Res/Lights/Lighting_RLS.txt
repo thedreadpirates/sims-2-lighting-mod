@@ -45,6 +45,10 @@ set wall:roomDirectionalBoost  		0.3
 set object:roomDirectionalBoost 	.3
 set sim:roomDirectionalBoost 	 	0.3
 
+setf sim:roomFromLightMapMix      	0
+setf sim:roomFromLightMapStrength 	0
+setf object:roomFromLightMapMix      	0
+
 set roomBounceStrength 			.95
 set wall:roomBounceStrength 		.95
 set object:roomBounceStrength 		.95
@@ -75,9 +79,9 @@ set wall:roomSideSlope 			0.5
 set object:SideSlope 			0.5
 set sim:SideSlope  			0.5
 
-set roomSaturation 0.75
+set roomSaturation 1
 
-set roomPortalStrength 			1
+set roomPortalStrength 			3
 set wall:roomPortalStrength 		1
 set object:roomPortalStrength 		1
 set sim:roomPortalStrength 		1

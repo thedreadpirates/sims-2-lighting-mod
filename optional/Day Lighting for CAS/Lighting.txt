@@ -831,13 +831,10 @@ end
 # CAS
 ####################################################
 lightingState CAS
-   # outside direct lighting
+    # outside direct lighting
    skylight                      (1,1,1)  0.5
    light sun      (1., 1.38, 1.5)    (1, .96, .82)     1.8
    light sky      (-1.5, -.2, 2)  (1,.96,.86)    .5
-
-   light fill1    (-1.5,-2.5, -2)     (.8,.8,.8)    .45
-   #light fill2    (-1.5, -1.5, -2)     (.6,.6,.6)    .5
 
    light simFill1  (1, -1.2, 1) (1, .95, .89)  .7
    light simFill2  (-2, 2, 1) (1, .95, .89)  1.75
@@ -877,6 +874,7 @@ lightingState CAS
    #               max in time (s)   max out time (s)
    transitionTimes        2                 100
 end
+
 
 
 ####################################################

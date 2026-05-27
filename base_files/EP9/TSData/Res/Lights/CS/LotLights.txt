@@ -16,23 +16,6 @@
 setf wConeMul 40
 setf wPenMul  20
 
-# LightRigs
-sinclude "LightRigs/PieMenu.txt"
-sinclude "LightRigs/terrainThumbnails.txt"
-sinclude "LightRigs/SimThumbnails.txt"
-sinclude "LightRigs/CASThumbnails.txt"
-
-# CAS
-sinclude "cas/casNeighborhoodPose.txt"
-sinclude "cas/casStudio.txt"
-
-# -- Studio lights --
-sinclude "objects/lightingFloorStudioUmbrella.txt"
-sinclude "objects/lightingFloorStudioBoom.txt"
-sinclude "objects/lightingFloorStudioDiffuser.txt"
-sinclude "objects/lightingFloorStudioBarnDoors.txt"
-sinclude "objects/lightingFloorStudioBoxDiffuser.txt"
-
 sinclude "windows/windows.txt"
 sinclude "LightDefs/BGWindows.nlo"
 
@@ -45,6 +28,24 @@ sinclude "objects/radianceWattage.txt"
 
 # Light Definitions
 sinclude "LightDefs/BGLights.nlo"
+sinclude "LightDefs/EP1Lights.nlo"
+sinclude "LightDefs/EP2Lights.nlo"
+sinclude "LightDefs/EP3Lights.nlo"
+sinclude "LightDefs/EP4Lights.nlo"
+sinclude "LightDefs/EP5Lights.nlo"
+sinclude "LightDefs/EP6Lights.nlo"
+sinclude "LightDefs/EP7Lights.nlo"
+sinclude "LightDefs/EP8Lights.nlo"
+sinclude "LightDefs/SP1Lights.nlo"
+sinclude "LightDefs/SP2Lights.nlo"
+sinclude "LightDefs/SP3Lights.nlo"
+sinclude "LightDefs/SP4Lights.nlo"
+sinclude "LightDefs/SP5Lights.nlo"
+sinclude "LightDefs/SP6Lights.nlo"
+sinclude "LightDefs/SP7Lights.nlo"
+sinclude "LightDefs/SP8Lights.nlo"
+sinclude "LightDefs/EP9Lights.nlo"
+sinclude "LightDefs/StoreLights.nlo"
 
 sinclude "objects/SpecialObjects.txt"
 sinclude "LightDefs/BGSpecialObjects.nlo"
