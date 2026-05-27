@@ -1,0 +1,28 @@
+######### LIGHTS ####################
+
+######## Ceiling Lights ###############
+
+
+create Four(lightingCeilingStylish_light)
+create SoftWhite(lightingCeilingStylish_light)
+
+
+########### Floor lights ############
+
+######### OUTDOOR lights ##########
+
+######### Table lights ###########
+
+######### Wall lights ##########
+
+create Four(lightingWallRomantic_light)
+create SoftAmber(lightingWallRomantic_light)
+
+create Four(lightingWallStylish_light)
+create SoftWhite(lightingWallStylish_light)
+
+########## Windows ##############
+
+
+########## Doors ##############
+

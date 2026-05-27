@@ -1,0 +1,202 @@
+######### LIGHTS ####################
+
+######## Ceiling Lights ###############
+
+
+create 150WattOVER(lightingCeilingAtomicAge_light)
+create SoftWhite(lightingCeilingAtomicAge_light)
+
+create 150WattOVER(lightingCeilingAtomicAgeKids_light)
+create quartz(lightingCeilingAtomicAgeKids_light)
+
+
+########### Floor lights ############
+
+create Five(lightingFloorAtomicAge_light)
+create SoftWhite(lightingFloorAtomicAge_light)
+
+create Five(lightingFloorAtomicAgeKids_light)
+create SoftWhite(lightingFloorAtomicAgeKids_light)
+
+
+######### OUTDOOR lights ##########
+
+create poleSTREETLIGHTstill(lightingOutdoorAtomicAge_light)
+create streetlightold(lightingOutdoorAtomicAge_light)
+
+create 50WattFENCE(lightingFloorGardenPagoda_light)
+create halogen(lightingFloorGardenPagoda_light)
+
+
+######### Table lights ###########
+
+create 75WattTABLE(lightingTableAtomicAge_light)
+create SoftWhite(lightingTableAtomicAge_light)
+
+create 75WattTABLE(lightingTableAtomicAgeKids_light)
+create SoftWhite(lightingTableAtomicAgeKids_light)
+
+######### Wall lights ##########
+
+create 75WattWALL2(lightingWallAtomicAge_light)
+create SoftWhite(lightingWallAtomicAge_light)
+
+######## Special Objects ###############
+
+create SFive(aquariumLarge_light1)
+create Flourescent(aquariumLarge_light1)
+
+create SFive(aquariumLarge_light2)
+create Flourescent(aquariumLarge_light2)
+
+create SSix(tvAtomicAge_bulb_light)
+create ElectricBlue(tvAtomicAge_bulb_light)
+
+##### FirePlaces #####
+
+create Fire(fireplaceAtomicAge_fill_light)
+create Fire(fireplaceAtomicAge_light)
+
+########## Windows ##############
+
+create WFour(windowAtomicAge_0_0_0_N_light)
+create WFour(windowAtomicAge_0_1S_0_S_light)
+create WFour(windowAtomicAgeDiagonal_0_0_0_NW_light)
+create WFour(windowAtomicAgeDiagonal_0_0_0_SE_light)
+create NS(windowAtomicAge_0_0_0_N_light)
+create NS(windowAtomicAge_0_1S_0_S_light)
+create EW(windowAtomicAgeDiagonal_0_0_0_NW_light)
+create EW(windowAtomicAgeDiagonal_0_0_0_SE_light)
+
+create WFour(windowAtomicAge2Tile_0_0_0_N_light)
+create WFour(windowAtomicAge2Tile_1E_0_0_N_light)
+create WFour(windowAtomicAge2Tile_0_1S_0_S_light)
+create WFour(windowAtomicAge2Tile_1E_1S_0_S_light)
+create WFour(windowAtomicAge2TileDiagonal_0_0_0_NW_light)
+create WFour(windowAtomicAge2TileDiagonal_1E_1N_0_NW_light)
+create WFour(windowAtomicAge2TileDiagonal_0_0_0_SE_light)
+create WFour(windowAtomicAge2TileDiagonal_1E_1N_0_SE_light)
+create NS(windowAtomicAge2Tile_0_0_0_N_light)
+create NS(windowAtomicAge2Tile_1E_0_0_N_light)
+create NS(windowAtomicAge2Tile_0_1S_0_S_light)
+create NS(windowAtomicAge2Tile_1E_1S_0_S_light)
+create EW(windowAtomicAge2TileDiagonal_0_0_0_NW_light)
+create EW(windowAtomicAge2TileDiagonal_1E_1N_0_NW_light)
+create EW(windowAtomicAge2TileDiagonal_0_0_0_SE_light)
+create EW(windowAtomicAge2TileDiagonal_1E_1N_0_SE_light)
+
+create WFour(windowAtomicAge3Tile_0_0_0_N_light)
+create WFive(windowAtomicAge3Tile_2E_0_0_N_light)
+create WFour(windowAtomicAge3Tile_0_1S_0_S_light)
+create WFive(windowAtomicAge3Tile_2E_1S_0_S_light)
+create WFour(windowAtomicAge3TileDiagonal_0_0_0_NW_light)
+create WFive(windowAtomicAge3TileDiagonal_2E_2N_0_NW_light)
+create WFour(windowAtomicAge3TileDiagonal_0_0_0_SE_light)
+create WFive(windowAtomicAge3TileDiagonal_2E_2N_0_SE_light)
+create NS(windowAtomicAge3Tile_0_0_0_N_light)
+create NS(windowAtomicAge3Tile_2E_0_0_N_light)
+create NS(windowAtomicAge3Tile_0_1S_0_S_light)
+create NS(windowAtomicAge3Tile_2E_1S_0_S_light)
+create EW(windowAtomicAge3TileDiagonal_0_0_0_NW_light)
+create EW(windowAtomicAge3TileDiagonal_2E_2N_0_NW_light)
+create EW(windowAtomicAge3TileDiagonal_0_0_0_SE_light)
+create EW(windowAtomicAge3TileDiagonal_2E_2N_0_SE_light)
+
+create WFour(windowPaw_0_0_0_N_light)
+create WFour(windowPaw_0_1S_0_S_light)
+create WFour(windowPawDiagonal_0_0_0_NW_light)
+create WFour(windowPawDiagonal_0_0_0_SE_light)
+create NS(windowPaw_0_0_0_N_light)
+create NS(windowPaw_0_1S_0_S_light)
+create EW(windowPawDiagonal_0_0_0_NW_light)
+create EW(windowPawDiagonal_0_0_0_SE_light)
+
+########## Doors ##############
+
+create WFive(doorAtomicAge_0_0_0_N_light)
+create WFive(doorAtomicAge_0_1S_0_S_light)
+create WFive(doorAtomicAgeDiagonal_0_0_0_SE_light)
+create WFive(doorAtomicAgeDiagonal_0_0_0_NW_light)
+create NS(doorAtomicAge_0_0_0_N_light)
+create NS(doorAtomicAge_0_1S_0_S_light)
+create EW(doorAtomicAgeDiagonal_0_0_0_SE_light)
+create EW(doorAtomicAgeDiagonal_0_0_0_NW_light)
+create noAngle(doorAtomicAge_0_0_0_N_light)
+create noAngle(doorAtomicAge_0_1S_0_S_light)
+create noAngle(doorAtomicAgeDiagonal_0_0_0_SE_light)
+create noAngle(doorAtomicAgeDiagonal_0_0_0_NW_light)
+
+create WThree(doorAtomicAge2Tile_0_1S_0_S_light)
+create WThree(doorAtomicAge2Tile_1E_1S_0_S_light)
+create WThree(doorAtomicAge2Tile_0_0_0_N_light)
+create WThree(doorAtomicAge2Tile_1E_0_0_N_light)
+create WThree(doorAtomicAge2TileDiagonal_0_0_0_SE_light)
+create WThree(doorAtomicAge2TileDiagonal_1E_1N_0_SE_light)
+create WThree(doorAtomicAge2TileDiagonal_0_0_0_NW_light)
+create WThree(doorAtomicAge2TileDiagonal_1E_1N_0_NW_light)
+create NS(doorAtomicAge2Tile_0_1S_0_S_light)
+create NS(doorAtomicAge2Tile_1E_1S_0_S_light)
+create NS(doorAtomicAge2Tile_0_0_0_N_light)
+create NS(doorAtomicAge2Tile_1E_0_0_N_light)
+create EW(doorAtomicAge2TileDiagonal_0_0_0_SE_light)
+create EW(doorAtomicAge2TileDiagonal_1E_1N_0_SE_light)
+create EW(doorAtomicAge2TileDiagonal_0_0_0_NW_light)
+create EW(doorAtomicAge2TileDiagonal_1E_1N_0_NW_light)
+create noAngle(doorAtomicAge2Tile_0_1S_0_S_light)
+create noAngle(doorAtomicAge2Tile_1E_1S_0_S_light)
+create noAngle(doorAtomicAge2Tile_0_0_0_N_light)
+create noAngle(doorAtomicAge2Tile_1E_0_0_N_light)
+create noAngle(doorAtomicAge2TileDiagonal_0_0_0_SE_light)
+create noAngle(doorAtomicAge2TileDiagonal_1E_1N_0_SE_light)
+create noAngle(doorAtomicAge2TileDiagonal_0_0_0_NW_light)
+create noAngle(doorAtomicAge2TileDiagonal_1E_1N_0_NW_light)
+
+create WFive(doorAtomicAge2TileArch_0_1S_0_S_light)
+create WFive(doorAtomicAge2TileArch_1E_1S_0_S_light)
+create WFive(doorAtomicAge2TileArch_0_0_0_N_light)
+create WFive(doorAtomicAge2TileArch_1E_0_0_N_light)
+create WFive(doorAtomicAge2TileArchDiagonal_0_0_0_SE_light)
+create WFive(doorAtomicAge2TileArchDiagonal_1E_1N_0_SE_light)
+create WFive(doorAtomicAge2TileArchDiagonal_0_0_0_NW_light)
+create WFive(doorAtomicAge2TileArchDiagonal_1E_1N_0_NW_light)
+create NS(doorAtomicAge2TileArch_0_1S_0_S_light)
+create NS(doorAtomicAge2TileArch_1E_1S_0_S_light)
+create NS(doorAtomicAge2TileArch_0_0_0_N_light)
+create NS(doorAtomicAge2TileArch_1E_0_0_N_light)
+create EW(doorAtomicAge2TileArchDiagonal_0_0_0_SE_light)
+create EW(doorAtomicAge2TileArchDiagonal_1E_1N_0_SE_light)
+create EW(doorAtomicAge2TileArchDiagonal_0_0_0_NW_light)
+create EW(doorAtomicAge2TileArchDiagonal_1E_1N_0_NW_light)
+create noAngle(doorAtomicAge2TileArch_0_1S_0_S_light)
+create noAngle(doorAtomicAge2TileArch_1E_1S_0_S_light)
+create noAngle(doorAtomicAge2TileArch_0_0_0_N_light)
+create noAngle(doorAtomicAge2TileArch_1E_0_0_N_light)
+create noAngle(doorAtomicAge2TileArchDiagonal_0_0_0_SE_light)
+create noAngle(doorAtomicAge2TileArchDiagonal_1E_1N_0_SE_light)
+create noAngle(doorAtomicAge2TileArchDiagonal_0_0_0_NW_light)
+create noAngle(doorAtomicAge2TileArchDiagonal_1E_1N_0_NW_light)
+
+create WFive(doorAtomicAge2TilePaw_0_1S_0_S_light)
+create WFive(doorAtomicAge2TilePaw_1E_1S_0_S_light)
+create WFive(doorAtomicAge2TilePaw_0_0_0_N_light)
+create WFive(doorAtomicAge2TilePaw_1E_0_0_N_light)
+create WFive(doorAtomicAge2TilePawDiagonal_0_0_0_SE_light)
+create WFive(doorAtomicAge2TilePawDiagonal_1E_1N_0_SE_light)
+create WFive(doorAtomicAge2TilePawDiagonal_0_0_0_NW_light)
+create WFive(doorAtomicAge2TilePawDiagonal_1E_1N_0_NW_light)
+create NS(doorAtomicAge2TilePaw_0_1S_0_S_light)
+create NS(doorAtomicAge2TilePaw_1E_1S_0_S_light)
+create NS(doorAtomicAge2TilePaw_0_0_0_N_light)
+create NS(doorAtomicAge2TilePaw_1E_0_0_N_light)
+create EW(doorAtomicAge2TilePawDiagonal_0_0_0_SE_light)
+create EW(doorAtomicAge2TilePawDiagonal_1E_1N_0_SE_light)
+create EW(doorAtomicAge2TilePawDiagonal_0_0_0_NW_light)
+create EW(doorAtomicAge2TilePawDiagonal_1E_1N_0_NW_light)
+create noAngle(doorAtomicAge2TilePaw_0_1S_0_S_light)
+create noAngle(doorAtomicAge2TilePaw_1E_1S_0_S_light)
+create noAngle(doorAtomicAge2TilePaw_0_0_0_N_light)
+create noAngle(doorAtomicAge2TilePaw_1E_0_0_N_light)
+create noAngle(doorAtomicAge2TilePawDiagonal_0_0_0_SE_light)
+create noAngle(doorAtomicAge2TilePawDiagonal_1E_1N_0_SE_light)
+create noAngle(doorAtomicAge2TilePawDiagonal_0_0_0_NW_light)
+create noAngle(doorAtomicAge2TilePawDiagonal_1E_1N_0_NW_light)

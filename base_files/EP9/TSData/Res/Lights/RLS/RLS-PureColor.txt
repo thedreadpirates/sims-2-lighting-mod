@@ -1,0 +1,94 @@
+######################################################################
+# Pure Colors
+#
+# 12/5/2005 (C) GunMod
+#
+######################################################################
+######################################################################
+define RED(lightName)
+lightAttribOverride &lightName color (1,0,0)
+lightAttribOverride &lightName diffusionSourceColor (1,0,0)
+enddef
+######################################################################
+define REDORANGE(lightName)
+lightAttribOverride &lightName color (1,0.25,0)
+lightAttribOverride &lightName diffusionSourceColor (1,0.25,0)
+enddef
+######################################################################
+define ORANGE(lightName)
+lightAttribOverride &lightName color (1,0.5,0)
+lightAttribOverride &lightName diffusionSourceColor (1,0.5,0)
+enddef
+######################################################################
+define YELLOWORANGE(lightName)
+lightAttribOverride &lightName color (1,0.75,0)
+lightAttribOverride &lightName diffusionSourceColor (1,0.75,0)
+enddef
+######################################################################
+define YELLOW(lightName)
+lightAttribOverride &lightName color (1,1,0)
+lightAttribOverride &lightName diffusionSourceColor (1,1,0)
+enddef
+######################################################################
+define GREENYELLOW(lightName)
+lightAttribOverride &lightName color (0.75,1,0)
+lightAttribOverride &lightName diffusionSourceColor (0.75,1,0)
+enddef
+######################################################################
+define GREEN(lightName)
+lightAttribOverride &lightName color (0,1,0)
+lightAttribOverride &lightName diffusionSourceColor (0,1,0)
+enddef
+######################################################################
+define BLUEGREEN(lightName)
+lightAttribOverride &lightName color (0,1,0.75)
+lightAttribOverride &lightName diffusionSourceColor (0,1,0.75)
+enddef
+######################################################################
+define CYAN(lightName)
+lightAttribOverride &lightName color (0,1,1)
+lightAttribOverride &lightName diffusionSourceColor (0,1,1)
+enddef
+######################################################################
+define BLUE(lightName)
+lightAttribOverride &lightName color (0,0,1)
+lightAttribOverride &lightName diffusionSourceColor (0,0,1)
+enddef
+######################################################################
+define VIOLET(lightName)
+lightAttribOverride &lightName color (0.5,0,1)
+lightAttribOverride &lightName diffusionSourceColor (0.5,0,1)
+enddef
+######################################################################
+define PURPLE(lightName)
+lightAttribOverride &lightName color (0.75,0,1)
+lightAttribOverride &lightName diffusionSourceColor (0.75,0,1)
+enddef
+######################################################################
+define MAGENTA(lightName)
+lightAttribOverride &lightName color (1,0,1)
+lightAttribOverride &lightName diffusionSourceColor (1,0,1)
+enddef
+######################################################################
+define PINK(lightName)
+lightAttribOverride &lightName color (1,0,.5)
+lightAttribOverride &lightName diffusionSourceColor (1,0,.5)
+enddef
+######################################################################
+define PINKRED(lightName)
+lightAttribOverride &lightName color (1,0,.25)
+lightAttribOverride &lightName diffusionSourceColor (1,0,.25)
+enddef
+######################################################################
+define WHITE(lightName)
+lightAttribOverride &lightName color (1,1,1)
+lightAttribOverride &lightName diffusionSourceColor (1,1,1)
+enddef
+######################################################################
+define GREY(lightName)
+lightAttribOverride &lightName color (0.5,0.5,0.5)
+lightAttribOverride &lightName diffusionSourceColor (0.5,0.5,0.5)
+enddef
+######################################################################
+# EOF
+######################################################################

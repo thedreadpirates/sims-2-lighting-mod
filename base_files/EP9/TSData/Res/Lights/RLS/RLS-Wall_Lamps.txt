@@ -1,0 +1,102 @@
+######################################################################
+# Wall Mounted Lights
+#
+# 12/10/2005 (C) GunMod
+# FIN
+######################################################################
+######################################################################
+
+#1 Basically Bare Bulb #
+create 75WattWALL(lightingWallValue_light)
+create household(lightingWallValue_light)
+
+#2 Prisoner of AkzaLamp #
+create 75WattWALL(lightingWallValue2_light)
+create SOFTBLUE(lightingWallValue2_light)
+
+#3 Torcher Clamshell #
+create 45WattWALL(lightingWallSconceClamshell_light)
+create household(lightingWallSconceClamshell_light)
+
+#4 LunaTech Gullivinzer #
+create 50WattWALL(lightingWallSconceWave_light)
+create flourescent(lightingWallSconceWave_light)
+
+
+#6 Wall Flowers Sconce #
+create 45WattWALL2(lightinglWallQuaint_light)
+create household(lightinglWallQuaint_light)
+
+#8 Five Diamonds Wall Light #
+create 45WattWALL(lightingWallDinerSmall_glass_BlackAndWhite_lit_designModeLight)
+create SOFTWHITE(lightingWallDinerSmall_glass_BlackAndWhite_lit_designModeLight)
+create 45WattWALL(lightingWallDinerSmall_glass_BlueAndYellow_lit_designModeLight)
+create SOFTYELLOW(lightingWallDinerSmall_glass_BlueAndYellow_lit_designModeLight)
+create 45WattWALL(lightingWallDinerSmall_glass_glass_GreenAndWhite_lit_designModeLight)
+create SOFTGREEN(lightingWallDinerSmall_glass_glass_GreenAndWhite_lit_designModeLight)
+create 45WattWALL(lightingWallDinerSmall_glass_GreenAndWhite_lit_designModeLight)
+create SOFTGREEN(lightingWallDinerSmall_glass_GreenAndWhite_lit_designModeLight)
+create 45WattWALL(lightingWallDinerSmall_glass_PinkAndWhite_lit_designModeLight)
+create SOFTPINK(lightingWallDinerSmall_glass_PinkAndWhite_lit_designModeLight)
+create 45WattWALL(lightingWallDinerSmall_glass_RedAndWhite_lit_designModeLight)
+create SOFTRED(lightingWallDinerSmall_glass_RedAndWhite_lit_designModeLight)
+
+#9 Antique Metal Sconce #
+create 60WattWALL(lightingWallMoroccan_light)
+create matchflame(lightingWallMoroccan_light)
+
+#12 Almost Deco #
+create 100WattWALL(wallDeckSconce_point)
+create whiteLight(wallDeckSconce_point)
+
+#13 Torcher Luminescence Sconce #
+create 60WattWALL4(lightingWallClubSconce_light)
+create matchflame(lightingWallClubSconce_light)
+
+#14 Beam0Lite Compact Wall Lamp #
+create 45WattWALL(lightingWallNightClub2x1_shade_green_lit_designModeLight)
+create GREEN(lightingWallNightClub2x1_shade_green_lit_designModeLight)
+create 45WattWALL(lightingWallNightClub2x1_shade_orange_lit_designModeLight)
+create ORANGE(lightingWallNightClub2x1_shade_orange_lit_designModeLight)
+create 45WattWALL(lightingWallNightClub2x1_shade_red_lit_designModeLight)
+create RED(lightingWallNightClub2x1_shade_red_lit_designModeLight)
+create 45WattWALL(lightingWallNightClub2x1_shade_stainless_lit_designModeLight)
+create LED(lightingWallNightClub2x1_shade_stainless_lit_designModeLight)
+create 45WattWALL(lightingWallNightClub2x1_shade_violet_lit_designModeLight)
+create VIOLET(lightingWallNightClub2x1_shade_violet_lit_designModeLight)
+create 45WattWALL(lightingWallNightClub2x1_shade_whiteOpaqueLucite_lit_designModeLight)
+create SOFTWHITE(lightingWallNightClub2x1_shade_whiteOpaqueLucite_lit_designModeLight)
+
+#16 Beam0Lite Extendo Wall Lamp #
+create 60WattWALL(lightingWallNightClub3x1_shade_green_lit_designModeLight)
+create GREEN(lightingWallNightClub3x1_shade_green_lit_designModeLight)
+create 60WattWALL(lightingWallNightClub3x1_shade_orange_lit_designModeLight)
+create ORANGE(lightingWallNightClub3x1_shade_orange_lit_designModeLight)
+create 60WattWALL(lightingWallNightClub3x1_shade_red_lit_designModeLight)
+create RED(lightingWallNightClub3x1_shade_red_lit_designModeLight)
+create 60WattWALL(lightingWallNightClub3x1_shade_stainless_lit_designModeLight)
+create LED(lightingWallNightClub3x1_shade_stainless_lit_designModeLight)
+create 60WattWALL(lightingWallNightClub3x1_shade_violet_lit_designModeLight)
+create VIOLET(lightingWallNightClub3x1_shade_violet_lit_designModeLight)
+create 60WattWALL(lightingWallNightClub3x1_shade_whiteOpaqueLucite_lit_designModeLight)
+create whiteLight(lightingWallNightClub3x1_shade_whiteOpaqueLucite_lit_designModeLight)
+
+#18 Illuminating Angles by Newt Vo #
+create 60WattWALL(lightingWallArtNouveau_light)
+create household(lightingWallArtNouveau_light)
+
+#19 Belle Epoque Tiffany Lamp #
+create 60WattWALL(lightingWallBrasserie_light)
+create matchflame(lightingWallBrasserie_light)
+
+#21 Diamonds Forever Wall Light #
+create 100WattWALL(lightingWallDiner_glass_BlackAndWhite_lit_designModeLight)
+create SOFTWHITE(lightingWallDiner_glass_BlackAndWhite_lit_designModeLight)
+create 100WattWALL(lightingWallDiner_glass_BlueAndYellow_lit_designModeLight)
+create SOFTYELLOW(lightingWallDiner_glass_BlueAndYellow_lit_designModeLight)
+create 100WattWALL(lightingWallDiner_glass_GreenAndWhite_lit_designModeLight)
+create SOFTGREEN(lightingWallDiner_glass_GreenAndWhite_lit_designModeLight)
+create 100WattWALL(lightingWallDiner_glass_PinkAndWhite_lit_designModeLight)
+create SOFTPINK(lightingWallDiner_glass_PinkAndWhite_lit_designModeLight)
+create 100WattWALL(lightingWallDiner_glass_RedAndWhite_lit_designModeLight)
+create SOFTRED(lightingWallDiner_glass_RedAndWhite_lit_designModeLight)

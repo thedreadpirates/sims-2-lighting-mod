@@ -1,0 +1,136 @@
+#EP and stuff packs#
+
+###TV###
+
+#TV and Cabiant
+create 30-Watt(tvCenterFamily_light)
+create SOFTBLUE(tvCenterFamily_light)
+
+#Cubic
+create 75-Watt(tVCubic_light)
+create SOFTBLUE(tVCubic_light)
+
+#Atomic Age
+create 30-Watt(tvAtomicAge_light)
+create SOFTBLUE(tvAtomicAge_light)
+
+#Teen Computer
+create 30-Watt(computerTeen_light)
+create SOFTBLUE(computerTeen_light)
+
+#The Television
+create 30-Watt(tVTeen_light)
+create SOFTBLUE(tVTeen_light)
+
+#The Tube wood
+create 30-Watt(tvCenterComfy_light)
+create SOFTBLUE(tvCenterComfy_light)
+
+#Stationary Concierge
+create 30-Watt(tVCenterHotel_light)
+create SOFTBLUE(tVCenterHotel_light)
+
+#Humble's comp
+create comp-Watt(computerHumble_light)
+
+#Gon
+comp-Watt(computertechie_light)
+
+#Smitty
+create 30-Watt(tvcenterjock_light)
+create SOFTBLUE(tvcenterjock_light)
+
+#home theatre 0x7FE4BC56
+create 75-Watt(tvHomeTheatre_light)
+create SOFTBLUE(tvHomeTheatre_light)
+
+###Other Lights###
+
+# Love Spa
+#create 25-Watt(rewardLoveSpa_light)
+create PASTELPURPLE(rewardLoveSpa_light)
+create TubLight4B(rewardLoveSpa_light)
+#create PASTELPURPLE(rewardLoveSpa_light)
+
+#Aqua pets
+60-Watt(aquariumlarge_light)
+SOFTBLUE(aquariumlarge_light)
+
+#BIG aqua 0x7F0B99A9
+#create 60-Watt(aquarium_expensive_light)
+#create SOFTBLUE(AquariumMassive_light)
+#create 60-Watt(AquariumSaltwater_light)
+#create SOFTBLUE(AquariumSaltwater_light)
+#create 60-Watt(aquarium_expensive00_light)
+#create SOFTBLUE(aquarium_expensive00_light)
+create 60-Watt(aquariumhuge_light)
+create SOFTBLUE(aquariumhuge_light)
+
+#cauldron 0x7FB62949
+create witchpot(witchcauldron_light)
+create candleflame(witchcauldron_light)
+
+#ELEATER
+75-Watt(doorelevatormodern_light)
+household(doorelevatormodern_light)
+
+#####
+###############
+######################################################
+###LIGHT OVERRITE FOR OVERALLHOOD###
+lightingState neighbourhood
+   environment (1, 1, 1) 1.0 
+end
+lightingState neighbourhoodNoPortals
+   skylight                      (.87,.925,1)  .25
+   light sun      (1.75, -2, 1.5)    (1, .9, .8) 1.75
+   light sky      (-2, 1.75, 2)  (0.7,.75,.8)   .5
+   light fill1    (0, 0, 1)     (1,1,1)     0.25
+   lightMap 0x0be702ef
+   diffParam insideAmbientColor       (1, .95, .75)
+   diffParam insideFloorAmbient        .15 
+   diffParam insideWallAmbient         .25 
+   diffParam floorThreshold            0.154
+   diffParam wallThreshold             0.12
+   modifiers insidePortals       3      3.8        0.8         .9
+   modifiers insidePortalSpills  3      4          .8         1.3
+   modifiers outsidePortals      0       0          1           1
+   modifiers outsidePortalSpills 0       0          1           1
+   modifiers insideObjects     1       1         2        1 
+   modifiers outsideObjects    0.5     1         4         2  
+   unlitRoomColor (0.01, 0.01, 0.01)
+   flatShade (1, .95, .85) .75  # for lighting quality 0
+   environment (1, 1, 1) 1.0  # override environment lighting state   
+end
+lightingState neighborhoodnight
+   skylight                         (0.2, 0.2, 1)     .3
+  light sun      (-1.5, -1,  2)    (.45, .45, 1)      1
+   lightMap   0x6fb59732
+   diffParam insideAmbientColor       (1, .95, .75)
+   diffParam insideFloorAmbient        .15 
+   diffParam insideWallAmbient         .25 
+   diffParam floorThreshold            0.154
+   diffParam wallThreshold             0.12
+   modifiers insidePortals       3      3.8        0.8         .9
+   modifiers insidePortalSpills  3      4          .8         1.3
+   modifiers outsidePortals      0       0          1           1
+   modifiers outsidePortalSpills 0       0          1           1
+   modifiers insideObjects     1       1         2        1 
+   modifiers outsideObjects    0.5     1         4         2  
+   unlitRoomColor (0.01, 0.01, 0.01)
+flatShade (.3, .35, .9) .5  # for lighting quality 0
+environment (0.5, 0.5, 1) 0.65  # override environment lighting state
+end
+#######################################
+######
+###
+
+#########################Custom Content Lights##############################
+#Electronics, LightKelvin PureColor, SoftColor text file for color profiles#
+#           CustomLights, CustomLights2 for Wattage Profiles               #
+#             New profiles can be created within those files               #
+###############################  BELOW  ####################################
+
+#KevinsHope's Lightlight WALL
+#create 100WattWALL(lightingWallClubSconce_light)
+#create SOFTYELLOW(lightingWallClubSconce_light)
