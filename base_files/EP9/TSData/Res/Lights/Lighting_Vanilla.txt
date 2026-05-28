@@ -25,29 +25,45 @@ setf incidenceMapHeightClamp 1
 ####################################################
 # Automatic room lighting tuning constants
 ####################################################
-setf roomLightingType 3
+setf roomLightingType 4
 
-set roomOverallStrength 0.8
+set roomOverallStrength 0.6
 set sim:roomOverallStrength 1.0
-set object:roomOverallStrength 0.8
-set wall:roomOverallStrength 0.6
+set object:roomOverallStrength 0.7
+set wall:roomOverallStrength 0.5
 
-set wall:roomDirectionalBoost  1
+set roomDirectionalBoost 1
+set object:roomDirectionalBoost 3
+set sim:roomDirectionalBoost 3
+set wall:roomDirectionalBoost 1
 
-set roomBounceStrength 0.4
+set roomBounceStrength 0.25
 set roomBounceCrossover 1
 set roomSideStrength  1.2
 set roomSideCrossover 1
 set roomSideSlope 0.75
-set roomSaturation 1
+set roomSaturation 0.5
 set roomPortalStrength .75
 set roomCeilingStrength 1
 
-set roomCrossBias 0.5
-set object:roomCrossBias 0.5
-set sim:roomCrossBias 0.5
+set roomCrossBias 0
+set object:roomCrossBias 0
+set sim:roomCrossBias 0
 
-set roomSpecular 0.85
+# Light-map derived room lighting
+setf roomFromLightMapMix            0 # controls mix with trad. room lighting
+setf roomFromLightMapStrength       0  # multiplier on light-map derived lighting
+
+setf sim:roomFromLightMapMix        0 # controls mix with trad. room lighting
+setf sim:roomFromLightMapStrength   2  # multiplier on light-map derived lighting
+
+setf wall:roomFromLightMapMix      1
+setf wall:roomFromLightMapStrength 3
+
+setf object:roomFromLightMapMix      0  # controls mix with trad. room lighting
+setf object:roomFromLightMapStrength 0
+
+set roomSpecular 0.8
 
 ####################################################
 # Features
@@ -95,11 +111,11 @@ lightingState night
    control -edith true
    
    skylight                         (0.25, 0.25, 0.3)     0.75
-   light sun      (-1.5, -1,  2)    (.45, .45, 0.75)      0.6
+   light sun      (-1.5, -1,  2)    (.45, .45, 0.85)      0.6
    light sky      ( 1.5,  1, 1)    (.25, 0.25, 0.75)    .6
 
-   light simFill1  (-1.25, -.75, 1.2) (.82,.8, .8)  1
-   light simFill2  (1.25, .75, 1.2) (.82,.8, .8)  .6
+  light simFill1  (-1.25, -.75, 1.2) (.82,.8, .8)  1
+  light simFill2  (1.25, .75, 1.2) (.82,.8, .8)  .6
    
    diffParam insideAmbientColor  (.9,.9,1)
    diffParam insideFloorAmbient   .001
@@ -458,6 +474,7 @@ lightingState Overcast
    modifiers outsidePortals      0       0          1           1
    modifiers outsidePortalSpills 0       0          1           1
 
+
    #                         pract. diffuse  p. falloff  d. falloff
    modifiers insideObjects     .8       .7    .35   .5  ### this can go higher when the on/off is fixed
    modifiers outsideObjects    0       0         1 1
@@ -477,7 +494,7 @@ end
 # Lot Night - Vacation Lot - Taken from the Base Game lighting.txt
 #
 lightingState vacationNight
-  control -edith true
+   control -edith true
 
    skylight                         (0.25, 0.25, 0.3)     0.75
    light sun      (-1.5, -1,  2)    (.45, .45, 0.75)      0.6
@@ -516,4 +533,3 @@ lightingState vacationNight
    #               max in time (s)   max out time (s)
    transitionTimes        2                 100
 end
-

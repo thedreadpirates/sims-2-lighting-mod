@@ -23,19 +23,19 @@ setf incidenceMapHeightClamp 1
 ####################################################
 # Automatic room lighting tuning constants
 ####################################################
-setf roomLightingType 4
+setf roomLightingType 3
 
-# Multiplier on how brightly the objects are lit by 
+# Multiplier on how brightly the objects are lit by
 # overall room lighting.
-set roomOverallStrength          1.0
-set sim:roomOverallStrength      1.10
-set object:roomOverallStrength   0.9
-set wall:roomOverallStrength     0.70
+set roomOverallStrength 0.8
+set sim:roomOverallStrength 1.0
+set object:roomOverallStrength 0.8
+set wall:roomOverallStrength 0.6
 
 set roomBounceStrength 0.25
 set roomBounceCrossover 1
 
-set roomSideStrength  1.1
+set roomSideStrength 1.2
 set roomSideCrossover 1
 set roomSideSlope 0.75
 set roomSaturation 0.75
@@ -44,6 +44,24 @@ set roomCeilingStrength 1
 set roomCrossBias 0
 set object:roomCrossBias 0
 set sim:roomCrossBias 0
+
+set roomDirectionalBoost 1
+set object:roomDirectionalBoost 1
+set sim:roomDirectionalBoost 1
+set wall:roomDirectionalBoost  0.8
+
+# Light-map derived room lighting
+setf roomFromLightMapMix            0 # controls mix with trad. room lighting
+setf roomFromLightMapStrength       0  # multiplier on light-map derived lighting
+
+setf sim:roomFromLightMapMix        0 # controls mix with trad. room lighting
+setf sim:roomFromLightMapStrength   0  # multiplier on light-map derived lighting
+
+setf wall:roomFromLightMapMix      1
+setf wall:roomFromLightMapStrength 3
+
+setf object:roomFromLightMapMix      0  # controls mix with trad. room lighting
+setf object:roomFromLightMapStrength 0
 
 set roomSpecular 0.8
 
