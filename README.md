@@ -49,7 +49,7 @@ The original mod has very dramatic lights and very dark darks, but I've put my o
 
 This is basically just Vanilla lighting with the lighting fixes from plasticbox and CircusWolf, dusk and dawn by spookymuffinsims, and the portal lighting fixes for dusk and dawn and vacation lighting from kayleigh83 she did for MM Lighting Mod.
 
-### **UNEDITED PHOTOS:**
+### **LIGHTING COMPARISON:**
 
 | Lighting Mod             | Photo |
 | ------------------------ | ----- |
@@ -58,6 +58,8 @@ This is basically just Vanilla lighting with the lighting fixes from plasticbox 
 | Radiance Lighting System | ![Image](assets/previews/RLS_in.png)      |
 | Cinema Secrets           | ![Image](assets/previews/CS_in.png)      |
 | World Lit by Fire        | ![Image](assets/previews/WLBF_in.png)       |
+
+Unedited photos are available on my [Tumblr](https://www.tumblr.com/veronavillequiltingbee/817412867195338752)
 
 ### **GAME INSTALLATION FOLDERS**
 
@@ -228,3 +230,4 @@ First two I highly recommend. The others are nice to have.
 - Almighty Hat for the World Lit By Fire tweak for Radiance, which I adapted for this mod
 - @teaaddictyt and others in the Tea Addict Discord server for the valuable testing and feedback
 - BoringBones for the TS2 Beta Lighting changes
+- HugeLunatic for the much better M&G chandelier fix
