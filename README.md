@@ -51,17 +51,19 @@ This is basically just Vanilla lighting with the lighting fixes from plasticbox 
 
 ## **LIGHTING COMPARISON:**
 
-| Lighting Mod             | Photo |
-| ------------------------ | ----- |
-| Vanilla Plus             | ![Image](assets/previews/VP_in.png)      |
-| Maxis Match Lighting Mod | ![Image](assets/previews/MM_in.png)       |
-| Radiance Lighting System | ![Image](assets/previews/RLS_in.png)      |
-| Cinema Secrets           | ![Image](assets/previews/CS_in.png)      |
-| World Lit by Fire        | ![Image](assets/previews/WLBF_in.png)       |
+> NOTE: Screenshots use the shaders from my "Recommended Mods" section below. Unedited photos are available on my [Tumblr](https://www.tumblr.com/veronavillequiltingbee/817412867195338752).
 
-Unedited photos are available on my [Tumblr](https://www.tumblr.com/veronavillequiltingbee/817412867195338752)
+| Lighting Mod                                | Day                                               | Night                                               |                                
+|---------------------------------------------|---------------------------------------------------|-----------------------------------------------------|
+| Vanilla Plus                                | ![Image](assets/previews/Screenshot_VP_Day.png)   | ![Image](assets/previews/Screenshot_VP_Night.png)   |
+| Maxis Match Lighting Mod                    | ![Image](assets/previews/Screenshot_MM_Day.png)   | ![Image](assets/previews/Screenshot_MM_Night.png)   |
+| Radiance Lighting System                    | ![Image](assets/previews/Screenshot_RLS_Day.png)  | ![Image](assets/previews/Screenshot_RLS_Night.png)  |
+| Cinema Secrets                              | ![Image](assets/previews/Screenshot_CS_Day.png)   | ![Image](assets/previews/Screenshot_CS_Night.png)   |
+| World Lit by Fire (based on Cinema Secrets) | ![Image](assets/previews/Screenshot_WLBF_Day.png) | ![Image](assets/previews/Screenshot_WLBF_Night.png) |
 
 ## **GAME INSTALLATION FOLDERS**
+
+The way the lighting mod is structured that unlike the vanilla lighting, where there's a `Lighting.txt` and `EPXLighting.nlo` files (sometimes, like in the case for Nightlife, multiple of them) for each EP is that for most of the EPs, every single NLO file is empty except for Base Game (which contains the bare minimum configuration and some common values shared across lighting configurations), and the latest EP, which in this case is Mansion and Garden Stuff (which contains the EP lighting definitions, plus many of the major lighting settings that can safely be placed in that folder without breaking lighting settings. Assuming the mod is installed correctly, you will only need to touch the BG and M&G folders. 
 
 ### **Ultimate Collection**
 
@@ -92,7 +94,7 @@ Unedited photos are available on my [Tumblr](https://www.tumblr.com/veronavilleq
 - Mansion and Garden:
    - `Program Files (x86)\EA GAMES\The Sims 2 Mansion and Garden Stuff` (for all version)
 
-### **Lights Folder Location:**
+## **LIGHTS FOLDER LOCATION**
 
 The Lights folder is located under `TSData\Res\Lights` under each Game Installation Folder.
 
@@ -100,7 +102,7 @@ The Lights folder is located under `TSData\Res\Lights` under each Game Installat
 
 Download and unzip the latest release from the [Releases](https://github.com/thedreadpirates/ts2-lighting-mod-uc/releases) page.
 
-## **INSTALLATION INSTRUCTIONS:**
+## **INSTALLATION INSTRUCTIONS**
 
 **![Image](assets/INSTALLATION_CHART.png)**
 
@@ -132,6 +134,8 @@ Simply type the cheat alias on the cheat console (CTRL + SHIFT + C) to switch wh
 - `slr` - Radiance Lighting (`Lighting_RLS.txt`)
 - `slw` - World Lit by Fire (`Lighting_WLBF.txt`)
 - `slc` - Cinema Secrets (`Lighting_CS.txt`)
+
+The lot lighting persists between saves unless you clear it with `setlotlightingfile clear` (or `sld`).
 
 ## **SWITCHING DEFAULT LIGHTING MODS**
 
@@ -186,21 +190,21 @@ alias slc "setlotlightingfile Lighting_CS.txt" "cinema secrets lighting mod" ""
 ##########################
 ```
 
-## **UNINSTALLATION INSTRUCTIONS:**
+## **UNINSTALLATION INSTRUCTIONS**
 
 1. Delete the contents of the LIGHTS folder for both BASE GAME and MANSION and GARDEN.
-2. Copy the contents of the `lights_backup` folder of this repository according to your game setup (UC, Legacy, or Disk).
+2. Copy the contents of the [Lights Backup](http://www.mediafire.com/file/elcrtdl6kx0x0sq/Lights_Backup.7z/file) file according to your game setup (UC, Legacy, or Disk).
 
 ## **OPTIONAL STEPS:**
 
-### **Disable Dusk/Dawn Lighting:**
+### **Disable Dusk/Dawn Lighting**
 
 1. Go to your BASE GAME Lighting.txt and look for the following line:
     - `setb morningEvening true`
 2. Change `true` to `false`.
 3. Save changes.
 
-### **Use Day CAS Lighting:**
+### **Use Day CAS Lighting**
 
 For those who use a CAS replacement with custom lighting setup, you might want the CAS room to use the Day lighting setup instead of the CAS lighting:
 
@@ -209,13 +213,13 @@ For those who use a CAS replacement with custom lighting setup, you might want t
 3. Paste both files and let them overwrite.
 4. Save.
 
-## **RECOMMENDED MODS:**
+## **RECOMMENDED MODS**
 
 First two I highly recommend. The others are nice to have.
 
 - [Accurate Neighborhood Terrain Lighting](https://modthesims.info/d/654677/accurate-neighborhood-terrain-lighting.html): Matches neighborhood lighting with lot lighting. Use the versions suffixed with “-lightingremedy”
-- [Blue Snow Fix](https://dreadpirate.tumblr.com/post/179182314487/blue-snow-no-more-shader-fixes-ive-included): Winter snow at night is blue. Very blue. This fixes it. If you want to use some water mods or roof shader mods, options are also available.
-- [StandardMaterial Shader](https://crispsandkerosene.tumblr.com/post/758562617469091841/extended-standardmaterial-shader-for-the-sims-2). Improves on the shaders that render objects. If you want to use this mod, use this shader instead of the “main” shaders in the snow fixes
+- [Blue Snow Fix](https://dreadpirate.tumblr.com/post/179182314487/blue-snow-no-more-shader-fixes-ive-included): Winter snow at night is blue. Very blue. This fixes it. If you want to use some water mods or roof shader mods, options are also available. I use EA roofs and Voeille's lot and neighborhood water
+- [StandardMaterial Shader](https://crispsandkerosene.tumblr.com/post/758562617469091841/extended-standardmaterial-shader-for-the-sims-2). Improves on the shaders that render objects. If you want to use this mod, use this shader instead of the “main” shaders in the snow fixes.
 - [Extended SimStandardMaterial Shader](https://crispsandkerosene.tumblr.com/post/768598233529434112/extended-simstandardmaterial-shader-for-the-sims-2)): Has several fixes that enable shiny textures on clothing, etc. I personally use the brighter sims version, but either is great.
 
 ## **CREDITS**
