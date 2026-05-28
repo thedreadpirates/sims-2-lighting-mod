@@ -334,7 +334,7 @@ enddef
 define FireFlame(lightName)
 	lightAttribOverride &lightName intensity 1
 	lightAttribOverride &lightName falloffRate 1
-	lightAttribOverride &lightName diffusionSourceIntensity .6
+	lightAttribOverride &lightName diffusionSourceIntensity 0.9
 	lightAttribOverride &lightName diffusionSourceMin  (0,0)
 	lightAttribOverride &lightName diffusionSourceMax (0,0)
 	lightAttribOverride &lightName diffusionSourceFalloff 3.5
@@ -349,25 +349,25 @@ enddef
 define FireTable(lightName)
 	lightAttribOverride &lightName intensity 1.5
 	lightAttribOverride &lightName falloffRate 1.1
-	lightAttribOverride &lightName diffusionSourceIntensity .6
+	lightAttribOverride &lightName diffusionSourceIntensity 0.9
 	lightAttribOverride &lightName diffusionSourceMin  (0,0)
 	lightAttribOverride &lightName diffusionSourceMax (0,0)
-	lightAttribOverride &lightName diffusionSourceFalloff 3.5
+	lightAttribOverride &lightName diffusionSourceFalloff 2.0
 	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
-	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .75
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .9
 	lightAttribOverride &lightName diffusionSourceIsDirectional 0
 	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
-	lightAttribOverride &lightName coneAngle 350
-	lightAttribOverride &lightName conePenumbra 359
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
 enddef
 
 define smallCANDLE(lightName)
-	lightAttribOverride &lightName intensity 1
+	lightAttribOverride &lightName intensity 1.2
 	lightAttribOverride &lightName falloffRate 1
-	lightAttribOverride &lightName diffusionSourceIntensity .4
+	lightAttribOverride &lightName diffusionSourceIntensity .9
 	lightAttribOverride &lightName diffusionSourceMin  (0,0)
 	lightAttribOverride &lightName diffusionSourceMax (0,0)
-	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceFalloff 1.5
 	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
 	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .8
 	lightAttribOverride &lightName diffusionSourceIsDirectional 0
