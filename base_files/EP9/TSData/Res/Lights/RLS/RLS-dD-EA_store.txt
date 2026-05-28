@@ -1,0 +1,22 @@
+#will only affect _NEW_ lights added by the new store. 
+#The lights from past Ep/Sp will have been already been affected
+
+#####DECO
+
+#little luce o luxury TABLE
+create 75WattTABLE(lightingTableDeco_light)
+create household(lightingTableDeco_light)
+
+#####Clubic
+
+#Geometric Refraction FLOOR
+create 75WattFL2(lightingFloorCubic_light)
+create household(lightingFloorCubic_light)
+
+#Geometric TABLE
+create 60WattTABLE(lightingTableCubic_light)
+create household(lightingTableCubic_light)
+
+#Geometric WALL
+create 100WattWALL(lightingWallCubic_light)
+create household(lightingWallCubic_light)

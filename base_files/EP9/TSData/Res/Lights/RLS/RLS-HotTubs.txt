@@ -1,0 +1,21 @@
+# HotTubs
+########################
+
+# Bubble Up Hot Tub #
+create TubLight(hotTubRaised_centerLight)
+create SOFTBLUE(hotTubRaised_centerLight)
+create TubLight2(hotTubRaised_centerLowLight)
+create PASTELBLUE(hotTubRaised_centerLowLight)
+
+# Vaporware Submergance Spa #
+create TubLight3(hotTubSunken_centerLight)
+create SOFTBLUE(hotTubSunken_centerLight)
+create TubLight2(hotTubSunken_centerLowLight)
+create SOFTBLUE(hotTubSunken_centerLowLight)
+
+# Love Tub #
+create TubLight4(loveTub_centerLight)
+create candleflame(loveTub_centerLight)
+create TubLight4B(loveTub_centerLowLight)
+create candleflame(loveTub_centerLowLight)
+

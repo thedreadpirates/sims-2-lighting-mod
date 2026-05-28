@@ -1,0 +1,76 @@
+######################################################################
+# Neon Lights
+#
+# 12/6/2005 (C) GunMod
+# FIN
+######################################################################
+######################################################################
+
+# One Pin, Two Pin #
+create 5WattWALLNEON(paintingNeonBowlingPins_light)
+create WHITE(paintingNeonBowlingPins_light)
+######################################################################
+
+# Neon Flamingo #
+create 5WattWALLNEON(lightingWallNeonFlamingo_neon_blue_lit_designModeLight)
+create BLUE(lightingWallNeonFlamingo_neon_blue_lit_designModeLight)
+create 5WattWALLNEON(lightingWallNeonFlamingo_neon_green_lit_designModeLight)
+create GREEN(lightingWallNeonFlamingo_neon_green_lit_designModeLight)
+create 5WattWALLNEON(lightingWallNeonFlamingo_neon_pink_lit_designModeLight)
+create MAGENTA(lightingWallNeonFlamingo_neon_pink_lit_designModeLight)
+create 5WattWALLNEON(lightingWallNeonFlamingo_neon_teal_lit_designModeLight)
+create BLUEGREEN(lightingWallNeonFlamingo_neon_teal_lit_designModeLight)
+create 5WattWALLNEON(lightingWallNeonFlamingo_neon_yellow_lit_designModeLight)
+create YELLOW(lightingWallNeonFlamingo_neon_yellow_lit_designModeLight)
+######################################################################
+
+# EverGlow Rods #
+create 5WattWALLNEON(lightingWallNeonTubeWave_neon_amberRed_lit_designModeLight)
+create matchflame(lightingWallNeonTubeWave_neon_amberRed_lit_designModeLight)
+create 5WattWALLNEON(lightingWallNeonTubeWave_neon_blueViolet_lit_designModeLight)
+create PURPLE(lightingWallNeonTubeWave_neon_blueViolet_lit_designModeLight)
+create 5WattWALLNEON(lightingWallNeonTubeWave_neon_greenYellow_lit_designModeLight)
+create GREENYELLOW(lightingWallNeonTubeWave_neon_greenYellow_lit_designModeLight)
+create 5WattWALLNEON(lightingWallNeonTubeWave_neon_red_lit_designModeLight)
+create RED(lightingWallNeonTubeWave_neon_red_lit_designModeLight)
+create 5WattWALLNEON(lightingWallNeonTubeWave_neon_violet_lit_designModeLight)
+create VIOLET(lightingWallNeonTubeWave_neon_violet_lit_designModeLight)
+######################################################################
+
+# LunaTech Light Disk #
+create 45WattWALLNEON(lightWallNightClubDisk_disk_amber_lit_designModeLight)
+create matchflame(lightWallNightClubDisk_disk_amber_lit_designModeLight)
+create 45WattWALLNEON(lightWallNightClubDisk_disk_blue_lit_designModeLight)
+create BLUE(lightWallNightClubDisk_disk_blue_lit_designModeLight)
+create 45WattWALLNEON(lightWallNightClubDisk_disk_green_lit_designModeLight)
+create GREEN(lightWallNightClubDisk_disk_green_lit_designModeLight)
+create 45WattWALLNEON(lightWallNightClubDisk_disk_red_lit_designModeLight)
+create RED(lightWallNightClubDisk_disk_red_lit_designModeLight)
+create 45WattWALLNEON(lightWallNightClubDisk_disk_violet_lit_designModeLight)
+create VIOLET(lightWallNightClubDisk_disk_violet_lit_designModeLight)
+######################################################################
+
+# NEON Serve #
+create 15WattCOUNTERNEON(islandNightClub_lucite_blue_designModeLight)
+create BLUE(islandNightClub_lucite_blue_designModeLight)
+create 15WattCOUNTERNEON(islandNightClub_lucite_green_designModeLight)
+create GREEN(islandNightClub_lucite_green_designModeLight)
+create 15WattCOUNTERNEON(islandNightClub_lucite_orange_designModeLight)
+create ORANGE(islandNightClub_lucite_orange_designModeLight)
+create 15WattCOUNTERNEON(islandNightClub_lucite_red_designModeLight)
+create RED(islandNightClub_lucite_red_designModeLight)
+create 15WattCOUNTERNEON(islandNightClub_lucite_violet_designModeLight)
+create VIOLET(islandNightClub_lucite_violet_designModeLight)
+#######################################################################
+
+# NEON Bar #
+create 5WattWALLNEON(counterIslandBarNightClub_lucite_blue_designModeLight)
+create BLUE(counterIslandBarNightClub_lucite_blue_designModeLight)
+create 5WattWALLNEON(counterIslandBarNightClub_lucite_green_designModeLight)
+create GREEN(counterIslandBarNightClub_lucite_green_designModeLight)
+create 5WattWALLNEON(counterIslandBarNightClub_lucite_orange_designModeLight)
+create ORANGE(counterIslandBarNightClub_lucite_orange_designModeLight)
+create 5WattWALLNEON(counterIslandBarNightClub_lucite_red_designModeLight)
+create RED(counterIslandBarNightClub_lucite_red_designModeLight)
+create 5WattWALLNEON(counterIslandBarNightClub_lucite_violet_designModeLight)
+create VIOLET(counterIslandBarNightClub_lucite_violet_designModeLight)

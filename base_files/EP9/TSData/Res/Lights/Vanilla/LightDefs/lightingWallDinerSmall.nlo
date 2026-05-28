@@ -1,0 +1,13 @@
+### lightingWallDinerSmall ####################################
+
+create Four(lightingWallDinerSmall_glass_RedAndWhite_lit_designModeLight)
+create Four(lightingWallDinerSmall_glass_GreenAndWhite_lit_designModeLight)
+create Four(lightingWallDinerSmall_glass_PinkAndWhite_lit_designModeLight)
+create Four(lightingWallDinerSmall_glass_BlueAndYellow_lit_designModeLight)
+create Four(lightingWallDinerSmall_glass_BlackAndWhite_lit_designModeLight)
+
+create SoftWhite(lightingWallDinerSmall_glass_RedAndWhite_lit_designModeLight)
+create SoftWhite(lightingWallDinerSmall_glass_GreenAndWhite_lit_designModeLight)
+create SoftWhite(lightingWallDinerSmall_glass_PinkAndWhite_lit_designModeLight)
+create SoftWhite(lightingWallDinerSmall_glass_BlueAndYellow_lit_designModeLight)
+create SoftWhite(lightingWallDinerSmall_glass_BlackAndWhite_lit_designModeLight)
