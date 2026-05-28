@@ -1,8 +1,8 @@
 ![Image](assets/heading.png)
 
-## **Lighting Mod Ultimate Collection**
+# **Lighting Mod Ultimate Collection**
 
-### ABOUT
+## ABOUT
 
 *(Yes, it’s a reference to the ultimate collection because…it is indeed an ultimate collection)*
 
@@ -21,35 +21,35 @@ Now, given the limitations of how lighting files are loaded, I used Cinema Secre
 
 Neighborhood lighting is the same across modes, as is CAS lighting, debug lighting, and certain global configurations
 
-### **LIGHTING MODS**
+## **LIGHTING MODS**
 
-#### 1. Cinema Secrets (DEFAULT)
+### 1. Cinema Secrets (DEFAULT)
 
 This is the one I personally use, and is sort of a middle ground between more maxis-styled lighting and more realistic and dramatic lighting mods like the Radiance Lighting System. It aims to keep the stuff I like with MM Lighting Mod, but integrate some aspects I like in the Radiance Lighting Mod and try to fix issues that plagued both.
 
 Cinema Secrets is the default lighting you will end up in if you don't switch to another mode.
 
-#### 2. World Lit by Fire
+### 2. World Lit by Fire
 
 This is a adaptation of the Radiance Lighting System tweaks by Almighty Hat that aims to add a candle light cast to all lights in the game that aren't supposed to be electric. However, I took this a step further and converted some of the electric lights to SoftAmber (if it makes sense).
 
 Everything else is still based on Cinema Secrets.
 
-#### 3. Maxis Match Lighting Mod
+### 3. Maxis Match Lighting Mod
 
 Maxis Match (MM) Lighting Mod is a lighting configuration mod for The Sims 2 that aims to improve on vanilla Maxis lighting, while at the same time retain its very essence. It had taken a life of its own ever since but it's still very maxis-matchy and uses Maxis lighting configuration across the board.
 
-#### 4. Radiance Lighting System
+### 4. Radiance Lighting System
 
 The Radiance Lighting System, according to its original creator GunMod, is an "Enhanced lighting system for the Sims 2." that uses physics laws of light to ensure the most realistic lighting possible within the game.
 
 The original mod has very dramatic lights and very dark darks, but I've put my own spin into it, adding in Radiance Lighting System fixes and tweaks on top of the 2.4 version by dDefender - dusk and dawn by bugjartimedecay-off, seasons and nights from my old RLS 2.5 system, and the unlit rooms are somewhere in between the original version of RLS and Raemia’s tweaks of the night lighting. I also added in some of the changes from the "Sims 2 Beta Lighting" mod by BoringBones.
 
-#### 5. Vanilla Plus
+### 5. Vanilla Plus
 
 This is basically just Vanilla lighting with the lighting fixes from plasticbox and CircusWolf, dusk and dawn by spookymuffinsims, and the portal lighting fixes for dusk and dawn and vacation lighting from kayleigh83 she did for MM Lighting Mod.
 
-### **LIGHTING COMPARISON:**
+## **LIGHTING COMPARISON:**
 
 | Lighting Mod             | Photo |
 | ------------------------ | ----- |
@@ -61,9 +61,9 @@ This is basically just Vanilla lighting with the lighting fixes from plasticbox 
 
 Unedited photos are available on my [Tumblr](https://www.tumblr.com/veronavillequiltingbee/817412867195338752)
 
-### **GAME INSTALLATION FOLDERS**
+## **GAME INSTALLATION FOLDERS**
 
-#### **Ultimate Collection**
+### **Ultimate Collection**
 
 - Base Game:
    - `Program Files (x86)\Origin Games\The Sims 2 Ultimate Collection\Double Deluxe\Base` (for the Origin version)
@@ -74,7 +74,7 @@ Unedited photos are available on my [Tumblr](https://www.tumblr.com/veronavilleq
     - `MagiPacks\The Sims 2\Fun with Pets\SP9` (for the MagiPack repack)
     - `Program Files (x86)\The Sims 2 Starter Pack\Fun with Pets\SP9` (for Osab's repack)
 
-#### **Legacy Collection**
+### **Legacy Collection**
 
 - Base Game:
    - `Program Files (x86)\Steam\steamapps\common\The Sims 2 Legacy Collection\Base` (for the Steam version)
@@ -83,7 +83,7 @@ Unedited photos are available on my [Tumblr](https://www.tumblr.com/veronavilleq
    - `Program Files (x86)\Steam\steamapps\common\The Sims 2 Legacy Collection\EP9` (for the Steam version)
    - `Program Files\EA Games\The Sims 2 Legacy Collection\EP9` (for the EA App version)
 
-#### **Disc Version**
+### **Disc Version**
 
 - Base Game:
    - `Program Files (x86)\EA GAMES\The Sims 2` (for regular Sims 2)
@@ -92,15 +92,15 @@ Unedited photos are available on my [Tumblr](https://www.tumblr.com/veronavilleq
 - Mansion and Garden:
    - `Program Files (x86)\EA GAMES\The Sims 2 Mansion and Garden Stuff` (for all version)
 
-#### **Lights Folder Location:**
+### **Lights Folder Location:**
 
 The Lights folder is located under `TSData\Res\Lights` under each Game Installation Folder.
 
-### **DOWNLOAD INSTRUCTIONS**
+## **DOWNLOAD INSTRUCTIONS**
 
-Download the latest release from the [Releases](https://github.com/thedreadpirates/ts2-lighting-mod-uc/releases) page.
+Download and unzip the latest release from the [Releases](https://github.com/thedreadpirates/ts2-lighting-mod-uc/releases) page.
 
-### **INSTALLATION INSTRUCTIONS:**
+## **INSTALLATION INSTRUCTIONS:**
 
 **![Image](assets/INSTALLATION_CHART.png)**
 
@@ -122,7 +122,7 @@ These steps assume that you have already extracted the files to an accessible lo
 
 6. Copy the contents of the folder labeled 4.0 to your downloads folder. These contain the fixed Store lights.
 
-### **SWITCHING LIGHTING MODS:**
+## **SWITCHING LIGHTING MODS:**
 
 Simply type the cheat alias on the cheat console (CTRL + SHIFT + C) to switch while on a lot.
 
@@ -130,10 +130,10 @@ Simply type the cheat alias on the cheat console (CTRL + SHIFT + C) to switch wh
 - `slv` - Vanilla Plus (`Lighting_Vanilla.txt`)
 - `slm` - Maxis Match lighting mod (`Lighting_MM.txt`)
 - `slr` - Radiance Lighting (`Lighting_RLS.txt`)
-- `slw` - World Lit by Fire (`Lighting_Vanilla.txt`)
+- `slw` - World Lit by Fire (`Lighting_WLBF.txt`)
 - `slc` - Cinema Secrets (`Lighting_CS.txt`)
 
-### **SWITCHING DEFAULT LIGHTING MODS**
+## **SWITCHING DEFAULT LIGHTING MODS**
 
 The mod uses Cinema Secrets by default, but you can switch to any of the other lighting mods by following these steps:
 
@@ -152,12 +152,12 @@ The mod uses Cinema Secrets by default, but you can switch to any of the other l
 
 5. If your game is open, key in CTRL+SHIFT+C, then type `sld`
 
-### **UPDATING INSTRUCTIONS:**
+## **UPDATING INSTRUCTIONS:**
 
 1. To update the lighting mod, delete all files (EXCEPT Scriptorium-related files, if you have them) in your BASE GAME and MANSION & GARDEN Lights folders, then place the updated files inside.
 2. If there are any cheat updates, delete all lines related to lighting from your userStartup.cheat file and replace with the lines in the updated userStartup.cheat.
 
-### Current Cheat Configuration
+## Current Cheat Configuration
 
 ```
 #### LIGHTING CHEATS ####
@@ -186,21 +186,21 @@ alias slc "setlotlightingfile Lighting_CS.txt" "cinema secrets lighting mod" ""
 ##########################
 ```
 
-### **UNINSTALLATION INSTRUCTIONS:**
+## **UNINSTALLATION INSTRUCTIONS:**
 
 1. Delete the contents of the LIGHTS folder for both BASE GAME and MANSION and GARDEN.
 2. Copy the contents of the `lights_backup` folder of this repository according to your game setup (UC, Legacy, or Disk).
 
-### **OPTIONAL STEPS:**
+## **OPTIONAL STEPS:**
 
-#### **Disable Dusk/Dawn Lighting:**
+### **Disable Dusk/Dawn Lighting:**
 
 1. Go to your BASE GAME Lighting.txt and look for the following line:
     - `setb morningEvening true`
 2. Change `true` to `false`.
 3. Save changes.
 
-#### **Use Day CAS Lighting:**
+### **Use Day CAS Lighting:**
 
 For those who use a CAS replacement with custom lighting setup, you might want the CAS room to use the Day lighting setup instead of the CAS lighting:
 
@@ -209,7 +209,7 @@ For those who use a CAS replacement with custom lighting setup, you might want t
 3. Paste both files and let them overwrite.
 4. Save.
 
-### **RECOMMENDED MODS:**
+## **RECOMMENDED MODS:**
 
 First two I highly recommend. The others are nice to have.
 
@@ -218,7 +218,7 @@ First two I highly recommend. The others are nice to have.
 - [StandardMaterial Shader](https://crispsandkerosene.tumblr.com/post/758562617469091841/extended-standardmaterial-shader-for-the-sims-2). Improves on the shaders that render objects. If you want to use this mod, use this shader instead of the “main” shaders in the snow fixes
 - [Extended SimStandardMaterial Shader](https://crispsandkerosene.tumblr.com/post/768598233529434112/extended-simstandardmaterial-shader-for-the-sims-2)): Has several fixes that enable shiny textures on clothing, etc. I personally use the brighter sims version, but either is great.
 
-**CREDITS**
+## **CREDITS**
 
 - @spookymuffinsims, for your lighting mod that served as a base for the maxis match lighting mod that started this all
 - @nightracer for the base of the Seasonal Lighting Tweaks
