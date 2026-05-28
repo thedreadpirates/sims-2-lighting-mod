@@ -46,8 +46,8 @@ create 60WattWALL(lightingWallMoroccan_light)
 create matchflame(lightingWallMoroccan_light)
 
 #12 Almost Deco #
-create 100WattWALL(wallDeckSconce_point)
-create whiteLight(wallDeckSconce_point)
+create 60WattWALL4(wallDeckSconce_point)
+create matchflame(wallDeckSconce_point)
 
 #13 Torcher Luminescence Sconce #
 create 60WattWALL4(lightingWallClubSconce_light)

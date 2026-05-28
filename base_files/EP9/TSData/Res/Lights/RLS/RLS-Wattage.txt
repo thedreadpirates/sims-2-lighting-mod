@@ -143,15 +143,15 @@ define 25-Watt(lightName)
 enddef
 
 define 30-Watt(lightName) #TV
-	lightAttribOverride &lightName intensity 1.02
+	lightAttribOverride &lightName intensity 2.02
 	lightAttribOverride &lightName falloffRate 3.75
 	lightAttribOverride &lightName diffusionSourceIntensity .78
 	lightAttribOverride &lightName diffusionSourceMin  (0,1)
 	lightAttribOverride &lightName diffusionSourceMax (0,0)
 	lightAttribOverride &lightName diffusionSourceFalloff 11
 	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
-	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
-	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 2
+	lightAttribOverride &lightName diffusionSourceIsDirectional 1
 	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
 	lightAttribOverride &lightName coneAngle 350
 	lightAttribOverride &lightName conePenumbra 359
@@ -188,16 +188,16 @@ define 45-Watt(lightName)
 enddef
 
 define 50-Watt(lightName) #TV
-	lightAttribOverride &lightName intensity 1.1
+	lightAttribOverride &lightName intensity 2
 	lightAttribOverride &lightName falloffRate 1.7
 	lightAttribOverride &lightName diffusionSourceIntensity .95
 	lightAttribOverride &lightName diffusionSourceMin  (0,.5)
 	lightAttribOverride &lightName diffusionSourceMax (0,0)
 	lightAttribOverride &lightName diffusionSourceFalloff 5.1
 	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
-	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
-	lightAttribOverride &lightName diffusionSourceIsDirectional 0
-	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 2
+	lightAttribOverride &lightName diffusionSourceIsDirectional 1
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 1
 	lightAttribOverride &lightName coneAngle 350
 	lightAttribOverride &lightName conePenumbra 359
 enddef
@@ -219,16 +219,16 @@ enddef
 
 
 define 75-Watt(lightName)#TV
-	lightAttribOverride &lightName intensity 1.4
+	lightAttribOverride &lightName intensity 1.9
 	lightAttribOverride &lightName falloffRate 1
 	lightAttribOverride &lightName diffusionSourceIntensity 1.2
 	lightAttribOverride &lightName diffusionSourceMin  (0,1)
 	lightAttribOverride &lightName diffusionSourceMax (0,0)
 	lightAttribOverride &lightName diffusionSourceFalloff 3
 	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
-	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
-	lightAttribOverride &lightName diffusionSourceIsDirectional 0
-	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 2
+	lightAttribOverride &lightName diffusionSourceIsDirectional 1
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 1
 	lightAttribOverride &lightName coneAngle 350
 	lightAttribOverride &lightName conePenumbra 359
 enddef

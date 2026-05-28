@@ -11,6 +11,9 @@ EP_LIST = [
 def create_lighting_mod_files(installation_type, deluxe_flag=0):
     for ep in EP_LIST:
         copy_to_output_folder(installation_type, ep, deluxe_flag)
+        if installation_type == "disc" or installation_type == "all":
+            copy_to_output_folder(installation_type, ep, 1)
+            copy_to_output_folder(installation_type, ep, 2)
 
 
 # Press the green button in the gutter to run the script.

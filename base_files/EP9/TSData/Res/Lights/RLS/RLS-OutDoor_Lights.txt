@@ -39,8 +39,8 @@ create quartz(lightingFloorGardenTier_light)
 ######################################################################
 
 # Preventek Lumilight Street Light #
-create mediumSTREETLIGHT(lightingStreetlight_light)
-create streetlightwhite(lightingStreetlight_light)
+create mediumSTREETLIGHT2(lightingStreetlight_light)
+create SOFTYELLOW(lightingStreetlight_light)
 ######################################################################
 
 # Wooden Post N Lamp Street Light #

@@ -114,7 +114,6 @@ set portalCornerSuppressionAmount 		0.1
 setf portalCornerSuppressionAmount  		0.1
 seti portalCornerSuppressionAmount 		0.1
 
-
 ####################################################
 # Environment light maps (for lighting terrain/floors/
 # walls outside.)
@@ -172,11 +171,11 @@ lightingState night
    modifiers insideObjects      1.2   .45   .2     .25
    modifiers outsideObjects     1   .7  .3   .2
 
- projectiveShadowStrength 0.4
+   projectiveShadowStrength 0.4
 
    portalSaturation 1
    
-   environment (.2, .2, .4)    1
+   environment (.2, .2, .45)    1
 
    # extra ambient for unlit rooms.
    unlitRoomColor (0.09, 0.09, 0.11) -threshold .4
@@ -237,13 +236,7 @@ lightingState evening
    control -edith true
 
    skylight                      (.51, .45, .4)  .4 # Neighborhood terrain, interior sun light; affects shadows
-
    light sun      (-2.8, 1.3, 1)    (.95, .6, .5)     1.2
-
-###newer1st light sun      (-2.8, 1.3, 1)    (.9,.51,.00)     1.2
-###newer2nd   light sun      (-2.8, 1.3, 1)    (.9,.51,.00)     1.7 # overall sun glint color - affects neighbor objects as well #2.0
-## orange   light sky      (2.8, 1.3, 1)  (.9,.5,.00)    .25 # overall sun color mixes with everything including shadows #.15
-
    light sky    (2.8, 1.3, 2.5)      (.95, .6, .5)    .05 
 
    light fill1    (1.5,-1.3, -2)      (.45, .3, .8)     .15
@@ -459,12 +452,11 @@ lightingState Spring
    light fill1    (1, 1, -1)             (1, .95, .8)    .54
    light fill2    (-10.5, -10.5, -2)     (.6, .6, .6)  .35   #indirect sunlight
 
-    light simFill1  (1, -1.2, .9)     (1, .87, .78)     .55       #sky
-    light simFill2  (-2, 2, .9)        (1, .88, .79)     1.8      #direct
-    light simFill3  (-5., -2.5, -5)     (.8, .8, .8)    .15       #floor indirect  						             bounce
+   light simFill1  (1, -1.2, .9)     (1, .87, .78)     .55       #sky
+   light simFill2  (-2, 2, .9)        (1, .88, .79)     1.8      #direct
+   light simFill3  (-5., -2.5, -5)     (.8, .8, .8)    .15       #floor indirect  						             bounce
 
-projectiveShadowStrength 0.83
-
+   projectiveShadowStrength 0.83
 
    # inside diffusion
    diffParam insideAmbientColor       (1, 1, 1)  
@@ -474,7 +466,6 @@ projectiveShadowStrength 0.83
    # diffusion inside and outside
    diffParam floorThreshold           .6
    diffParam wallThreshold            .4
-   
 
    portalSaturation 1
 
@@ -483,8 +474,6 @@ projectiveShadowStrength 0.83
    #                                      pract. diffuse  p. falloff  d. falloff
    modifiers insidePortals              0        0           1         1
    modifiers insidePortalSpills       1.1     2.55        .12     .28
-##   modifiers insidePortals          0       1.2  	   .01 	 .3
-##   modifiers insidePortalSpills  .  8       3.3       .008      .4
    modifiers outsidePortals            0        0           1        1
    modifiers outsidePortalSpills       0        0           1        1
 
@@ -539,8 +528,6 @@ projectiveShadowStrength 0.8
    #                                     pract. diffuse  p. falloff  d. falloff
    modifiers insidePortals             0    	   0           1          1
    modifiers insidePortalSpills       1.1    2.55       .12        .28
-##   modifiers insidePortals         0      1.2  	 .01         .3
-##   modifiers insidePortalSpills  .88       3         .008       .4
    modifiers outsidePortals           0       0           1           1
    modifiers outsidePortalSpills      0       0           1           1
 

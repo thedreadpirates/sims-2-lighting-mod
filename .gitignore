@@ -163,4 +163,4 @@ cython_debug/
 #.idea/
 
 # Lighting mod output files
-output/
+lighting_mod/

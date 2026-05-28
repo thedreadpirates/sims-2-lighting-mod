@@ -3,11 +3,14 @@ from pathlib import Path
 
 # Sims 2 game installation folder paths
 INPUT_DIR = Path.cwd().parent / "base_files"
-OUTPUT_DIR = Path.cwd().parent / "output"
+OUTPUT_DIR = Path.cwd().parent / "lighting_mod"
 
-DISC_OUTPUT_DIR = OUTPUT_DIR / "disc"
-ULTIMATE_OUTPUT_DIR = OUTPUT_DIR / "ultimate"
-LEGACY_OUTPUT_DIR = OUTPUT_DIR / "legacy"
+DISC_OUTPUT_DIR = OUTPUT_DIR / "2.0 - FOR DISC USERS"
+DISC_REG_OUTPUT_DIR = OUTPUT_DIR / "2.1 - FOR NON-DELUXE TS2"
+DELUXE_OUTPUT_DIR = OUTPUT_DIR / "2.2 - FOR TS2 DELUXE USERS"
+DOUBLE_DELUXE_OUTPUT_DIR = OUTPUT_DIR / "2.3 - FOR TS2 DOUBLE DELUXE USERS"
+ULTIMATE_OUTPUT_DIR = OUTPUT_DIR / "1.0 - FOR ULTIMATE COLLECTION USERS"
+LEGACY_OUTPUT_DIR = OUTPUT_DIR / "3.0 - FOR LEGACY COLLECTION USERS"
 
 def _get_base_game_path(installation_type: str, deluxe_flag: int) -> Path:
     """
@@ -22,10 +25,10 @@ def _get_base_game_path(installation_type: str, deluxe_flag: int) -> Path:
     elif installation_type == "legacy":
         return LEGACY_OUTPUT_DIR / "Base"
     elif deluxe_flag == 1:
-        return DISC_OUTPUT_DIR / "The Sims 2 Deluxe" / "Base"
+        return DELUXE_OUTPUT_DIR / "The Sims 2 Deluxe" / "Base"
     elif deluxe_flag == 2:
-        return DISC_OUTPUT_DIR / "The Sims 2 Double Deluxe" / "Base"
-    return DISC_OUTPUT_DIR / "The Sims 2"
+        return DOUBLE_DELUXE_OUTPUT_DIR / "The Sims 2 Double Deluxe" / "Base"
+    return DISC_REG_OUTPUT_DIR / "The Sims 2"
 
 
 def _get_ep2_path(installation_type: str, deluxe_flag: int) -> Path:
@@ -41,10 +44,10 @@ def _get_ep2_path(installation_type: str, deluxe_flag: int) -> Path:
     elif installation_type == "legacy":
         return LEGACY_OUTPUT_DIR / "EP2"
     elif deluxe_flag == 1:
-        return DISC_OUTPUT_DIR / "The Sims 2 Deluxe" / "EP2"
+        return DELUXE_OUTPUT_DIR / "The Sims 2 Deluxe" / "EP2"
     elif deluxe_flag == 2:
-        return DISC_OUTPUT_DIR / "The Sims 2 Double Deluxe" / "EP2"
-    return DISC_OUTPUT_DIR / "The Sims 2 Nightlife"
+        return DOUBLE_DELUXE_OUTPUT_DIR / "The Sims 2 Double Deluxe" / "EP2"
+    return DISC_REG_OUTPUT_DIR / "The Sims 2 Nightlife"
 
 
 def _get_sp4_path(installation_type: str, deluxe_flag: int) -> Path:
@@ -59,9 +62,11 @@ def _get_sp4_path(installation_type: str, deluxe_flag: int) -> Path:
         return ULTIMATE_OUTPUT_DIR / "Double Deluxe" / "SP4"
     elif installation_type == "legacy":
         return LEGACY_OUTPUT_DIR / "SP4"
+    elif deluxe_flag == 1:
+        return DELUXE_OUTPUT_DIR / "The Sims 2 Celebration! Stuff"
     elif deluxe_flag == 2:
-        return DISC_OUTPUT_DIR / "The Sims 2 Double Deluxe" / "SP4"
-    return DISC_OUTPUT_DIR / "The Sims 2 Celebration! Stuff"
+        return DOUBLE_DELUXE_OUTPUT_DIR / "The Sims 2 Double Deluxe" / "SP4"
+    return DISC_REG_OUTPUT_DIR / "The Sims 2 Celebration! Stuff"
 
 
 INPUT_FOLDER_PATHS = {
@@ -188,8 +193,8 @@ def get_folder_path(
 def copy_to_output_folder(
     installation_type: str, ep_flag: str = "Base", deluxe_flag: int = 0
 ):
-    src = get_folder_path(installation_type, ep_flag, input_flag=1)
-    dst = get_folder_path(installation_type, ep_flag, input_flag=0)
+    src = get_folder_path(installation_type, ep_flag, deluxe_flag, input_flag=1)
+    dst = get_folder_path(installation_type, ep_flag, deluxe_flag, input_flag=0)
     print(f"Copying {src} to {dst}")
 
     dst.parent.mkdir(parents=True, exist_ok=True)

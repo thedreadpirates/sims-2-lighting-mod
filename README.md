@@ -43,7 +43,7 @@ Maxis Match (MM) Lighting Mod is a lighting configuration mod for The Sims 2 tha
 
 The Radiance Lighting System, according to its original creator GunMod, is an "Enhanced lighting system for the Sims 2." that uses physics laws of light to ensure the most realistic lighting possible within the game.
 
-The original mod has very dramatic lights and very dark darks, but I've put my own spin into it, adding in Radiance Lighting System fixes and tweaks on top of the 2.4 version by dDefender - dusk and dawn by bugjartimedecay-off, seasons and nights from my old RLS 2.5 system, and the unlit rooms are somewhere in between the original version of RLS and Raemia’s tweaks of the night lighting.
+The original mod has very dramatic lights and very dark darks, but I've put my own spin into it, adding in Radiance Lighting System fixes and tweaks on top of the 2.4 version by dDefender - dusk and dawn by bugjartimedecay-off, seasons and nights from my old RLS 2.5 system, and the unlit rooms are somewhere in between the original version of RLS and Raemia’s tweaks of the night lighting. I also added in some of the changes from the "Sims 2 Beta Lighting" mod by BoringBones.
 
 #### 5. Vanilla Plus
 
@@ -124,7 +124,7 @@ These steps assume that you have already extracted the files to an accessible lo
 
 Simply type the cheat alias on the cheat console (CTRL + SHIFT + C) to switch while on a lot.
 
-- `sld` - default lighting (Cinema Secrets)
+- `sld` - default lighting (`Lighting.txt`)
 - `slv` - Vanilla Plus (`Lighting_Vanilla.txt`)
 - `slm` - Maxis Match lighting mod (`Lighting_MM.txt`)
 - `slr` - Radiance Lighting (`Lighting_RLS.txt`)
@@ -132,6 +132,8 @@ Simply type the cheat alias on the cheat console (CTRL + SHIFT + C) to switch wh
 - `slc` - Cinema Secrets (`Lighting_CS.txt`)
 
 ### **SWITCHING DEFAULT LIGHTING MODS**
+
+The mod uses Cinema Secrets by default, but you can switch to any of the other lighting mods by following these steps:
 
 1. Go to your Mansion and Garden Lights folder.
 
@@ -216,12 +218,13 @@ First two I highly recommend. The others are nice to have.
 
 **CREDITS**
 
-- @spookymuffinsims​, for your lighting mod that served as a base for the maxis match lighting mod that started this all
+- @spookymuffinsims, for your lighting mod that served as a base for the maxis match lighting mod that started this all
 - @nightracer for the base of the Seasonal Lighting Tweaks
 - @criquette-was-here, for the different shader and hood lighting tweaks
 - @bugjartimedecayoff for the base for night, dusk and dawn lighting
 - @simnopke for the SkyFix, and the valuable feedback
 - Gunmod, ChocolatePi, Ddefender for the hard work on the Radiance Lighting System
-- Plasticbox and CircusWolf for the object lighting fixes
-- Almighty Hat for the World Lit By Fire tweak
+- Plasticbox and CircusWolf for the object lighting fixes used in Vanilla Plus and Maxis Match Lighting Mod
+- Almighty Hat for the World Lit By Fire tweak for Radiance, which I adapted for this mod
 - @teaaddictyt and others in the Tea Addict Discord server for the valuable testing and feedback
+- BoringBones for the TS2 Beta Lighting changes

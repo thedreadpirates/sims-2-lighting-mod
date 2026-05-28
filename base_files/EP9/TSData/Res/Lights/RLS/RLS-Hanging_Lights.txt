@@ -46,7 +46,8 @@ create flourescent(lightingCeilingGroovy_light)
 ############################################################
 
 #9 Legno's Modern Lamp #
-create 100WattOVER(lightingceilingchandeliermodern_light)
+#create 100WattOVER(lightingceilingchandeliermodern_light)
+create 100WattWALL3(lightingceilingchandeliermodern_light)
 create household(lightingceilingchandeliermodern_light)
 ############################################################
 

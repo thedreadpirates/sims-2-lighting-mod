@@ -9,9 +9,9 @@ create PASTELBLUE(hotTubRaised_centerLowLight)
 
 # Vaporware Submergance Spa #
 create TubLight3(hotTubSunken_centerLight)
-create PASTELBLUE(hotTubSunken_centerLight)
+create SOFTBLUE(hotTubSunken_centerLight)
 create TubLight2(hotTubSunken_centerLowLight)
-create PASTELBLUE(hotTubSunken_centerLowLight)
+create SOFTBLUE(hotTubSunken_centerLowLight)
 
 # Love Tub #
 create TubLight4(loveTub_centerLight)
