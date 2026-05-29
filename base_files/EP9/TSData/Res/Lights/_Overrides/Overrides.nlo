@@ -25,4 +25,44 @@
 ########## Doors ##############
 
 
-### NOTE: These will be loaded after all the other lighting files
+############ CAS LIGHTS ######################
+
+# Set both to 1 to disable CAS lighting for CAS
+# screens with custom lighting setup
+
+seti FamilyAreaOff 0
+seti PodiumAreaOff 0
+
+if ($FamilyAreaOff) 
+	create Zero(CASFamilyArea_objectsOnly1)  
+	create Zero(CAS_FamilyAreaKey8)
+	create Zero(CASFamilyArea_Fill8)
+	create Zero(CAS_FamilyAreaKey9)
+	create Zero(CASFamilyArea_Fill9)
+	create Zero(CASFamilyArea_leftrim9)
+	create Zero(CASFamilyArea_rfill9)
+	create Zero(CASFamilyArea_studioBarnDoors_light8)
+	create Zero(CASFamilyArea_studioDiffuser_light8)
+	create Zero(CASFamilyArea_studioUmbrella_light8)
+	create Zero(CASFamilyArea_microHalogenLight9_01)
+	create Zero(CASFamilyArea_microHalogenLight9_02)
+	create Zero(CAS_FamilyAreaKey)
+	create Zero(CASFamilyArea_Fill)
+endif
+
+if($PodiumAreaOff)
+	create Zero(CASPodiumArea_podiumKey)
+	create Zero(CASPodiumArea_podiumKey7)
+	create Zero(CASPodiumArea_podiumFill7)
+	create Zero(CASPodiumArea_Bounce7)
+	create Zero(CASPodiumArea_podiumMirrorBounce7)
+	create Zero(CASPodiumArea_objectsOnly1)
+	create Zero(CASPodiumArea_objectsOnly1)
+	create Zero(CASPodiumArea_microHalogenLight1_01)
+	create Zero(CASPodiumArea_microHalogenLight1_02)
+	create Zero(CASPodiumArea_microHalogenLight1_03)
+	create Zero(CASPodiumArea_podiumKey)
+	create Zero(CASPodiumArea_podiumFill)
+	create Zero(CASPodiumArea_podiumBounce)
+	create Zero(CASPodiumArea_podiumMirrorBounce)
+endif

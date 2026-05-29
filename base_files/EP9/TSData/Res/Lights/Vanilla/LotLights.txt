@@ -22,6 +22,8 @@ sinclude "objects/colors.txt"
 sinclude "objects/lightObjects.txt"
 sinclude "objects/SpecialObjects.txt"
 
+sinclude "CAS_lighting.txt"
+
 sinclude "LightDefs/EP1Lights.nlo"
 sinclude "LightDefs/EP2Lights.nlo"
 sinclude "LightDefs/fireJet.nlo"
@@ -49,3 +51,4 @@ sinclude "LightDefs/SP7Lights.nlo"
 sinclude "LightDefs/SP8Lights.nlo"
 sinclude "LightDefs/EP9Lights.nlo"
 sinclude "LightDefs/StoreLights.nlo"
+

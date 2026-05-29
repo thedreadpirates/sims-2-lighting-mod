@@ -27,6 +27,8 @@ sinclude "LightDefs/BGLights.nlo"
 sinclude "objects/SpecialObjects.txt"
 sinclude "LightDefs/BGSpecialObjects.nlo"
 
+sinclude "CAS_lighting.txt"
+
 sinclude "LightDefs/EP1Lights.nlo"
 sinclude "LightDefs/EP2Lights.nlo"
 sinclude "LightDefs/EP3Lights.nlo"
