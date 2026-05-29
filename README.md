@@ -4,7 +4,7 @@
 
 ## ABOUT
 
-*(Yes, it’s a reference to the ultimate collection because…it is indeed an ultimate collection)*
+*(Yes, it’s a reference to the Sims 2 Ultimate Collection because…it is indeed an ultimate collection)*
 
 The ***Lighting Mod Ultimate Collection*** is a lighting mod/framework that allows players to switch lighting configurations on a lot-level basis.
 
@@ -200,17 +200,23 @@ alias slc "setlotlightingfile Lighting_CS.txt" "cinema secrets lighting mod" ""
 ### **Disable Dusk/Dawn Lighting**
 
 1. Go to your BASE GAME Lighting.txt and look for the following line:
-    - `setb morningEvening true`
+```
+setb morningEvening true
+```
 2. Change `true` to `false`.
 3. Save changes.
 
 ### **Use Day CAS Lighting**
 
-For those who use a CAS replacement with custom lighting setup, you might want the CAS room to use the Day lighting setup instead of the CAS lighting:
+For those who use a CAS replacement with custom lighting setup, you might want to turn off the CAS lights:
 
-1. Copy the contents of Day Lighting for CAS folder under `_OPTIONAL FILES`
-2. Go to your BASE GAME Lights folder
-3. Paste both files and let them overwrite.
+1. Go to the MANSION and GARDEN Lights Folder
+2. Go to the `_Overrides` folder then `Overrides.nlo`
+3. Change the following lines from 0 to 1.
+```
+seti FamilyAreaOff 0
+seti PodiumAreaOff 0
+```
 4. Save.
 
 ## **RECOMMENDED MODS**
@@ -229,7 +235,7 @@ First two I highly recommend. The others are nice to have.
 - @criquette-was-here, for the different shader and hood lighting tweaks
 - @bugjartimedecayoff for the base for night, dusk and dawn lighting
 - @simnopke for the SkyFix, and the valuable feedback
-- Gunmod, ChocolatePi, Ddefender for the hard work on the Radiance Lighting System
+- Gunmod, ChocolatePi, Ddefinder for the hard work on the Radiance Lighting System
 - Plasticbox and CircusWolf for the object lighting fixes used in Vanilla Plus and Maxis Match Lighting Mod
 - Almighty Hat for the World Lit By Fire tweak for Radiance, which I adapted for this mod
 - @teaaddictyt and others in the Tea Addict Discord server for the valuable testing and feedback
