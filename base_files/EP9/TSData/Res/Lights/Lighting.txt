@@ -54,6 +54,9 @@ set wall:roomOverallStrength     0.80
 
 # strength of room object bounce light
 set roomBounceStrength 			   0.65
+set wall:roomBounceStrength 		0.55
+set object:roomBounceStrength 	0.65
+set sim:roomBounceStrength 		0.75
  
 # The amount of "crossover" from the side lights.
 set roomBounceCrossover 		   1.00
@@ -116,9 +119,7 @@ set wall:roomDirectionalBoost    0.80
 # (There is no actual ceiling, so illumination from
 # the ceiling is estimated as a fraction of the floor
 set roomBounceStrength 			   0.75
-set wall:roomBounceStrength 		0.75
-set object:roomBounceStrength 	0.75
-set sim:roomBounceStrength 		0.75
+
 
 # Light-map derived room lighting
 setf roomFromLightMapMix            0 # controls mix with trad. room lighting

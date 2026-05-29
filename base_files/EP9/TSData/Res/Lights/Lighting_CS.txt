@@ -54,6 +54,9 @@ set wall:roomOverallStrength     0.80
 
 # strength of room object bounce light
 set roomBounceStrength 			   0.65
+set wall:roomBounceStrength 		0.55
+set object:roomBounceStrength 	0.65
+set sim:roomBounceStrength 		0.75
  
 # The amount of "crossover" from the side lights.
 set roomBounceCrossover 		   1.00
@@ -115,10 +118,7 @@ set wall:roomDirectionalBoost    0.80
 # Ceiling light proportional to floor.
 # (There is no actual ceiling, so illumination from
 # the ceiling is estimated as a fraction of the floor
-set roomBounceStrength 			   0.75
-set wall:roomBounceStrength 		0.75
-set object:roomBounceStrength 	0.75
-set sim:roomBounceStrength 		0.75
+set roomCeilingStrength 1
 
 # Light-map derived room lighting
 setf roomFromLightMapMix            0 # controls mix with trad. room lighting
@@ -595,15 +595,14 @@ lightingState Overcast
    transitionTimes        2                 100
 end
 
-
 ####################################################
 # Lot Night - Vacation Lot - Taken from the Base Game lighting.txt
 ####################################################
 lightingState vacationNight
    control -edith true
    skylight                       (0.5, 0.3, 0.2)  .4
-   light sun       (0.5, 0.48, 0.2)   (.84, .52, .37)   1.85
-   light sky       (-0.5, -0.48, 0.5)   (.5, .25, .25)  0.8
+   light sun       (-0.5, 0.48, 0.2)   (.84, .52, .37)   1.85
+   light sky       (0.5, -0.48, 0.5)   (.5, .25, .25)  0.8
 
    light fill1 (-2, -2, 2) 	(.5,.5,.7) .2  		# 5 #changes brighter
    #light fill2 (2, 2, -2) (.5,.5,.7) .3 			#bleed oppsite
