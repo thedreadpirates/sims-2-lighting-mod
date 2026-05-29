@@ -286,8 +286,8 @@ lightAttribOverride lightingFloorStudioUmbrella_light diffusionSourceWallIntensi
 lightAttribOverride lightingFloorStudioUmbrella_light falloffRate .01
 lightAttribOverride lightingFloorStudioUmbrella_light intensity 1.1
 
-seti FamilyAreaOff 1
-seti PodiumAreaOff 1
+seti FamilyAreaOff 0
+seti PodiumAreaOff 0
 
 if ($FamilyAreaOff) 
 	create Zero(CASFamilyArea_objectsOnly1)  
