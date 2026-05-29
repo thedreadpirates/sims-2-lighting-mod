@@ -23,7 +23,7 @@ setf incidenceMapHeightClamp 1
 ####################################################
 # Automatic room lighting tuning constants
 ####################################################
-setf roomLightingType 3
+setf roomLightingType 4
 
 # Multiplier on how brightly the objects are lit by
 # overall room lighting.
@@ -57,7 +57,7 @@ setf roomFromLightMapStrength       0  # multiplier on light-map derived lightin
 setf sim:roomFromLightMapMix        0 # controls mix with trad. room lighting
 setf sim:roomFromLightMapStrength   0  # multiplier on light-map derived lighting
 
-setf wall:roomFromLightMapMix      1
+setf wall:roomFromLightMapMix      0
 setf wall:roomFromLightMapStrength 3
 
 setf object:roomFromLightMapMix      0  # controls mix with trad. room lighting
@@ -69,6 +69,7 @@ set roomSpecular 0.8
 # Features
 ####################################################
 set wallDrivenPortals 1
+setb morningEvening true
 setf objectLightJitter 0
 setf portalLightJitter 0
 set lightRangeCutoff 0.275
@@ -108,6 +109,8 @@ setf hmBinaryShadowThreshold     	0.99
 # Nighttime
 ####################################################
 lightingState night
+   control -edith true
+
    skylight                       (0.35, 0.35, 0.4)     0.55
    light sun      (1.5, 1,  2)    (.45, .45, 0.83)      0.40
    light sky      (-1.5, -1, 1)    (0.25, 0.25, 0.63)   0.60

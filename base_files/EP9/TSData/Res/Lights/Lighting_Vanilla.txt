@@ -27,10 +27,12 @@ setf incidenceMapHeightClamp 1
 ####################################################
 setf roomLightingType 4
 
-set roomOverallStrength 0.4
-set sim:roomOverallStrength .6
-set object:roomOverallStrength 0.5
-set wall:roomOverallStrength 0.2
+# Multiplier on how brightly the objects are lit by
+# overall room lighting.
+set roomOverallStrength 0.8
+set sim:roomOverallStrength 1.0
+set object:roomOverallStrength 0.8
+set wall:roomOverallStrength 0.6
 
 set roomDirectionalBoost 1
 set object:roomDirectionalBoost 2
@@ -39,7 +41,7 @@ set wall:roomDirectionalBoost 1
 
 set roomBounceStrength 0.25
 set roomBounceCrossover 1
-set roomSideStrength  1.2
+set roomSideStrength 1.2
 set roomSideCrossover 1
 set roomSideSlope 0.75
 set roomSaturation 0.5
@@ -57,8 +59,8 @@ setf roomFromLightMapStrength       0  # multiplier on light-map derived lightin
 setf sim:roomFromLightMapMix        0 # controls mix with trad. room lighting
 setf sim:roomFromLightMapStrength   2  # multiplier on light-map derived lighting
 
-setf wall:roomFromLightMapMix      1
-setf wall:roomFromLightMapStrength 3
+setf wall:roomFromLightMapMix      0
+setf wall:roomFromLightMapStrength 2
 
 setf object:roomFromLightMapMix      0  # controls mix with trad. room lighting
 setf object:roomFromLightMapStrength 0
@@ -105,6 +107,7 @@ setf hmObjectShadowingBias       	0.1
 setf hmBinaryShadowThreshold     	0.99
 
 
+
 ####################################################
 # Time of day lighting states
 ####################################################
@@ -113,7 +116,7 @@ lightingState night
 
    skylight                         (0.25, 0.25, 0.3)     0.75
    light sun      (1, 1,  2)    (.5, .5, .85)      .7
-   light sky      ( 1.5,  1, 1)    (.25, 0.25, 0.75)    .6
+   light sky      (-1.5,  -1, 1)    (.25, 0.25, 0.75)    .6
 
   light simFill1  (-1.25, -.75, 1.2) (.82,.8, .8)  1
   light simFill2  (1.25, .75, 1.2) (.82,.8, .8)  .6
@@ -256,8 +259,8 @@ lightingState day
 
    # inside diffusion
    diffParam insideAmbientColor       (.85, .75, .75)
-   diffParam insideFloorAmbient         0.001
-   diffParam insideWallAmbient          0.001
+   diffParam insideFloorAmbient 0.03
+   diffParam insideWallAmbient  0.03
 
    # diffusion inside and outside
    diffParam floorThreshold           .4
@@ -307,8 +310,8 @@ lightingState Winter
 
    # inside diffusion
    diffParam insideAmbientColor       (.85, .75, .75)
-   diffParam insideFloorAmbient         0.001
-   diffParam insideWallAmbient          0.001
+   diffParam insideFloorAmbient 0.03
+   diffParam insideWallAmbient  0.03
 
    # diffusion inside and outside
    diffParam floorThreshold           .4
@@ -357,8 +360,8 @@ lightingState Spring
 
    # inside diffusion
    diffParam insideAmbientColor       (.85, .75, .75)
-   diffParam insideFloorAmbient         0.001
-   diffParam insideWallAmbient          0.001
+   diffParam insideFloorAmbient 0.03
+   diffParam insideWallAmbient  0.03
 
    # diffusion inside and outside
    diffParam floorThreshold           .4
@@ -405,8 +408,8 @@ lightingState Autumn
 
    # inside diffusion
    diffParam insideAmbientColor       (.85, .75, .75)
-   diffParam insideFloorAmbient         0.001
-   diffParam insideWallAmbient          0.001
+   diffParam insideFloorAmbient 0.03
+   diffParam insideWallAmbient  0.03
 
    # diffusion inside and outside
    diffParam floorThreshold           .4
@@ -457,8 +460,8 @@ lightingState Overcast
 
    # inside diffusion
    diffParam insideAmbientColor       (.85, .75, .75)
-   diffParam insideFloorAmbient         0.001
-   diffParam insideWallAmbient          0.001
+   diffParam insideFloorAmbient 0.03
+   diffParam insideWallAmbient  0.03
 
    # diffusion inside and outside
    diffParam floorThreshold           .4
