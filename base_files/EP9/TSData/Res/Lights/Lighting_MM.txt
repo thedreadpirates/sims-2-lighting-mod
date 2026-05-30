@@ -69,7 +69,6 @@ set roomSpecular 0.8
 # Features
 ####################################################
 set wallDrivenPortals 1
-setb morningEvening true
 setf objectLightJitter 0
 setf portalLightJitter 0
 set lightRangeCutoff 0.275
@@ -112,7 +111,7 @@ lightingState night
    control -edith true
 
    skylight                       (0.35, 0.35, 0.4)     0.55
-   light sun      (1.5, 1,  2)    (.45, .45, 0.83)      0.40
+   light sun      (-1.5, -1,  2)    (.45, .45, 0.83)      0.40
    light sky      (-1.5, -1, 1)    (0.25, 0.25, 0.63)   0.60
 
    light simFill1  (-1.25, -.75, 1.2) (.82,.8, .8)  1
@@ -142,38 +141,15 @@ lightingState night
    transitionTimes        2                 100
 end
 
-lightingState evening
-   skylight                       (0.5, 0.25, 0.25) 0.55
-   light sun      (-1.25, 0.75,  2.25)  (.9, .65, .50)   0.45
-   light sky      (1.9,  -1.3, 0.8)   (.6, 0.5, .4)  0.6
-
-   light fill1 (-2, -2, 2) 	(.5,.5,.7) .2  		# 5 #changes brighter
-
-   light simFill1  (-2.8, -0, 1) (1.95,1.65,1.6)  .3
-   light simFill2    (2.8, -1.3, -1)     (1.3,1.3,1.6)    .25
-
-   diffParam insideAmbientColor       (1, 1, 1)
-   diffParam insideFloorAmbient         0.03
-   diffParam insideWallAmbient          0.03
-   diffParam floorThreshold           .8
-   diffParam wallThreshold            .6
-
-   modifiers insidePortals       0      .6       .333       .333
-   modifiers insidePortalSpills  3      2.1      .3     .2  #### check after incremental #dif 1.7
-   modifiers outsidePortals      0      0          .7           -.5
-   modifiers outsidePortalSpills   3       1.5       1         1
-   modifiers insideObjects      .6     .5        .2     .3
-   modifiers outsideObjects    .25    .35     .085     .09
-   environment (.75, .60, .5) 0.7  # override environment lighting state 
-   transitionTimes        2                100
-end
-
+####################################################
+# Morning
+####################################################
 lightingState morning
    control -edith true
 
    skylight                       (0.4, 0.3, 0.2)   0.55
-   light sun      (1.25, -0.75,  2.25) (.95, .75, .65)     0.45
-   light sky      (-1.9,  1.3, 0.8) (.8, 0.7, .6)    0.6
+   light sun      (-0.5, -0.75,  0.2) (.95, .75, .65)     1.3
+   light sky      (0.5,  0.5, 0.5) (.8, 0.7, .6)    0.6
 
    light fill1    (-2, 1.5, -.5)     (1.6,.9,.6)    .45
 
@@ -206,8 +182,38 @@ lightingState morning
 end
 
 ####################################################
+# Evening
+####################################################
+lightingState evening
+   control -edith true
+   skylight                       (0.5, 0.25, 0.25) 0.55
+   light sun      (-0.5, 0.5, 0.2)  (.9, .65, .50)   1.5
+   light sky       (0.5, -0.5, 0.5)    (.6, 0.5, .4)  0.6
+
+   light fill1 (-2, -2, 2) 	(.5,.5,.7) .2  		# 5 #changes brighter
+
+   light simFill1  (-2.8, -0, 1) (1.95,1.65,1.6)  .3
+   light simFill2    (2.8, -1.3, -1)     (1.3,1.3,1.6)    .25
+
+   diffParam insideAmbientColor       (1, 1, 1)
+   diffParam insideFloorAmbient         0.03
+   diffParam insideWallAmbient          0.03
+   diffParam floorThreshold           .8
+   diffParam wallThreshold            .6
+
+   modifiers insidePortals       0      .6       .333       .333
+   modifiers insidePortalSpills  3      2.1      .3     .2  #### check after incremental #dif 1.7
+   modifiers outsidePortals      0      0          .7           -.5
+   modifiers outsidePortalSpills   3       1.5       1         1
+   modifiers insideObjects      .6     .5        .2     .3
+   modifiers outsideObjects    .25    .35     .085     .09
+   environment (.75, .60, .5) 0.7  # override environment lighting state 
+   transitionTimes        2                100
+end
+
+####################################################
 # Season - Summer
-#
+####################################################
 lightingState day
    control -edith true
 
@@ -259,7 +265,7 @@ end
 
 ####################################################
 # Season - Winter
-#
+####################################################
 lightingState Winter
    control -edith true
 
@@ -309,7 +315,7 @@ end
 
 ####################################################
 # Season - Spring
-#
+####################################################
 lightingState Spring
    control -edith true
 
@@ -360,7 +366,7 @@ end
 
 ####################################################
 # Season - Autumn
-#
+####################################################
 lightingState Autumn
    control -edith true
 
@@ -407,7 +413,7 @@ end
 
 ####################################################
 # Season - Overcast
-#
+####################################################
 lightingState Overcast
    control -edith true
    skylight         (1,1,1)  0.5
@@ -455,67 +461,23 @@ lightingState Overcast
 end
 
 ####################################################
-# Neighbourhood
-#
-lightingState neighborhoodnight
-   
-   skylight                         (0.6, 0.6, .9)     .5
-   light sun      (-1.5, -1,  2)    (.65, .65, .95)      1
-
-   lightMap   0x6fb59732
-   
-   # inside diffusion
-   diffParam insideAmbientColor       (1, .95, .75)
-   diffParam insideFloorAmbient        .15 
-   diffParam insideWallAmbient         .25 
-   
-   # diffusion inside and outside
-   diffParam floorThreshold            0.154
-   diffParam wallThreshold             0.12
-   
-   #               pract. diffuse  p. falloff  d. falloff
-   modifiers insidePortals       3      3.8        0.8         .9
-   modifiers insidePortalSpills  3      4          .8         1.3
-   
-   modifiers outsidePortals      0       0          1           1
-   modifiers outsidePortalSpills 0       0          1           1
-
-   #                         pract. diffuse  p. falloff  d. falloff
-   modifiers insideObjects     1       1         2        1 
-   modifiers outsideObjects    0.5     1         4         2  
-
-
-   # extra ambient for unlit rooms.
-   unlitRoomColor (0.35, 0.35, 0.37)
-   
-   # fog <colour> <nearRange> <farRange>
-   # DISABLED pending shader program path support for linear fog.
-   #fog (0.9, 0.9, 1) 1200 2200
-
-   flatShade (.6, .6, .9) .5  # for lighting quality 0
-
-   environment (.65, .65, .95) 0.65  # override environment lighting state
-
-end
-
-####################################################
 # Lot Night - Vacation Lot - Taken from the Base Game lighting.txt
-#
-lightingState vacationNight 
+####################################################
+lightingState vacationNight
   control -edith true
-   
-   skylight                         (0.25, 0.25, 0.3)     0.75
-   light sun      (-1.5, -1,  2)    (.45, .45, 0.75)      0.6
-   light sky      ( 1.5,  1, 1)    (.25, 0.25, 0.75)    .6
 
-  light simFill1  (-1.25, -.75, 1.2) (.82,.8, .8)  1
-  light simFill2  (1.25, .75, 1.2) (.82,.8, .8)  .6
-   
+   skylight                       (0.35, 0.35, 0.4)     0.55
+   light sun      (-1.5, -1,  2)    (.45, .45, 0.83)      0.40
+   light sky      (-1.5, -1, 1)    (0.25, 0.25, 0.63)   0.60
+
+   light simFill1  (-1.25, -.75, 1.2) (.82,.8, .8)  1
+   light simFill2  (1.25, .75, 1.2) (.82,.8, .8)  .6
+
    diffParam insideAmbientColor  (.9,.9,1)
    diffParam insideFloorAmbient   .001
    diffParam insideWallAmbient    0.001
 
-   
+
    diffParam floorThreshold          0.2
    diffParam wallThreshold           0.2
 
@@ -528,18 +490,13 @@ lightingState vacationNight
    #                         pract. diffuse  p. falloff  d. falloff
    modifiers insideObjects     .6    .6       .35       .65
    modifiers outsideObjects    1      .6        .4     .65
-  # modifiers insidePortals      0       0         0 0
-  # modifiers insidePortalSpills 0       0          0 0
-  # modifiers outsidePortals      0       0         0 0
-  # modifiers outsidePortalSpills 0       0          0 0
 
- projectiveShadowStrength 0.4
+   projectiveShadowStrength 0.4
    # How much sun/skylight split in spill lights
    portalSaturation 1
-   
+
    # extra ambient for unlit rooms.
    unlitRoomColor (0.345, 0.345, 0.42) -threshold .4 ### do not set threshold to 0
- ##   unlitRoomColor (0.245, 0.245, 0.32) -threshold .28
    flatShade (0.75, 0.8, 1)  .6 -sims 1.8 -objects 1.5 -indoors 1 # for lighting set to low
 
    environment (1, 1, 1) .8  # for env. cubes and particles #does not work
