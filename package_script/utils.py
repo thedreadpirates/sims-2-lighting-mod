@@ -105,7 +105,7 @@ OUTPUT_FOLDER_PATHS = {
         "SP1": ULTIMATE_OUTPUT_DIR / "Fun with Pets" / "SP1",
         "SP2": ULTIMATE_OUTPUT_DIR / "Glamour Life Stuff",
         "SP4": _get_sp4_path("ultimate", 0),
-        "SP5": ULTIMATE_OUTPUT_DIR / "Best for Business" / "SP5",
+        "SP5": ULTIMATE_OUTPUT_DIR / "Best of Business" / "SP5",
         "SP6": ULTIMATE_OUTPUT_DIR / "University Life" / "SP6",
         "SP7": ULTIMATE_OUTPUT_DIR / "Best for Business" / "SP7",
         "SP8": ULTIMATE_OUTPUT_DIR / "University Life" / "SP8",

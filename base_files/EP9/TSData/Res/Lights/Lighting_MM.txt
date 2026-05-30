@@ -69,7 +69,6 @@ set roomSpecular 0.8
 # Features
 ####################################################
 set wallDrivenPortals 1
-setb morningEvening true
 setf objectLightJitter 0
 setf portalLightJitter 0
 set lightRangeCutoff 0.275
@@ -464,21 +463,21 @@ end
 ####################################################
 # Lot Night - Vacation Lot - Taken from the Base Game lighting.txt
 ####################################################
-lightingState vacationNight 
+lightingState vacationNight
   control -edith true
-   
-   skylight                         (0.25, 0.25, 0.3)     0.75
-   light sun      (-1.5, -1,  2)    (.45, .45, 0.75)      0.6
-   light sky      (-1.5, -1, 1)    (.25, 0.25, 0.75)    .6
 
-  light simFill1  (-1.25, -.75, 1.2) (.82,.8, .8)  1
-  light simFill2  (1.25, .75, 1.2) (.82,.8, .8)  .6
-   
+   skylight                       (0.35, 0.35, 0.4)     0.55
+   light sun      (-1.5, -1,  2)    (.45, .45, 0.83)      0.40
+   light sky      (-1.5, -1, 1)    (0.25, 0.25, 0.63)   0.60
+
+   light simFill1  (-1.25, -.75, 1.2) (.82,.8, .8)  1
+   light simFill2  (1.25, .75, 1.2) (.82,.8, .8)  .6
+
    diffParam insideAmbientColor  (.9,.9,1)
    diffParam insideFloorAmbient   .001
    diffParam insideWallAmbient    0.001
 
-   
+
    diffParam floorThreshold          0.2
    diffParam wallThreshold           0.2
 
@@ -492,10 +491,10 @@ lightingState vacationNight
    modifiers insideObjects     .6    .6       .35       .65
    modifiers outsideObjects    1      .6        .4     .65
 
- projectiveShadowStrength 0.4
+   projectiveShadowStrength 0.4
    # How much sun/skylight split in spill lights
    portalSaturation 1
-   
+
    # extra ambient for unlit rooms.
    unlitRoomColor (0.345, 0.345, 0.42) -threshold .4 ### do not set threshold to 0
    flatShade (0.75, 0.8, 1)  .6 -sims 1.8 -objects 1.5 -indoors 1 # for lighting set to low

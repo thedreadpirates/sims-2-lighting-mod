@@ -72,7 +72,6 @@ set roomSpecular 0.8
 ####################################################
 
 set wallDrivenPortals 1
-setb morningEvening true
 setf objectLightJitter 0
 setf portalLightJitter 0
 set lightRangeCutoff 0.275
@@ -495,18 +494,19 @@ end
 # Lot Night - Vacation Lot - Taken from the Base Game lighting.txt
 ####################################################
 lightingState vacationNight
-   control -edith true
+  control -edith true
 
    skylight                         (0.25, 0.25, 0.3)     0.75
-   light sun      (-1.5, -1,  2)    (.45, .45, 0.75)      0.6
-   light sky      (-1.5, -1, 1)    (.25, 0.25, 0.75)    .6
+   light sun      (-1, -1,  2)    (.5, .5, .85)      .7
+   light sky      (-1.5,  -1, 1)    (.25, 0.25, 0.85)    .6
 
-  light simFill1  (-1.25, -.75, 1.2) (.82,.8, .8)  1
-  light simFill2  (1.25, .75, 1.2) (.82,.8, .8)  .6
+   light simFill1  (-1.25, -.75, 1.2) (.82,.8, .8)  1
+   light simFill2  (1.25, .75, 1.2) (.82,.8, .8)  .6
 
    diffParam insideAmbientColor  (.9,.9,1)
    diffParam insideFloorAmbient   .001
    diffParam insideWallAmbient    0.001
+
 
    diffParam floorThreshold          0.2
    diffParam wallThreshold           0.2
