@@ -147,7 +147,7 @@ lightingState night
    control -edith true 
    
    skylight       (.35,.35,.65) .35
-   light sun (1.25, 0.75,  2.25) (.3,.3,.675) .5
+   light sun (-1.25, -0.75,  2.25) (.3,.3,.675) .5
    light sky (-1.9, -1.3, 0.8) (.3,.3,.675) .1
 
    light fill1 (-2, -2, 2) 	(.35,.35,.675) .2  		# 5 #changes brighter
@@ -193,8 +193,8 @@ lightingState morning
    control -edith true
 
    skylight       (.6, .4, .3) .15
-   light sun      (2, -1.5, .5)     (.8, .6, .4) 1.2   #this is overall power
-   light sky      (2, -1.5, .5)     (.8, .6, .4) .54   #2:00
+   light sun      (-2, -1.5, .5)     (.8, .6, .4) 1.5   #this is overall power
+   light sky      (2, 1.5, .5)     (.8, .6, .4) .54   #2:00
 
    light fill1    (-2, 1.5, -.5)     (.3, .3, .8)    .25
 
@@ -236,8 +236,8 @@ lightingState evening
    control -edith true
 
    skylight                      (.51, .45, .4)  .4 # Neighborhood terrain, interior sun light; affects shadows
-   light sun      (-2.8, 1.3, 1)    (.95, .6, .5)     1.2
-   light sky    (2.8, 1.3, 2.5)      (.95, .6, .5)    .05 
+   light sun      (-0.5, 0.48, 0.2)    (.95, .6, .5)     1.2
+   light sky    (0.5, -0.48, 0.5)      (.95, .6, .5)    .05 
 
    light fill1    (1.5,-1.3, -2)      (.45, .3, .8)     .15
    light fill2    (2.8, -1.3, -1)     (.3, .3, .8)      .05  # SKY
@@ -276,59 +276,13 @@ end
 
 
 ####################################################
-# Lot Night - Vacation Lot - Taken from the Base Game lighting.txt
-####################################################
-lightingState vacationNight 
-   control -edith true
-   
-   skylight       (0.25, 0.25, 0.3) 0.4
-   light sun      (-2, -2, 2)    (0.45, 0.45, 0.78) 0.6
-   light sky      (-2, -2, 2)    (0.3, 0.3, 0.7)      0.1
-
-   light fill1      (-2, -2, 2) 	(0.65, 0.65, 0.75) .3  		# 5 #changes brighter
-   light fill2      (2, 2, -2)      (0.65, 0.65, 0.75) .3 			#bleed oppsite
-
-   light simFill1  (2, 2, -2)     (0.71, 0.71, 0.78)  .5        #bleed opposite
-   light simFill2  (-2, -1, 2)    (0.71, 0.71, 0.78)  .4       #near direct
-
-   diffParam insideFloorAmbient 0.03
-   diffParam insideWallAmbient  0.03
-   diffParam insideAmbientColor (1, 1, 1)
-   
-   diffParam floorThreshold     .6
-   diffParam wallThreshold      .4
-
-   modifiers insidePortals          0         1     .333   .333
-   modifiers insidePortalSpills    3.7      .9        1      1
-   modifiers outsidePortals        0        0         1      1
-   modifiers outsidePortalSpills  2.8      3.0      1     1.8
-
-   modifiers insideObjects        1.2     .45       .2    .25
-   modifiers outsideObjects      1        .7        .3    .2
-
- projectiveShadowStrength 0.4
-
-   portalSaturation 1
-   
-   environment (.2, .2, .45)    1
-
-   # extra ambient for unlit rooms.
-   unlitRoomColor (0.12, 0.12, 0.123) -threshold .5
-
-   flatShade (1, 1, 1) 1  -sims 1 -objects 1 -indoors 1
-
-   transitionTimes        2                 100
-end
-
-
-####################################################
 # Season - Summer/Daytime
 ####################################################
 lightingState day
    control -edith true
 
    skylight                      (.87,.925,1)  0.5 # INDOOR COLORS
-   light sun      (-1., -1.38, 1.5)    (1, .9, .8)      1.5
+   light sun      (-1.5, -1.38, 1.5)    (1, .9, .8)      1.5
    light sky      (1.5, 1.2, 2)  (.8,.8,.73)    .5 
 
    light fill1    (1,1,-1)     (.9,.9,.9)    .5
@@ -388,11 +342,10 @@ lightingState Winter
    skylight                      (.95, .95, .95)  0.4 #overall mostly shadow
 
    light sun      (-1.1, -1.5, 1.45)    (.89, .88, .92)     1.7
-
    light sky      (1.5, 1.2, 2)  (.87, .95, .93)    .35 #shadow
 
    light fill1    (1, 1, -1)             (1, 1, 1)       .5
-   light fill2    (-10.5, -10.5, -2)     (.6, .6, .6)    .35   #indirect sunlight
+   light fill2    (-1.5, -1.5, -2)     (.6, .6, .6)    .35   #indirect sunlight
 
     light simFill1  (1, -1.2, .9)     (.91, .92, 1)     .5      #sky
     light simFill2  (-2, 2, .9)      (.91, .95, 1)     1.75    #direct 
@@ -447,7 +400,7 @@ lightingState Spring
    light sky      (1.5, 1.2, 2)      (1, .99, .75)    .52 #shadow
 
    light fill1    (1, 1, -1)             (1, .95, .8)    .54
-   light fill2    (-10.5, -10.5, -2)     (.6, .6, .6)  .35   #indirect sunlight
+   light fill2    (-1.5, -1.5, -2)     (.6, .6, .6)  .35   #indirect sunlight
 
    light simFill1  (1, -1.2, .9)     (1, .87, .78)     .55       #sky
    light simFill2  (-2, 2, .9)        (1, .88, .79)     1.8      #direct
@@ -484,7 +437,7 @@ lightingState Spring
    flatShade (1, .95, .85) .75  -sims 1.7 -objects 1.3 -indoors 1 # for lighting set to low.
 
    environment (1, 1, 1) 1
-   
+
    #               max in time (s)   max out time (s)
    transitionTimes        2                 100
 end
@@ -500,7 +453,7 @@ lightingState Autumn
    light sky      (1.5, 1.2, 2)      (1, .85, .75)    .4  #shadow
 
    light fill1    (1, 1, -1)             (1, .88, .6)    .5
-   light fill2    (-10.5, -10.5, -2)  (.6, .6, .6)    .55   #indirect sunlight
+   light fill2    (-1.5, -1.5, -2)  (.6, .6, .6)    .55   #indirect sunlight
 
     light simFill1  (1, -1.2, .9)         (1, .96, .88)   .65     #sky
     light simFill2  (-2, 2, .9)           (1, .93, .8)     1.8     #direct
@@ -557,7 +510,7 @@ lightingState Overcast
    light sky      (1.5, 1.2, 2)   (.895, .895, .895)    .25 #shadow
 
    light fill1    (-1.5, -2.5, -2)        (.8, .8, .8)    .25
-   light fill2    (-10.5, -10.5, -2)     (.6, .6, .6)    .25   #indirect sunlight
+   light fill2    (-1.5, -1.5, -2)     (.6, .6, .6)    .25   #indirect sunlight
 
     light simFill1  (-2.5, -1.5, 5)     (.6, .6, .6)    .75      #sky
     light simFill2  (1, -.8, 2)           (1, 1, 1)       .7       #direct
@@ -581,8 +534,6 @@ projectiveShadowStrength 0.1
    #                                          pract. diffuse  p. falloff  d. falloff
    modifiers insidePortals                  0        0          1           1
    modifiers insidePortalSpills           1.22    2.4        .12        .38
-##   modifiers insidePortals              0      1.2  	      .01         .3
-##   modifiers insidePortalSpills       .875    3.3       .008       .37
    modifiers outsidePortals                0       0           1           1
    modifiers outsidePortalSpills          0        0           1           1
 
@@ -601,3 +552,51 @@ projectiveShadowStrength 0.1
    transitionTimes        2                 100
 end
 
+####################################################
+# Lot Night - Vacation Lot - Taken from the Base Game lighting.txt
+####################################################
+lightingState vacationNight 
+   control -edith true
+   
+   skylight       (0.25, 0.25, 0.3) 0.4
+   light sun      (-2, -2, 2)    (0.45, 0.45, 0.78) 0.6
+   light sky      (-2, -2, 2)    (0.3, 0.3, 0.7)      0.1
+
+   light fill1      (-2, -2, 2) 	(0.65, 0.65, 0.75) .3  		# 5 #changes brighter
+   light fill2      (2, 2, -2)      (0.65, 0.65, 0.75) .3 			#bleed oppsite
+
+   light simFill1  (2, 2, -2)     (0.71, 0.71, 0.78)  .5        #bleed opposite
+   light simFill2  (-2, -1, 2)    (0.71, 0.71, 0.78)  .4       #near direct
+
+   diffParam insideFloorAmbient 0.03
+   diffParam insideWallAmbient  0.03
+   diffParam insideAmbientColor (1, 1, 1)
+   
+   diffParam floorThreshold     .6
+   diffParam wallThreshold      .4
+
+   modifiers insidePortals          0         1     .333   .333
+   modifiers insidePortalSpills    3.7      .9        1      1
+   modifiers outsidePortals        0        0         1      1
+   modifiers outsidePortalSpills  2.8      3.0      1     1.8
+
+   modifiers insideObjects        1.2     .45       .2    .25
+   modifiers outsideObjects      1        .7        .3    .2
+
+ projectiveShadowStrength 0.4
+
+   portalSaturation 1
+   
+   environment (.2, .2, .45)    1
+
+   # extra ambient for unlit rooms.
+   unlitRoomColor (0.12, 0.12, 0.123) -threshold .5
+
+   flatShade (1, 1, 1) 1  -sims 1 -objects 1 -indoors 1
+
+   transitionTimes        2                 100
+
+   # UI Lighting Parameter (based on but not identical to skyLight param.)
+   UIShade (0.656, 0.531, .559)     1
+
+end
