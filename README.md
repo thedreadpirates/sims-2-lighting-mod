@@ -55,6 +55,13 @@ All lighting mods have the option for you to change the lighting direction of th
 
 *Unlike Hook's original lighting direction files, however, my implementation of the lighting direction doesn't just affect the daytime lighting, but **morning, evening, and night lighting** as well.*
 
+> NOTE: The lot in the preview photo's Sun orientation is facing at the front of the lot. If your lot's original sun orientation is not facing front, your results may vary.
+
+| ![Image](assets/previews/LD_Front.png)<br/>Front | ![Image](assets/previews/LD_Right.png)<br/>Right |
+|--------------------------------------------------|--------------------------------------------------|
+| ![Image](assets/previews/LD_Back.png)<br/>Back   | ![Image](assets/previews/LD_Left.png)<br/>Left   |
+
+
 ## **LIGHTING COMPARISON:**
 
 > NOTE: Screenshots use the shaders from my "Recommended Mods" section below. Unedited photos are available on my [Tumblr](https://www.tumblr.com/veronavillequiltingbee/817412867195338752).
