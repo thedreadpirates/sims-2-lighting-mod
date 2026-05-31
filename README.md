@@ -57,9 +57,10 @@ All lighting mods have the option for you to change the lighting direction of th
 
 > NOTE: The lot in the preview photo's Sun orientation is facing at the front of the lot. If your lot's original sun orientation is not facing front, your results may vary.
 
-| ![Image](assets/previews/LD_Front.png)<br/>Front | ![Image](assets/previews/LD_Right.png)<br/>Right |
-|--------------------------------------------------|--------------------------------------------------|
-| ![Image](assets/previews/LD_Back.png)<br/>Back   | ![Image](assets/previews/LD_Left.png)<br/>Left   |
+|                                                      |                                                      |
+|------------------------------------------------------|------------------------------------------------------|
+| ![Image](assets/previews/LD_Front.png)<br/>**Front** | ![Image](assets/previews/LD_Right.png)<br/>**Right** |
+| ![Image](assets/previews/LD_Back.png)<br/>**Back**   | ![Image](assets/previews/LD_Left.png)<br/>**Left**   |
 
 
 ## **LIGHTING COMPARISON:**
