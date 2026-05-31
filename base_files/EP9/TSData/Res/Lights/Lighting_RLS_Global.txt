@@ -1,0 +1,141 @@
+####################################################
+# GUNMOD RADIANCE LIGHTING SYSTEM
+# version 2.4
+# EDIT OF FEB 28
+#
+# based on Gunmod's work
+# update and edits by dDefinder
+# season tweaks by NightRacer
+# Adapted by VeronavilleQuiltingBee
+####################################################
+# Light Definition Declaration
+####################################################
+ignoreErrors true
+
+####################################################
+# Global diffusion parameters
+####################################################
+
+set outsideDiffusionAmbientColor    (1.0, 1.0, 1.0)
+set outsideFloorAmbient                0.25
+set outsideWallAmbient                 0.25
+set brightWallFloorContribution       	1
+set darkWallFloorContribution         	1
+seti wallPropagationSteps 3
+seti floorPropagationSteps 3
+setf incidenceMapScale 100
+setf incidenceMapHeightClamp 1
+
+####################################################
+# Automatic room lighting tuning constants
+####################################################
+setf roomLightingType 3
+
+set roomOverallStrength 		1
+set object:roomOverallStrength 		1.05
+set sim:roomOverallStrength 		1.11
+set wall:roomOverallStrength 		.9
+setf wall:roomFromLightMapMix      	0
+setf wall:roomFromLightMapStrength 	0
+
+set roomDirectionalBoost 		.3
+set wall:roomDirectionalBoost  		0.3
+set object:roomDirectionalBoost 	.3
+set sim:roomDirectionalBoost 	 	0.3
+
+setf sim:roomFromLightMapMix      	0
+setf sim:roomFromLightMapStrength 	0
+setf object:roomFromLightMapMix      	0
+
+set roomBounceStrength 			.95
+set wall:roomBounceStrength 		.95
+set object:roomBounceStrength 		.95
+set sim:roomBounceStrength 		.95
+
+set roomBounceCrossover 		.5
+set wall:roomBounceCrossover 		.5
+set object:roomBounceCrossover 		.5
+set sim:roomBounceCrossover 		.5
+
+set roomCrossBias 			.5
+set wall:roomCrossBias 			.5
+set object:roomCrossBias 		.5
+set sim:roomCrossBias 			.5
+
+set roomSideStrength  			0.6
+set wall:roomSideStrength  		0.6
+set object:roomSideStrength  		0.6
+set sim:roomSideStrength  		0.6
+
+set roomSideCrossover 			.5
+set wall:roomSideCrossover 		.5
+set object:roomSideCrossover 		.5
+set sim:roomSideCrossover 		.5
+
+set roomSideSlope 			0.5
+set wall:roomSideSlope 			0.5
+set object:SideSlope 			0.5
+set sim:SideSlope  			0.5
+
+set roomSaturation 1
+
+set roomPortalStrength 			3
+set wall:roomPortalStrength 		1
+set object:roomPortalStrength 		1
+set sim:roomPortalStrength 		1
+
+set roomCeilingStrength 		1
+set wall:roomCeilingStrength 		1
+set object:roomCeilingStrength 		1
+set sim:roomCeilingStrength 		1
+
+set roomSpecular 			1
+set sim:roomSpecular 			1
+set object:roomSpecular 		1
+set wall:roomSpecular 			1
+
+####################################################
+# Features
+####################################################
+set wallDrivenPortals 1
+setf objectLightJitter 0
+setf portalLightJitter 0
+set lightRangeCutoff	0.075
+
+setf spillPlaneOffset 			0.1
+setf objectLightTransitionTime 		0.01
+
+set portalSuppressionRadius 		3
+set portalSuppressionAmount 		0.15
+
+set portalCornerSuppressionAmount 		0.1
+setf portalCornerSuppressionAmount  		0.1
+seti portalCornerSuppressionAmount 		0.1
+
+####################################################
+# Environment light maps (for lighting terrain/floors/
+# walls outside.)
+#
+
+set dayLightMapID    0xeba01cc9
+set nightLightMapID  0x8ba01cad
+set nhoodLightMapID  0x0be702ef
+set testMap1ID       0x917660c
+set testMap2ID       0x917660d
+set gunmodnightID    0x6fb59732
+
+
+####################################################
+# Height map shadows
+#
+
+setf hmLotShadowStrength         	1.5
+setf hmNHoodShadowStrength       	0.47
+setf hmSunLightTransitionZone    	1
+setf hmBlobWidthModifier         	0.05
+setf hmBlobHeightModifier        	0.09
+setf hmObjectShadowingBias       	0.1
+setf hmBinaryShadowThreshold     	0.99
+
+
+sinclude "RLS/RLS-Main.txt"

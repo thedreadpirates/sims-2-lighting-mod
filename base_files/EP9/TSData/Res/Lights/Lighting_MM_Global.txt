@@ -1,0 +1,108 @@
+####################################################
+# Lighting Manager settings
+#
+# LIGHT FILE May 4
+
+ignoreErrors true
+
+####################################################D
+# Global diffusion parameters
+
+# If auto-lighting is active, this has no absolute effect,
+# but it does factor into how quickly lights fall off.
+# The higher the ambient, the sooner the lights
+# drop off to zero.
+set outsideDiffusionAmbientColor    (1.0, 1.0, 1.0)
+set outsideFloorAmbient                0.25
+set outsideWallAmbient                 0.25
+
+# These control how much the floor affects an adjacent
+# wall for a wall with direct lighting, and a wall with
+# no other lighting respectively.
+set brightWallFloorContribution        1
+set darkWallFloorContribution          .5
+
+
+# Number of steps to use in the propagation algorithm.
+# The higher this number is, the farther light will
+# spread, but also the longer diffusion will take.
+seti wallPropagationSteps 50
+seti floorPropagationSteps 50
+
+# strength of wall and floor bumpmapping, derived from
+# diffusion map.
+setf incidenceMapScale 100
+setf incidenceMapHeightClamp 1
+
+
+
+####################################################
+# Automatic room lighting tuning constants
+#
+
+# Room object lighting algorithm
+# 0 = 5 directionals, 1 = 4 directionals, 
+# 2 = ambient, 3 = ambient + 1 dir, etc.
+setf roomLightingType 3
+
+# Multiplier on how brightly the objects are lit by 
+# overall room lighting.
+set roomOverallStrength 0.6
+set sim:roomOverallStrength 1.0
+set object:roomOverallStrength 0.7
+set wall:roomOverallStrength 0.4
+
+# strength of room object bounce light
+set roomBounceStrength 0.4
+ 
+# The amount of "crossover" from the side lights.
+set roomBounceCrossover 1
+
+# Bounce crossover determines how much of the sampled 
+# side lighting leaks into the bounce light. (The 
+# underside of a surface can usually see portions of the
+# walls.)
+
+# strength & crossover of room object side lights
+set roomSideStrength  1.2
+set roomSideCrossover 1
+
+# slope of room object side lights -- zero is
+# horizontal, 1 is pointing down at a 45 degree
+# angle.
+set roomSideSlope 0.75
+
+# This controls how much of the wall and floor colours
+# bleed into the object lighting. 1 gives full bleed,
+# 0 gives none at all.
+set roomSaturation 1
+
+# How much direct lighting from portals (windows/doors) affects
+# Sim/object lighting.
+set roomPortalStrength 1
+
+# How much to bias lighting so we get secondary variation
+# at ninety degrees to the major light direction.
+set roomCrossBias 0.5
+set object:roomCrossBias 0.5
+set sim:roomCrossBias 0.5
+
+# Ceiling light proportional to floor.
+# (There is no actual ceiling, so illumination from
+# the ceiling is estimated as a fraction of the floor
+set roomCeilingStrength 1
+
+# Light-map derived room lighting
+setf sim:roomFromLightMapMix      0 # controls mix with trad. room lighting
+setf sim:roomFromLightMapStrength 2  # multiplier on light-map derived lighting
+
+setf object:roomFromLightMapMix      0  # controls mix with trad. room lighting
+
+# How much the room lights contribute to specular
+# reflection. Be careful: setting this value to
+# a high value may result in many more specular
+# highlights than you want, leading to flashing.
+set roomSpecular 0.85
+
+
+sinclude "MM/LotLights.txt"
