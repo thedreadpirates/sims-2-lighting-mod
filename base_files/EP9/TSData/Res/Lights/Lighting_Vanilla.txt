@@ -114,8 +114,8 @@ lightingState night
    control -edith true
 
    skylight                         (0.25, 0.25, 0.3)     0.75
-   light sun      (-1, -1,  2)    (.5, .5, .85)      .7
-   light sky      (-1.5,  -1, 1)    (.25, 0.25, 0.75)    .6
+   light sun      (-1, 1,  2)    (.5, .5, .85)      .7
+   light sky      (1.5,  -1, 1)    (.25, 0.25, 0.75)    .6
 
   light simFill1  (-1.25, -.75, 1.2) (.82,.8, .8)  1
   light simFill2  (1.25, .75, 1.2) (.82,.8, .8)  .6
@@ -249,8 +249,8 @@ lightingState day
 
    # outside direct lighting
    skylight                      (1,1,1)  0.5
-   light sun      (-1.5, -1, 2)    (1, .95, .86)     1.7
-   light sky      (1.5, 1.2, 2)  (1,.95,.86)    .52
+   light sun      (-1.5, -1, 2)    (1, .95, .78)     2
+   light sky      (1.5, 1.2, 2)  (.8,.8,.73)    .5
    light fill1    (1, 1, -1)     (1,0.8,.9)    .54
 
    light simFill1  (1, -1.2, 1) (1, .95, .89)  .5
@@ -299,7 +299,7 @@ end
 lightingState Winter
    control -edith true
    skylight          (1,1,1)  0.5
-   light sun      (-1.5, -1.2, 1.65)    (.82, .8, 0.9)     1.5
+   light sun      (-1.5, -1.2, 1.65)    (.82, .8, 0.86)     1.73
    light sky      (1.5, 1.2, 2)  (.90,1,.98)    .5
    light fill1    (1, 1, -1)     (1,1,1)    .5
 
@@ -348,8 +348,8 @@ lightingState Spring
    control -edith true
 
    skylight          (1,1,1)  0.5
-   light sun      (-1.5, -1.2, 1.85)    (1, .94, .78)     1.7
-   light sky      (1.5, 1.2, 2)  (1, .89, .77)   .52
+   light sun      (-1.5, -1.2, 1.85)    (.90,1,.98)    .5
+   light sky      (1.5, 1.2, 2)  (1,.99,.75)    .52
    light fill1    (1, 1, -1)     (1,.95,.7)    .54
 
    light simFill1  (1, -1.2, .9) (1, .87, .78)  .55
@@ -397,7 +397,7 @@ lightingState Autumn
    control -edith true
    skylight          (1,1,1)  0.5
    light sun      (-1.5, -1.2, 1.75)   (.98, .93, .75)     1.75
-   light sky      (1.5, 1.2, 2)   (1,.88,.70) .4
+   light sky      (1.5, 1.2, 2)   (1,.85,.75) .4
    light fill1    (1, 1, -1)     (1,.88,.6)  .5
 
    light simFill1  (1, -1.2, .9) (1, .96, .88)  .65
@@ -447,8 +447,8 @@ lightingState Overcast
    control -edith true
    skylight         (1,1,1)  0.5
 
-   light sun      (-1.5, -1.2, 2)    (1, 1, 1)     1.1
-   light sky      (1.5, 1.2, 2)  (1, 1, 1)   .6
+   light sun      (-1.5, -1.2, 2)    (.90, .98, 1)     1.1
+   light sky      (1.5, 1.2, 2)  (.90,1,.98)    .5
    light fill1    (1, 1, -1)     (.90,.98,1)    .5
 
    light simFill1  (1, -1.2, 1) (1, .95, .89)  .6
@@ -497,8 +497,8 @@ lightingState vacationNight
   control -edith true
 
    skylight                         (0.25, 0.25, 0.3)     0.75
-   light sun      (-1, -1,  2)    (.5, .5, .85)      .7
-   light sky      (-1.5,  -1, 1)    (.25, 0.25, 0.85)    .6
+   light sun      (-1, 1,  2)    (.5, .5, .85)      .7
+   light sky      (1.5,  -1, 1)    (.25, 0.25, 0.75)    .6
 
    light simFill1  (-1.25, -.75, 1.2) (.82,.8, .8)  1
    light simFill2  (1.25, .75, 1.2) (.82,.8, .8)  .6
