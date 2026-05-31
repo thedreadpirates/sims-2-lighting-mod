@@ -88,7 +88,7 @@ set sim:SideSlope  			      0.5
 # This controls how much of the wall and floor colours
 # bleed into the object lighting. 1 gives full bleed,
 # 0 gives none at all.
-set roomSaturation               0.75
+set roomSaturation               1
 
 # How much direct lighting from portals (windows/doors) affects
 # Sim/object lighting.

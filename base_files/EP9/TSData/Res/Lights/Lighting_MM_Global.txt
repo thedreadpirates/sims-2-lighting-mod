@@ -43,7 +43,7 @@ setf incidenceMapHeightClamp 1
 # Room object lighting algorithm
 # 0 = 5 directionals, 1 = 4 directionals, 
 # 2 = ambient, 3 = ambient + 1 dir, etc.
-setf roomLightingType 3
+setf roomLightingType 4
 
 # Multiplier on how brightly the objects are lit by 
 # overall room lighting.
@@ -103,6 +103,5 @@ setf object:roomFromLightMapMix      0  # controls mix with trad. room lighting
 # a high value may result in many more specular
 # highlights than you want, leading to flashing.
 set roomSpecular 0.85
-
 
 sinclude "MM/LotLights.txt"
