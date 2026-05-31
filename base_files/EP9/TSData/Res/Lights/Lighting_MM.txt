@@ -126,12 +126,12 @@ lightingState night
    #                              pract. diffuse  p. falloff  d. falloff
    modifiers insidePortals         0      .2      1 1
    modifiers insidePortalSpills    0      .2      1 1
-   modifiers outsidePortals        4      4       .5         1
-   modifiers outsidePortalSpills   4      4      .5         1
+   modifiers outsidePortals        4      3       .5         1
+   modifiers outsidePortalSpills   4      3       .5         1
 
    #                         pract. diffuse  p. falloff  d. falloff
-   modifiers insideObjects     .6    .6       .35       .65
-   modifiers outsideObjects    1      .6        .4     .65
+   modifiers insideObjects     0.8     .7       .25      .65
+   modifiers outsideObjects    1     0.8        .25     .57
 
    projectiveShadowStrength 0.4
    portalSaturation 1

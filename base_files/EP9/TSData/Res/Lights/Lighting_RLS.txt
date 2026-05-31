@@ -164,12 +164,12 @@ lightingState night
    diffParam floorThreshold     .6
    diffParam wallThreshold      .4
 
-   modifiers insidePortals       0  1  .333  .333
+   modifiers insidePortals       0.2  1  .4  .4
    modifiers insidePortalSpills  3.7 .9  1   1
    modifiers outsidePortals      0  0  1    1
-   modifiers outsidePortalSpills     2.8    3.0     1     1.8
+   modifiers outsidePortalSpills     3.2    3.5     1     1
 
-   modifiers insideObjects      1.2   .45   .2     .25
+   modifiers insideObjects      1.2   .55   .2     .25
    modifiers outsideObjects     1   .7  .3   .2
 
  projectiveShadowStrength 0.4

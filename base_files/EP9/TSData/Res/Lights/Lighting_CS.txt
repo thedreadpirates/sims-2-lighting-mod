@@ -216,8 +216,8 @@ lightingState night
    #                              pract. diffuse  p. falloff  d. falloff
    modifiers insidePortals         0.2     0.6       0.5         0.5
    modifiers insidePortalSpills    2.0     1.4       1.0         1.0
-   modifiers outsidePortals        0.0     0.0       1.0         1.0
-   modifiers outsidePortalSpills   3.0     3.0       1.0         1.0
+   modifiers outsidePortals        1.5     1.5       1.0         1.0
+   modifiers outsidePortalSpills   3.5     3.5       1.0         1.0
 
    #                              pract. diffuse  p. falloff  d. falloff
    modifiers insideObjects          1.2      0.5      0.35         0.45
