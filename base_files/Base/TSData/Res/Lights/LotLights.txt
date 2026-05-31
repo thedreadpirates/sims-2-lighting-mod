@@ -1,8 +1,8 @@
-#########################################################
+######################################################### 
 # Various manual light overrides for lot lighting.
 #
 
-#########################################################
+######################################################### 
 #
 # Set diffusion constants for practical lights
 #
@@ -34,21 +34,8 @@ sinclude "objects/lightingFloorStudioBarnDoors.txt"
 sinclude "objects/lightingFloorStudioBoxDiffuser.txt"
 
 sinclude "windows/windows.txt"
-sinclude "LightDefs/BGWindows.nlo"
 
 sinclude "objects/colors.txt"
 sinclude "objects/lightObjects.txt"
-
-# Radiance Definitions
-sinclude "objects/radianceLights.txt"
-sinclude "objects/radianceWattage.txt"
-
-# Light Definitions
-sinclude "LightDefs/BGLights.nlo"
-
 sinclude "objects/SpecialObjects.txt"
-sinclude "LightDefs/BGSpecialObjects.nlo"
-
 sinclude "CAS_lighting.txt"
-
-# BG Lighting Overrides
