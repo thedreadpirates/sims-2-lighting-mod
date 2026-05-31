@@ -252,6 +252,11 @@ define candleflame(lightName)
 	lightAttribOverride &lightName diffusionSourceColor (0.721,0.572,0.411)
 enddef
 
+define household(lightName)
+	lightAttribOverride &lightName color (0.733,0.654,0.59)
+	lightAttribOverride &lightName diffusionSourceColor (0.733,0.654,0.59)
+enddef
+
 define quartz(lightName)
 	lightAttribOverride &lightName color (0.741,0.717,0.7)
 	lightAttribOverride &lightName diffusionSourceColor (0.741,0.717,0.7)

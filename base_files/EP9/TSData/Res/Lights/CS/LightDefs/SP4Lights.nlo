@@ -4,7 +4,7 @@
 
 
 create ORBlight(lightingCeilingPartyLantern_light)
-create Halogen(lightingCeilingPartyLantern_light)
+create halogen(lightingCeilingPartyLantern_light)
 
 ########### Floor lights ############
 

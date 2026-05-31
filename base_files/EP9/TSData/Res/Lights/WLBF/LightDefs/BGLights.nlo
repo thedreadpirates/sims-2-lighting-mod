@@ -1,3 +1,21 @@
+# UNKNOWN
+######################################################################
+create 100WattWALL(lightingWallDeckSconce_light)
+create 75WattOVER2(lightingCeilingPaperShade_light)
+create 50WattFENCE(deckPostLamp_spot)
+create 50WattFENCE(lightingDeckPostLamp_light)
+create 150-Watt(lightingFencePostValue_light)
+create poleSTREETLIGHTstill(lightingStreetlightTriple_light)
+create Zero(streetlightTriple_left)
+create Zero(streetlightTriple_right)
+create 75WattFL5(lampfloorvalue_light)
+create 75-Watt(OLD_lightingTableBigBulb_toplight)
+create officetablelamp(lightingtablevalue_01_light)
+create bigBLUEbulb(lightingTableBigBulb_toplight)
+create bigGREENbulb(lightingTableBigBulbGreen_toplight)
+create bigREDbulb(lightingTableBigBulbRed_toplight)
+######################################################################
+
 ############ TABLE LIGHTS #########################
 #1 Pix-Arm Drafting Table Lamp #
 create officetablelamp(lightingTableValue1_light)
@@ -110,7 +128,7 @@ create candleflame(lightingFloorMoroccan_light)
 
 # Designer Lamp
 create Four(lightingFloorDesigner_light)
-create SoftAmber(lightingFloorDesigner_light)
+create SoftWhite(lightingFloorDesigner_light)
 ######################################################################
 
 # Rave Against The Machine
@@ -142,7 +160,7 @@ create PastelBlue(lightingWallValue2_light)
 
 #3 Torcher Clamshell #
 create 45WattWALL(lightingWallSconceClamshell_light)
-create candleflame(lightingWallSconceClamshell_light) 
+create candleflame(lightingWallSconceClamshell_light)
 ############################################################
 
 #4 LunaTech Gullivinzer #
@@ -198,7 +216,7 @@ create candleflame(lightingCeilingCanister_light)
 ############################################################
 
 #3 Lamp On the Half Shell #
-create 75WattOVER(lightingceilingquaint_light)
+create 75WattOVER(lightingCeilingQuaint_light)
 create candleflame(lightingceilingquaint_light)
 ############################################################
 
