@@ -6,7 +6,7 @@ define Eleven(lightName)
 	lightAttribOverride &lightName diffusionSourceIntensity 3.5
 	lightAttribOverride &lightName diffusionSourceFalloff 1
 	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
-	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .65
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .75
 	lightAttribOverride &lightName diffusionSourceIsDirectional 0
 enddef
 define Ten(lightName)
@@ -15,7 +15,7 @@ define Ten(lightName)
 	lightAttribOverride &lightName diffusionSourceIntensity 3
 	lightAttribOverride &lightName diffusionSourceFalloff 1
 	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
-	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .65
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .75
 	lightAttribOverride &lightName diffusionSourceIsDirectional 0
 enddef
 define Nine(lightName)
@@ -24,7 +24,7 @@ define Nine(lightName)
 	lightAttribOverride &lightName diffusionSourceIntensity 2.5
 	lightAttribOverride &lightName diffusionSourceFalloff 1
 	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
-	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .65
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .75
 	lightAttribOverride &lightName diffusionSourceIsDirectional 0
 
 enddef
@@ -34,7 +34,7 @@ define Eight(lightName)
 	lightAttribOverride &lightName diffusionSourceIntensity 2
 	lightAttribOverride &lightName diffusionSourceFalloff 1
 	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
-	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .65
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .75
 	lightAttribOverride &lightName diffusionSourceIsDirectional 0
 enddef
 define Seven(lightName)
@@ -43,7 +43,7 @@ define Seven(lightName)
 	lightAttribOverride &lightName diffusionSourceIntensity 1.75
 	lightAttribOverride &lightName diffusionSourceFalloff 1
 	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
-	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .65
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .75
 	lightAttribOverride &lightName diffusionSourceIsDirectional 0
 enddef
 ################# BEST USED FOR INDOOR ##########################################
