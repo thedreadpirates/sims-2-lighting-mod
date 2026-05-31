@@ -49,6 +49,12 @@ The original mod has very dramatic lights and very dark darks, but I've put my o
 
 This is basically just Vanilla lighting with the lighting fixes from plasticbox and CircusWolf, dusk and dawn by spookymuffinsims, and the portal lighting fixes for dusk and dawn and vacation lighting from kayleigh83 she did for MM Lighting Mod.
 
+## LIGHTING DIRECTION
+
+All lighting mods have the option for you to change the lighting direction of the lot depending on where you want the bright part of the lot to be. The sun orientation of a lot is semi-hardcoded at the lot level, so if you're aiming for sun accuracy, or you want a certain side of the lot to catch the sun, you can change the lighting direction. 
+
+*Unlike Hook's original lighting direction files, however, my implementation of the lighting direction doesn't just affect the daytime lighting, but **morning, evening, and night lighting** as well.*
+
 ## **LIGHTING COMPARISON:**
 
 > NOTE: Screenshots use the shaders from my "Recommended Mods" section below. Unedited photos are available on my [Tumblr](https://www.tumblr.com/veronavillequiltingbee/817412867195338752).
@@ -126,7 +132,7 @@ These steps assume that you have already extracted the files to an accessible lo
 
 ## **SWITCHING LIGHTING MODS:**
 
-Simply type the cheat alias on the cheat console (CTRL + SHIFT + C) to switch while on a lot.
+Simply type the cheat alias on the cheat console (CTRL + SHIFT + C) to switch while on a lot. The default configuration for each lighting mod has the sun orientation at the front of the lot.
 
 - `sld` - default lighting (`Lighting.txt`)
 - `slv` - Vanilla Plus (`Lighting_Vanilla.txt`)
@@ -137,22 +143,38 @@ Simply type the cheat alias on the cheat console (CTRL + SHIFT + C) to switch wh
 
 The lot lighting persists between saves unless you clear it with `setlotlightingfile clear` (or `sld`).
 
+## **SWITCHING LIGHTING DIRECTIONS**
+
+To switch lighting directions (Back, Left, Right), type the following cheats:
+
+| **Lighting Mod**         | **Front (default)** | **Back** | **Left** | **Right** |
+| ------------------------ |---------------------| -------- | -------- | --------- |
+| Default                  | `sld` or `sldf`     | `sldb`   | `sldl`   | `sldr`    |
+| Cinema Secrets           | `slc` or `slcf`     | `slcb`   | `slcl`   | `slcr`    |
+| Radiance Lighting System | `slr` or `slrf`     | `slrb`   | `slrl`   | `slrr`    |
+| Maxis Match Lighting Mod | `slm` or `slmf`     | `slmb`   | `slml`   | `slmr`    |
+| Vanilla Plus             | `slv` or `slmf`     | `slvb`   | `slvl`   | `slvr`    |
+| World Lit by Fire        | `slw` or `slwf`     | `slwb`   | `slwl`   | `slwr`    |
+
 ## **SWITCHING DEFAULT LIGHTING MODS**
 
 The mod uses Cinema Secrets by default, but you can switch to any of the other lighting mods by following these steps:
 
 1. Go to your Mansion and Garden Lights folder.
 
-2. Rename the original `Lighting.txt` file to `Lighting_bak.txt`
+2. Copy the original `Lighting.txt` file and rename to `Lighting_bak.txt`
 
-3. Duplicate the `Lighting.txt` file of the lighting mode you like.
+3. Open `Lighting.txt` file and look for the first `sinclude` line and change it to any of the following:
 
     - Cinema Secrets - `Lighting_CS.txt`
+    - World Lit by Fire - `Lighting_WLBF.txt`
     - Maxis Match Lighting Mod - `Lighting_MM.txt`
     - Radiance Lighting System - `Lighting_RLS.txt`
     - Vanilla Plus - `Lighting_Vanilla.txt`
 
-4. Rename the file to `Lighting.txt`
+4. Save.
+
+5. Repeat Steps 2-4 with `Lighting_Back.txt`, `Lighting_Left.txt`, and `Lighting_Right.txt`, changing the first `sinclude` line with the corresponding light direction file for each lighting mod.
 
 5. If your game is open, key in CTRL+SHIFT+C, then type `sld`
 
@@ -181,12 +203,41 @@ boolProp geomGenerateTangentSpaceSxT true
 ##########################
 
 #### LIGHTING ALIASES ####
-alias sld "setlotlightingfile clear" "default lighting" ""
-alias slw "setlotlightingfile Lighting_WLBF.txt" "a world lit by fire" ""
-alias slm "setlotlightingfile Lighting_MM.txt" "maxis match lighting mod" ""
-alias slv "setlotlightingfile Lighting_Vanilla.txt" "vanilla plus lighting mod" ""
-alias slr "setlotlightingfile Lighting_RLS.txt" "radiance lighting system" ""
-alias slc "setlotlightingfile Lighting_CS.txt" "cinema secrets lighting mod" ""
+alias sld "setlotlightingfile clear" "Default Lighting" "Default Lighting - front"
+alias sldf "setlotlightingfile clear" "Default Lighting" "Default Lighting - front"
+alias sldb "setlotlightingfile Lighting_Back.txt" "Default Lighting - Back" "Default Lighting - Back"
+alias sldl "setlotlightingfile Lighting_Left.txt" "Default Lighting - Left" "Default Lighting - Left"
+alias sldr "setlotlightingfile Lighting_Right.txt" "Default Lighting - Right" "Default Lighting - Right"
+
+alias slw "setlotlightingfile Lighting_WLBF.txt" "a world lit by fire" "A World Lit by Fire - front"
+alias slwf "setlotlightingfile Lighting_WLBF.txt" "a world lit by fire" "A World Lit by Fire - front"
+alias slwb "setlotlightingfile Lighting_WLBF_Back.txt" "a world lit by fire - Back" "A World Lit by Fire - Back"
+alias slwl "setlotlightingfile Lighting_WLBF_Left.txt" "a world lit by fire - Left" "A World Lit by Fire - Left"
+alias slwr "setlotlightingfile Lighting_WLBF_Right.txt" "a world lit by fire - Right" "A World Lit by Fire - Right"
+
+alias slm "setlotlightingfile Lighting_MM.txt" "maxis match lighting mod" "Maxis Match Lighting Mod - front"
+alias slmf "setlotlightingfile Lighting_MM.txt" "maxis match lighting mod" "Maxis Match Lighting Mod - front"
+alias slmb "setlotlightingfile Lighting_MM_Back.txt" "maxis match lighting mod - Back" "Maxis Match Lighting Mod - Back"
+alias slml "setlotlightingfile Lighting_MM_Left.txt" "maxis match lighting mod - Left" "Maxis Match Lighting Mod - Left"
+alias slmr "setlotlightingfile Lighting_MM_Right.txt" "maxis match lighting mod - Right" "Maxis Match Lighting Mod - Right"
+
+alias slv "setlotlightingfile Lighting_Vanilla.txt" "vanilla plus lighting mod" "Vanilla Plus Lighting - front"
+alias slvf "setlotlightingfile Lighting_Vanilla.txt" "vanilla plus lighting mod" "Vanilla Plus Lighting - front"
+alias slvb "setlotlightingfile Lighting_Vanilla_Back.txt" "vanilla plus lighting mod - Back" "Vanilla Plus Lighting - Back"
+alias slvl "setlotlightingfile Lighting_Vanilla_Left.txt" "vanilla plus lighting mod - Left" "Vanilla Plus Lighting - Left"
+alias slvr "setlotlightingfile Lighting_Vanilla_Right.txt" "vanilla plus lighting mod - Right" "Vanilla Plus Lighting - Right"
+
+alias slr "setlotlightingfile Lighting_Vanilla.txt" "vanilla plus lighting mod" "Vanilla Plus Lighting - front"
+alias slrf "setlotlightingfile Lighting_RLS.txt" "radiance lighting system" "Gunmod Radiance Lighting System - front"
+alias slrb "setlotlightingfile Lighting_RLS_Back.txt" "radiance lighting system - back" "Gunmod Radiance Lighting System - back"
+alias slrl "setlotlightingfile Lighting_RLS_Left.txt" "radiance lighting system - left" "Gunmod Radiance Lighting System - left"
+alias slrr "setlotlightingfile Lighting_RLS_Right.txt" "radiance lighting system - right" "Gunmod Radiance Lighting System - right"
+
+alias slc "setlotlightingfile Lighting_CS.txt" "cinema secrets lighting mod" "Cinema Secrets Lighting Mod - front"
+alias slcf "setlotlightingfile Lighting_CS.txt" "cinema secrets lighting mod" "Cinema Secrets Lighting Mod - front"
+alias slcb "setlotlightingfile Lighting_CS_Back.txt" "cinema secrets lighting mod - back" "Cinema Secrets Lighting Mod - back"
+alias slcl "setlotlightingfile Lighting_CS_Left.txt" "cinema secrets lighting mod - left" "Cinema Secrets Lighting Mod - left"
+alias slcr "setlotlightingfile Lighting_CS_Right.txt" "cinema secrets lighting mod - right" "Cinema Secrets Lighting Mod - right"
 ##########################
 ```
 
@@ -241,3 +292,4 @@ First two I highly recommend. The others are nice to have.
 - @teaaddictyt and others in the Tea Addict Discord server for the valuable testing and feedback
 - BoringBones for the TS2 Beta Lighting changes
 - HugeLunatic for the much better M&G chandelier fix
+- Hook, for the lighting direction changes

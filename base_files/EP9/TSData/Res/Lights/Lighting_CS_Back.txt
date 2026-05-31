@@ -197,8 +197,8 @@ lightingState night
    control -edith true
 
    skylight                       (0.25, 0.25, 0.4)     0.75
-   light sun      (-1.25, 0.75,  2.25)    (.45, .45, 0.72)      0.5
-   light sky      (1.9, -1.3, 0.8)    (0.25, 0.25, 0.47)   0.6
+   light sun      (1.25, -0.75,  2.25)     (.45, .45, 0.72)      0.5
+   light sky      (-1.9, -1.3, 0.8)     (0.25, 0.25, 0.47)   0.6
 
    #light fill1 (-2, -2, 2) 	(.5,.5,.7) .2  		# 5 #changes brighter
    #light fill2 (2, 2, -2) (.5,.5,.7) .3 			#bleed oppsite
@@ -241,8 +241,8 @@ lightingState morning
    control -edith true
 
    skylight                          (.5,.3,.2) .4
-   light sun      (-2 ,-1.5, .5)     (.8, .6, .4) 1.3   #this is overall power
-   light sky      (2, 1.5, .5)     (.8, .6, .4) .54   #2:00
+   light sun      (2 ,1.5, .5)     (.8, .6, .4) 1.3   #this is overall power
+   light sky      (-2, -1.5, .5)     (.8, .6, .4) .54   #2:00
 
    light fill1 (-2, 1.5, -.5)  	(.35,.35,.55) .5  		# 5 #changes brighter
    #light fill2 (1, 1, -1) (.35,.35,.55) .4 			#bleed oppsite
@@ -291,8 +291,8 @@ lightingState evening
    control -edith true
 
    skylight                       (0.5, 0.3, 0.2)  .4
-   light sun       (-0.5, 0.48, 0.2)   (.84, .52, .37)   1.85
-   light sky       (0.5, -0.48, 0.5)   (.5, .25, .25)  0.8
+   light sun       (1.5, -1.2, .6)   (.84, .52, .37)   1.85
+   light sky       (-1.5, -1.2, .6)   (.5, .25, .25)  0.8
 
    light fill1 (-2, -2, 2) 	(.5,.5,.7) .2  		# 5 #changes brighter
    #light fill2 (2, 2, -2) (.5,.5,.7) .3 			#bleed oppsite
@@ -339,8 +339,8 @@ lightingState day
 
    # outside direct lighting
    skylight                      (1,1,1)  0.5
-   light sun      (-1.5, -1.2, 2)    (1, .96, .82)     1.8
-   light sky      (1.5, 1.2, 2)  (1,.96,.86)    .5
+   light sun      (1.5, 1.2, 2)    (1, .96, .82)     1.8
+   light sky      (-1.5, -1.2, 2)  (1,.96,.86)    .5
 
    light fill1    (1,1,-1)     (.8,.8,.8)    .45
    #light fill2    (-1.5, -1.5, -2)     (.6,.6,.6)    .5
@@ -393,8 +393,8 @@ lightingState Winter
 
    # outside direct lighting
    skylight          (1,1,1)  0.5
-   light sun      (-1.1, -1.5, 1.45)     (.89, .88, 0.92)     1.8
-   light sky      (1.5, 1.2, 2)  (.87,.95,0.93)    .4
+   light sun      (-1.1, 1.5, 1.45)     (.89, .88, 0.92)     1.8
+   light sky      (-1.5, -1.2, 2)  (.87,.95,0.93)    .4
 
    light fill1    (1,1,-1)     (.8,.8,.8)    .45
    #light fill2    (-1.5, -1.5, -2)     (.6,.6,.6)    .5
@@ -447,8 +447,8 @@ lightingState Spring
 
    skylight          (1,1,1)  0.5
 
-   light sun      (-1.5, -1.38, 1.5)    (0.97, 0.99, .75)     1.8
-   light sky      (1.5, 1.2, 2)  (1, .89, .77)   .55
+   light sun      (1.5, 1.38, 1.5)    (0.97, 0.99, .75)     1.8
+   light sky      (-1.5, -1.2, 2)  (1, .89, .77)   .55
 
    light fill1    (1,1,-1)     (.8,.8,.8)    .45
    #light fill2    (-1.5, -1.5, -2)     (.6,.6,.6)    .5
@@ -500,8 +500,8 @@ lightingState Autumn
    # outside direct lighting
    skylight          (1,1,1)  0.5
 
-   light sun      (-1.6, -1.5, 1.54)   (1, .91, .73)     1.7
-   light sky      (1.5, 1.2, 2)   (1,.9,.72) .4
+   light sun      (1.6, 1.5, 1.54)   (1, .91, .73)     1.7
+   light sky      (-1.5, -1.2, 2)   (1,.9,.72) .4
 
    light fill1    (1,1,-1)     (.8,.8,.8)    .45
    #light fill2    (-1.5, -1.5, -2)     (.6,.6,.6)    .5
@@ -548,8 +548,8 @@ lightingState Overcast
    control -edith true
    skylight          (0.9, 0.9, 0.9)  0.5
 
-   light sun      (-1.5, -1.2, 2)    (.98, .98, 1)     1.1
-   light sky      (1.5, 1.2, 2)  (.98,1,.98)    .5
+   light sun      (1.5, 1.2, 2)    (.98, .98, 1)     1.1
+   light sky      (-1.5, -1.2, 2)  (.98,1,.98)    .5
 
    light fill1    (1,1,-1)     (.8,.8,.8)    .45
    #light fill2    (-1.5, -1.5, -2)     (.6,.6,.6)    .5
@@ -599,8 +599,8 @@ lightingState vacationNight
   control -edith true
 
    skylight                       (0.25, 0.25, 0.4)     0.75
-   light sun      (-1.25, 0.75,  2.25)    (.45, .45, 0.72)      0.5
-   light sky      (1.9, -1.3, 0.8)    (0.25, 0.25, 0.47)   0.6
+   light sun      (1.25, -0.75,  2.25)     (.45, .45, 0.72)      0.5
+   light sky      (-1.9, -1.3, 0.8)     (0.25, 0.25, 0.47)   0.6
 
    light simFill1  (-1.25, -.75, 1.2) (.82,.8, .8)  1
    light simFill2  (1.25, .75, 1.2) (.82,.8, .8)  .6

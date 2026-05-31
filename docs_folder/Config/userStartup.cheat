@@ -15,10 +15,39 @@ boolProp geomGenerateTangentSpaceSxT true
 ##########################
 
 #### LIGHTING ALIASES ####
-alias sld "setlotlightingfile clear" "default lighting" ""
-alias slw "setlotlightingfile Lighting_WLBF.txt" "a world lit by fire" ""
-alias slm "setlotlightingfile Lighting_MM.txt" "maxis match lighting mod" ""
-alias slv "setlotlightingfile Lighting_Vanilla.txt" "vanilla plus lighting mod" ""
-alias slr "setlotlightingfile Lighting_RLS.txt" "radiance lighting system" ""
-alias slc "setlotlightingfile Lighting_CS.txt" "cinema secrets lighting mod" ""
+alias sld "setlotlightingfile clear" "Default Lighting" "Default Lighting - front"
+alias sldf "setlotlightingfile clear" "Default Lighting" "Default Lighting - front"
+alias sldb "setlotlightingfile Lighting_Back.txt" "Default Lighting - Back" "Default Lighting - Back"
+alias sldl "setlotlightingfile Lighting_Left.txt" "Default Lighting - Left" "Default Lighting - Left"
+alias sldr "setlotlightingfile Lighting_Right.txt" "Default Lighting - Right" "Default Lighting - Right"
+
+alias slw "setlotlightingfile Lighting_WLBF.txt" "a world lit by fire" "A World Lit by Fire - front"
+alias slwf "setlotlightingfile Lighting_WLBF.txt" "a world lit by fire" "A World Lit by Fire - front"
+alias slwb "setlotlightingfile Lighting_WLBF_Back.txt" "a world lit by fire - Back" "A World Lit by Fire - Back"
+alias slwl "setlotlightingfile Lighting_WLBF_Left.txt" "a world lit by fire - Left" "A World Lit by Fire - Left"
+alias slwr "setlotlightingfile Lighting_WLBF_Right.txt" "a world lit by fire - Right" "A World Lit by Fire - Right"
+
+alias slm "setlotlightingfile Lighting_MM.txt" "maxis match lighting mod" "Maxis Match Lighting Mod - front"
+alias slmf "setlotlightingfile Lighting_MM.txt" "maxis match lighting mod" "Maxis Match Lighting Mod - front"
+alias slmb "setlotlightingfile Lighting_MM_Back.txt" "maxis match lighting mod - Back" "Maxis Match Lighting Mod - Back"
+alias slml "setlotlightingfile Lighting_MM_Left.txt" "maxis match lighting mod - Left" "Maxis Match Lighting Mod - Left"
+alias slmr "setlotlightingfile Lighting_MM_Right.txt" "maxis match lighting mod - Right" "Maxis Match Lighting Mod - Right"
+
+alias slv "setlotlightingfile Lighting_Vanilla.txt" "vanilla plus lighting mod" "Vanilla Plus Lighting - front"
+alias slvf "setlotlightingfile Lighting_Vanilla.txt" "vanilla plus lighting mod" "Vanilla Plus Lighting - front"
+alias slvb "setlotlightingfile Lighting_Vanilla_Back.txt" "vanilla plus lighting mod - Back" "Vanilla Plus Lighting - Back"
+alias slvl "setlotlightingfile Lighting_Vanilla_Left.txt" "vanilla plus lighting mod - Left" "Vanilla Plus Lighting - Left"
+alias slvr "setlotlightingfile Lighting_Vanilla_Right.txt" "vanilla plus lighting mod - Right" "Vanilla Plus Lighting - Right"
+
+alias slr "setlotlightingfile Lighting_Vanilla.txt" "vanilla plus lighting mod" "Vanilla Plus Lighting - front"
+alias slrf "setlotlightingfile Lighting_RLS.txt" "radiance lighting system" "Gunmod Radiance Lighting System - front"
+alias slrb "setlotlightingfile Lighting_RLS_Back.txt" "radiance lighting system - back" "Gunmod Radiance Lighting System - back"
+alias slrl "setlotlightingfile Lighting_RLS_Left.txt" "radiance lighting system - left" "Gunmod Radiance Lighting System - left"
+alias slrr "setlotlightingfile Lighting_RLS_Right.txt" "radiance lighting system - right" "Gunmod Radiance Lighting System - right"
+
+alias slc "setlotlightingfile Lighting_CS.txt" "cinema secrets lighting mod" "Cinema Secrets Lighting Mod - front"
+alias slcf "setlotlightingfile Lighting_CS.txt" "cinema secrets lighting mod" "Cinema Secrets Lighting Mod - front"
+alias slcb "setlotlightingfile Lighting_CS_Back.txt" "cinema secrets lighting mod - back" "Cinema Secrets Lighting Mod - back"
+alias slcl "setlotlightingfile Lighting_CS_Left.txt" "cinema secrets lighting mod - left" "Cinema Secrets Lighting Mod - left"
+alias slcr "setlotlightingfile Lighting_CS_Right.txt" "cinema secrets lighting mod - right" "Cinema Secrets Lighting Mod - right"
 ##########################
