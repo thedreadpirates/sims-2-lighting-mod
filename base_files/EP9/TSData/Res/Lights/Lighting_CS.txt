@@ -631,7 +631,7 @@ lightingState vacationNight
    unlitRoomColor (0.345, 0.345, 0.42) -threshold .4 ### do not set threshold to 0
    flatShade (0.75, 0.8, 1)  .6 -sims 1.8 -objects 1.5 -indoors 1 # for lighting set to low
 
-   environment (1, 1, 1) .8  # for env. cubes and particles #does not work
+   environment (.5, .5, .75)   0.6  # override environment lighting state
 
    #               max in time (s)   max out time (s)
    transitionTimes        2                 100

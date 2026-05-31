@@ -95,7 +95,7 @@ OUTPUT_FOLDER_PATHS = {
         "Base": _get_base_game_path("ultimate", 0),
         "EP1": ULTIMATE_OUTPUT_DIR / "University Life" / "EP1",
         "EP2": _get_ep2_path("ultimate", 0),
-        "EP3": ULTIMATE_OUTPUT_DIR / "Best for Business" / "EP3",
+            "EP3": ULTIMATE_OUTPUT_DIR / "Best of Business" / "EP3",
         "EP4": ULTIMATE_OUTPUT_DIR / "Fun with Pets" / "EP4",
         "EP5": ULTIMATE_OUTPUT_DIR / "Seasons",
         "EP6": ULTIMATE_OUTPUT_DIR / "Bon Voyage",
@@ -107,7 +107,7 @@ OUTPUT_FOLDER_PATHS = {
         "SP4": _get_sp4_path("ultimate", 0),
         "SP5": ULTIMATE_OUTPUT_DIR / "Best of Business" / "SP5",
         "SP6": ULTIMATE_OUTPUT_DIR / "University Life" / "SP6",
-        "SP7": ULTIMATE_OUTPUT_DIR / "Best for Business" / "SP7",
+        "SP7": ULTIMATE_OUTPUT_DIR / "Best of Business" / "SP7",
         "SP8": ULTIMATE_OUTPUT_DIR / "University Life" / "SP8",
     },
     "disc": {
