@@ -1,0 +1,48 @@
+######################################################################
+# Floor Lamps
+#
+# 12/10/2005 (C) GunMod
+# FIN
+######################################################################
+######################################################################
+
+#1 Thrice As Nice #
+create 75WattFL5(lightingFloorValue_light)
+create candleflame(lightingFloorValue_light)
+
+#2 Social Climbing Ivy Floor Lamp #
+create 75WattFL2(lightingFloorQuaint_light)
+create candleflame(lightingFloorQuaint_light)
+
+#3 Burnished Blaze #
+create 75WattFL3(lightingFloorClubLampTorch_light)
+create candleflame(lightingFloorClubLampTorch_light)
+
+#4 Circle of Light Friendship Lamp #
+create 75WattFL4(lightingFloorGroovy_light)
+create candleflame(lightingFloorGroovy_light)
+
+#5 Light Orbiter #
+create 75WattFL2(lightingFloorClubLampSwingArm_light)
+create candleflame(lightingFloorClubLampSwingArm_light)
+
+#6 Tulip Light #
+create 75WattFL3(lightingFloorLoftLamp_light)
+create candleflame(lightingFloorLoftLamp_light)
+
+#8 Tornadoe Torch Lamp #
+create 75WattFL3(lightingFloorMoroccan_light)
+create candleflame(lightingFloorMoroccan_light)
+
+#9 Rave Against The Machine #
+lightAttribOverride lightingFloorUM_light intensity 1.25
+lightAttribOverride lightingFloorUM_light color (.31, .0, .60)
+lightAttribOverride lightingFloorUM_light falloffRate .5
+lightAttribOverride lightingFloorUM_light diffusionSourceIntensity 1
+lightAttribOverride lightingFloorUM_light diffusionSourceColor (.31, .0, .60)
+lightAttribOverride lightingFloorUM_light diffusionSourceMin (-0, -0)
+lightAttribOverride lightingFloorUM_light diffusionSourceMax (0, 0)
+lightAttribOverride lightingFloorUM_light diffusionSourceFalloff 1.2
+lightAttribOverride lightingFloorUM_light diffusionSourceWallIntensityScale 1
+lightAttribOverride lightingFloorUM_light diffusionSourceFloorIntensityScale 1.5
+lightAttribOverride lightingFloorUM_light diffusionSourceIsDirectional 0

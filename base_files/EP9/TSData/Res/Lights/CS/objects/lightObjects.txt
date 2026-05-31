@@ -26,7 +26,6 @@ define Nine(lightName)
 	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
 	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .65
 	lightAttribOverride &lightName diffusionSourceIsDirectional 0
-
 enddef
 define Eight(lightName)
 	lightAttribOverride &lightName intensity 2

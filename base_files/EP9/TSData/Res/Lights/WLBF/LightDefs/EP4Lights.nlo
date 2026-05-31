@@ -33,7 +33,7 @@ create candleflame(lightingFloorGardenPagoda_light)
 create 75WattTABLE(lightingTableAtomicAge_light)
 create SoftWhite(lightingTableAtomicAge_light)
 
-create household(lightingTableAtomicAge_light)
+create household(lightingTableAtomicAgeKids_light)
 create SoftWhite(lightingTableAtomicAgeKids_light)
 
 ######### Wall lights ##########
@@ -44,10 +44,10 @@ create SoftWhite(lightingWallAtomicAge_light)
 ######## Special Objects ###############
 
 create SFive(aquariumLarge_light1)
-create Florescent(aquariumLarge_light1)
+create Flourescent(aquariumLarge_light1)
 
 create SFive(aquariumLarge_light2)
-create Florescent(aquariumLarge_light2)
+create Flourescent(aquariumLarge_light2)
 
 create SSix(tvAtomicAge_bulb_light)
 create ElectricBlue(tvAtomicAge_bulb_light)

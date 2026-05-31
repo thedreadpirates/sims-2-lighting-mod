@@ -17,7 +17,7 @@ create SoftAmber(lightingceilingvictorian_light)
 
 ######### Table lights ###########
 
-create FireTable(lightingtablecandlegoth_light)
+create 60WattTABLE(lightingtablecandlegoth_light)
 create Fire(lightingtablecandlegoth_light)
 
 create 75WattTABLE(lightingtablevictorian_light)

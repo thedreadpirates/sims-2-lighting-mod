@@ -3,8 +3,8 @@
 ######## Ceiling Lights ###############
 
 
-create ORBlight(lightingCeilingPartyLantern_light)
-create Halogen(lightingCeilingPartyLantern_light)
+create 60WattOVER(lightingCeilingPartyLantern_light)
+create Amber(lightingCeilingPartyLantern_light)
 
 ########### Floor lights ############
 
@@ -12,11 +12,12 @@ create Halogen(lightingCeilingPartyLantern_light)
 
 ######### Table lights ###########
 
-create smallCANDLE(lightingTablePartyHurricane_light)
-create matchflame(lightingTablePartyHurricane_light)
 
-create smallCANDLE(lightingTablePartyTealights_light)
-create matchflame(lightingTablePartyTealights_light)
+create FireFlame(lightingTablePartyHurricane_light)
+create Amber(lightingTablePartyHurricane_light)
+
+create FireFlame(lightingTablePartyTealights_light)
+create Amber(lightingTablePartyTealights_light)
 
 ######### Wall lights ##########
 
@@ -35,4 +36,3 @@ create SoftAmber(lightingWallNeonWedding_neon_bambooOrange_lit_designModeLight_l
 
 
 ########## Doors ##############
-

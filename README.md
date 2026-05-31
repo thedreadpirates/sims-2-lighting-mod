@@ -29,7 +29,7 @@ This is the one I personally use, and is sort of a middle ground between more ma
 
 Cinema Secrets is the default lighting you will end up in if you don't switch to another mode.
 
-### 2. World Lit by Fire
+### 2. World Lit by Fire (Cinema Secrets version)
 
 This is a adaptation of the Radiance Lighting System tweaks by Almighty Hat that aims to add a candle light cast to all lights in the game that aren't supposed to be electric. However, I took this a step further and converted some of the electric lights to SoftAmber (if it makes sense).
 
@@ -44,6 +44,10 @@ Maxis Match (MM) Lighting Mod is a lighting configuration mod for The Sims 2 tha
 The Radiance Lighting System, according to its original creator GunMod, is an "Enhanced lighting system for the Sims 2." that uses physics laws of light to ensure the most realistic lighting possible within the game.
 
 The original mod has very dramatic lights and very dark darks, but I've put my own spin into it, adding in Radiance Lighting System fixes and tweaks on top of the 2.4 version by dDefender - dusk and dawn by bugjartimedecay-off, seasons and nights from my old RLS 2.5 system, and the unlit rooms are somewhere in between the original version of RLS and Raemia’s tweaks of the night lighting. I also added in some of the changes from the "Sims 2 Beta Lighting" mod by BoringBones.
+
+### 5. World Lit by Fire (Radiance version)
+
+This is the original Radiance 2.4 based version by Almighty Hat. Unlike the original version of this tweak, you can switch to regular radiance and World Lit by Fire using cheats.
 
 ### 5. Vanilla Plus
 
@@ -146,8 +150,9 @@ Simply type the cheat alias on the cheat console (CTRL + SHIFT + C) to switch wh
 - `slv` - Vanilla Plus (`Lighting_Vanilla.txt`)
 - `slm` - Maxis Match lighting mod (`Lighting_MM.txt`)
 - `slr` - Radiance Lighting (`Lighting_RLS.txt`)
-- `slw` - World Lit by Fire (`Lighting_WLBF.txt`)
+- `slw` - World Lit by Fire - Cinema Secrets base (`Lighting_WLBF.txt`)
 - `slc` - Cinema Secrets (`Lighting_CS.txt`)
+- `slf` - World Lit by Fire - Radiance base (`Lighting_RLS_WLBF.txt`)
 
 The lot lighting persists between saves unless you clear it with `setlotlightingfile clear` (or `sld`).
 
@@ -155,14 +160,15 @@ The lot lighting persists between saves unless you clear it with `setlotlighting
 
 To switch lighting directions (Back, Left, Right), type the following cheats:
 
-| **Lighting Mod**         | **Front (default)** | **Back** | **Left** | **Right** |
-| ------------------------ |---------------------| -------- | -------- | --------- |
-| Default                  | `sld` or `sldf`     | `sldb`   | `sldl`   | `sldr`    |
-| Cinema Secrets           | `slc` or `slcf`     | `slcb`   | `slcl`   | `slcr`    |
-| Radiance Lighting System | `slr` or `slrf`     | `slrb`   | `slrl`   | `slrr`    |
-| Maxis Match Lighting Mod | `slm` or `slmf`     | `slmb`   | `slml`   | `slmr`    |
-| Vanilla Plus             | `slv` or `slmf`     | `slvb`   | `slvl`   | `slvr`    |
-| World Lit by Fire        | `slw` or `slwf`     | `slwb`   | `slwl`   | `slwr`    |
+| **Lighting Mod**                        | **Front (default)** | **Back** | **Left** | **Right** |
+|-----------------------------------------|---------------------|----------|----------|-----------|
+| Default                                 | `sld` or `sldf`     | `sldb`   | `sldl`   | `sldr`    |
+| Cinema Secrets                          | `slc` or `slcf`     | `slcb`   | `slcl`   | `slcr`    |
+| Radiance Lighting System                | `slr` or `slrf`     | `slrb`   | `slrl`   | `slrr`    |
+| Maxis Match Lighting Mod                | `slm` or `slmf`     | `slmb`   | `slml`   | `slmr`    |
+| Vanilla Plus                            | `slv` or `slmf`     | `slvb`   | `slvl`   | `slvr`    |
+| World Lit by Fire (Cinema Secrets base) | `slw` or `slwf`     | `slwb`   | `slwl`   | `slwr`    |
+| World Lit by Fire (Radiance base)       | `slf` or `slff`     | `slfb`   | `slfl`   | `slfr`    |
 
 ## **SWITCHING DEFAULT LIGHTING MODS**
 
@@ -175,9 +181,10 @@ The mod uses Cinema Secrets by default, but you can switch to any of the other l
 3. Open `Lighting.txt` file and look for the first `sinclude` line and change it to any of the following:
 
     - Cinema Secrets - `Lighting_CS.txt`
-    - World Lit by Fire - `Lighting_WLBF.txt`
+    - World Lit by Fire (Cinema Secrets base) - `Lighting_WLBF.txt`
     - Maxis Match Lighting Mod - `Lighting_MM.txt`
     - Radiance Lighting System - `Lighting_RLS.txt`
+    - World Lit by Fire (Radiance base) - `Lighting_RLS_WLBF.txt`
     - Vanilla Plus - `Lighting_Vanilla.txt`
 
 4. Save.
@@ -235,11 +242,17 @@ alias slvb "setlotlightingfile Lighting_Vanilla_Back.txt" "vanilla plus lighting
 alias slvl "setlotlightingfile Lighting_Vanilla_Left.txt" "vanilla plus lighting mod - Left" "Vanilla Plus Lighting - Left"
 alias slvr "setlotlightingfile Lighting_Vanilla_Right.txt" "vanilla plus lighting mod - Right" "Vanilla Plus Lighting - Right"
 
-alias slr "setlotlightingfile Lighting_Vanilla.txt" "vanilla plus lighting mod" "Vanilla Plus Lighting - front"
+alias slr "setlotlightingfile Lighting_RLS.txt" "radiance lighting system" "Gunmod Radiance Lighting System - front"
 alias slrf "setlotlightingfile Lighting_RLS.txt" "radiance lighting system" "Gunmod Radiance Lighting System - front"
 alias slrb "setlotlightingfile Lighting_RLS_Back.txt" "radiance lighting system - back" "Gunmod Radiance Lighting System - back"
 alias slrl "setlotlightingfile Lighting_RLS_Left.txt" "radiance lighting system - left" "Gunmod Radiance Lighting System - left"
 alias slrr "setlotlightingfile Lighting_RLS_Right.txt" "radiance lighting system - right" "Gunmod Radiance Lighting System - right"
+
+alias slf "setlotlightingfile Lighting_RLS_WLBF.txt" "a world lit by fire (radiance base) - front" "a world lit by fire (radiance base) - front"
+alias slff "setlotlightingfile Lighting_RLS_WLBF.txt" "a world lit by fire (radiance base) - front" "a world lit by fire (radiance base) - front"
+alias slfb "setlotlightingfile Lighting_RLS_WLBF_Back.txt" "a world lit by fire (radiance base) - back" "a world lit by fire (radiance base) - front"
+alias slfl "setlotlightingfile Lighting_RLS_WLBF_Left.txt" "a world lit by fire (radiance base) - left" "a world lit by fire (radiance base) - left"
+alias slfr "setlotlightingfile Lighting_RLS_Right.txt" "radiance lighting system - right" "Gunmod Radiance Lighting System - right"
 
 alias slc "setlotlightingfile Lighting_CS.txt" "cinema secrets lighting mod" "Cinema Secrets Lighting Mod - front"
 alias slcf "setlotlightingfile Lighting_CS.txt" "cinema secrets lighting mod" "Cinema Secrets Lighting Mod - front"
@@ -277,6 +290,8 @@ seti FamilyAreaOff 0
 seti PodiumAreaOff 0
 ```
 4. Save.
+
+This should apply across all lighting mod configurations.
 
 ## **RECOMMENDED MODS**
 

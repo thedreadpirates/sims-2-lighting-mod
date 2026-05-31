@@ -83,7 +83,7 @@ create SoftAmber(lightingTableArtNouveau_light)
 ######################################################################
 
 #17 Founding Fathers Electric Lamp #
-create 100WattTABLE(lightingtablecolonial1_light)
+create 100WattTABLE(lightingTableColonial1_light)
 create Amber(lightingTableColonial1_light)
 ######################################################################
 
@@ -219,7 +219,7 @@ create SoftWhite(lightingCeilingCanister_light)
 ############################################################
 
 #3 Lamp On the Half Shell #
-create 75WattOVER(lightingceilingquaint_light)
+create 75WattOVER(lightingCeilingQuaint_light)
 create SoftWhite(lightingCeilingQuaint_light)
 ############################################################
 
@@ -235,7 +235,7 @@ create Flourescent(lightingCeilingHangingFluorescent_light)
 
 #6 Qadim Bauble Lamp #
 create 75WattOVER(lightingCeilingMoroccan_light)
-create Halogen(lightingCeilingMoroccan_light)
+create matchflame(lightingCeilingMoroccan_light)
 ############################################################
 
 #7 Chinese Riddle Lantern #
@@ -244,7 +244,7 @@ create SoftAmber(lightingCeilingCentralAsian_light)
 ############################################################
 
 #9 Legno's Modern Lamp #
-create 100WattOVER(lightingceilingchandeliermodern_light)
+create 100WattOVER(lightingCeilingChandelierModern_light)
 create SoftWhite(lightingCeilingChandelierModern_light)
 ############################################################
 
@@ -255,7 +255,7 @@ create candleflame(lightingCeilingClubGlass_light)
 
 #11 Paper Moon Ceiling Lamp #
 create 75WattOVER2(lightingCeilingPaperShade_bulb)
-create SoftWhite(lightingCeilingPaperShade_bulb) 
+create SoftWhite(lightingCeilingPaperShade_bulb)
 ############################################################
 
 #14 Floral Fancy Hanging Lamp #

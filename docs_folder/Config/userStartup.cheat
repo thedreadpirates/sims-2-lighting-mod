@@ -39,11 +39,17 @@ alias slvb "setlotlightingfile Lighting_Vanilla_Back.txt" "vanilla plus lighting
 alias slvl "setlotlightingfile Lighting_Vanilla_Left.txt" "vanilla plus lighting mod - Left" "Vanilla Plus Lighting - Left"
 alias slvr "setlotlightingfile Lighting_Vanilla_Right.txt" "vanilla plus lighting mod - Right" "Vanilla Plus Lighting - Right"
 
-alias slr "setlotlightingfile Lighting_Vanilla.txt" "vanilla plus lighting mod" "Vanilla Plus Lighting - front"
+alias slr "setlotlightingfile Lighting_RLS.txt" "radiance lighting system" "Gunmod Radiance Lighting System - front"
 alias slrf "setlotlightingfile Lighting_RLS.txt" "radiance lighting system" "Gunmod Radiance Lighting System - front"
 alias slrb "setlotlightingfile Lighting_RLS_Back.txt" "radiance lighting system - back" "Gunmod Radiance Lighting System - back"
 alias slrl "setlotlightingfile Lighting_RLS_Left.txt" "radiance lighting system - left" "Gunmod Radiance Lighting System - left"
 alias slrr "setlotlightingfile Lighting_RLS_Right.txt" "radiance lighting system - right" "Gunmod Radiance Lighting System - right"
+
+alias slf "setlotlightingfile Lighting_RLS_WLBF.txt" "a world lit by fire (radiance base) - front" "a world lit by fire (radiance base) - front"
+alias slff "setlotlightingfile Lighting_RLS_WLBF.txt" "a world lit by fire (radiance base) - front" "a world lit by fire (radiance base) - front"
+alias slfb "setlotlightingfile Lighting_RLS_WLBF_Back.txt" "a world lit by fire (radiance base) - back" "a world lit by fire (radiance base) - front"
+alias slfl "setlotlightingfile Lighting_RLS_WLBF_Left.txt" "a world lit by fire (radiance base) - left" "a world lit by fire (radiance base) - left"
+alias slfr "setlotlightingfile Lighting_RLS_Right.txt" "radiance lighting system - right" "Gunmod Radiance Lighting System - right"
 
 alias slc "setlotlightingfile Lighting_CS.txt" "cinema secrets lighting mod" "Cinema Secrets Lighting Mod - front"
 alias slcf "setlotlightingfile Lighting_CS.txt" "cinema secrets lighting mod" "Cinema Secrets Lighting Mod - front"
